@@ -9,6 +9,31 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="Inside_Airbnb_Client.styles.css" rel="stylesheet" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script>
+        window.mapbox = () => {
+            mapboxgl.accessToken = 'pk.eyJ1Ijoicm93YW5wYXVsIiwiYSI6ImNsMzF0M2ZxNTB6dDEzanBzZHF0MmdoZXAifQ.b_qn6AFUlzR5cmPYJmq5Ng';
+            map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [4.9041, 52.3676],
+                zoom: 11,
+            })
+            map.on('load', () => {
+                /*
+                map.addSource('listing', {
+                    type: 'geojson',
+                    data: "https://localhost:7124/api/listing",
+                    cluster: true,
+                    clusterMaxZoom: 14,
+                    clusterRadius: 50
+                });
+                */
+            })
+        }
+    </script>
 </head>
 
 <body>
