@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Client", "Inside_Airbnb_Client\Inside_Airbnb_Client.csproj", "{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Server", "Inside_Airbnb_Server\Inside_Airbnb_Server.csproj", "{EB011008-590E-42AA-8893-1DDA0C3D85B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
