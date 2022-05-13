@@ -22,6 +22,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(policy =>
+    policy.WithOrigins("https://localhost:7093")
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials()
+);
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
