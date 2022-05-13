@@ -29,7 +29,6 @@ namespace Inside_Airbnb_Server.Controllers
         {
             if (geojson)
             {
-                //return System.IO.File.OpenRead(@"C:\Users\RP-Fl\Github\HANAIM-WAPP\Data\neighbourhoods.geojson");
                 var bytes = System.IO.File.ReadAllBytes(@"wwwroot/neighbourhoods.geojson");
 
                 return File(bytes, "application/octet-stream", "neighbourhoods.json");
