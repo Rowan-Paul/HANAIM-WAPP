@@ -19,7 +19,7 @@
                 container: 'map',
                 style: 'mapbox://styles/mapbox/streets-v11',
                 center: [4.9041, 52.3676],
-                zoom: 11,
+                zoom: 10,
             })
             map.on('load', () => {
                 map.addSource('neighbourhoods', {
@@ -39,12 +39,11 @@
                     type: 'geojson',
                     data: "https://localhost:7124/api/listings?geojson=true",
                     cluster: true,
-                    clusterRadius: 3
+                    clusterRadius: 6
                 });
                 map.addLayer({
                     id: 'listings-layer',
                     type: 'circle',
-                    filter: ['!', ['has', 'point_count']],
                     source: 'listings',
                     paint: {
                         'circle-color': '#14248A',
