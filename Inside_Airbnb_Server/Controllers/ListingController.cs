@@ -51,11 +51,10 @@ namespace Inside_Airbnb_Server.Controllers
 
             foreach (var listing in listings)
             {
-                Console.WriteLine(listing.Latitude + " " + listing.Longitude);
                 if (listing.Latitude != null && listing.Longitude != null)
                 {
                     features.Add(new Feature(new Point(new Position((double)listing.Latitude,
-                        (double)listing.Longitude)), new { listing.Id }));
+                        (double)listing.Longitude)), new { listing.Id, listing.Name }));
                 }
             }
 
