@@ -22,6 +22,19 @@
                 zoom: 11,
             })
             map.on('load', () => {
+                map.addSource('neighbourhoods', {
+                    type: 'geojson',
+                    data: "https://localhost:7124/api/neighbourhoods?geojson=true",
+                });
+                map.addLayer({
+                    id: 'neigbourhoods-layer',
+                    type: 'fill',
+                    source: 'neighbourhoods',
+                    paint: {
+                        'fill-color': 'rgba(229, 182, 247, 0.4)',
+                        'fill-outline-color': 'rgba(200, 100, 240, 1)'
+                    }
+                });
                 map.addSource('listings', {
                     type: 'geojson',
                     data: "https://localhost:7124/api/listings?geojson=true",
@@ -34,7 +47,7 @@
                     filter: ['!', ['has', 'point_count']],
                     source: 'listings',
                     paint: {
-                        'circle-color': '#A020F0',
+                        'circle-color': '#14248A',
                         'circle-radius': 6,
                     }
                 });

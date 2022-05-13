@@ -1,5 +1,6 @@
 using Inside_Airbnb_Server;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddDbContext<inside_airbnbContext>(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDirectoryBrowser();
 
 var app = builder.Build();
 
@@ -30,6 +32,13 @@ app.UseCors(policy =>
 );
 
 app.UseHttpsRedirection();
+
+// Enable displaying browser links.
+app.UseStaticFiles(new StaticFileOptions
+{
+    ServeUnknownFileTypes = true,
+    DefaultContentType = "application/geo+json",
+});
 
 app.UseAuthorization();
 
