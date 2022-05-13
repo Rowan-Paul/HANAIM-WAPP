@@ -17,130 +17,44 @@ namespace Inside_Airbnb_Server.Controllers
     [ApiController]
     public class ListingController : ControllerBase
     {
-        private readonly inside_airbnbContext _context;
+        private IListingRepository ListingRepository { get; }
 
-        public ListingController(inside_airbnbContext context)
+        public ListingController(IListingRepository listingRepository)
         {
-            _context = context;
+            ListingRepository = listingRepository;
         }
 
         // GET: api/Listing
         [HttpGet]
         public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson)
         {
-            if (geojson)
-            {
-                List<Listing> listings = await _context.Listings.ToListAsync();
+            List<Listing> listings = await ListingRepository.GetAllListings();
+
+            if (!geojson) return listings;
             
-                List<Feature> features = new();
-                FeatureCollection featureCollection = new(features);
+            List<Feature> features = new();
+            FeatureCollection featureCollection = new(features);
 
-                foreach (var listing in listings)
-                {
-                    if (listing.Latitude != null && listing.Longitude != null)
-                    {
-                        features.Add(new Feature(new Point(new Position((double)listing.Latitude,
-                            (double)listing.Longitude)), new { listing.Id, listing.Name, listing.HostName }));
-                    }
-                }
-
-                return featureCollection;
-            }
-
-            if (_context.Listings == null)
+            foreach (var listing in listings)
             {
-                return NotFound();
+                if (listing.Latitude != null && listing.Longitude != null)
+                {
+                    features.Add(new Feature(new Point(new Position((double)listing.Latitude,
+                        (double)listing.Longitude)), new { listing.Id, listing.Name, listing.HostName }));
+                }
             }
-            return await _context.Listings.ToListAsync();
+
+            return featureCollection;
+
         }
 
         // GET: api/Listing/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Listing>> GetListing(int? id)
+        public async Task<ActionResult<Listing>> GetListing(int id)
         {
-          if (_context.Listings == null)
-          {
-              return NotFound();
-          }
-          var listing = await _context.Listings.FindAsync(id);
+            var listing = await ListingRepository.GetListingById(id);
 
-          if (listing == null)
-          {
-              return NotFound();
-          }
-
-          return listing;
-        }
-
-        // PUT: api/Listing/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutListing(int? id, Listing listing)
-        {
-            if (id != listing.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(listing).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ListingExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Listing
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Listing>> PostListing(Listing listing)
-        {
-          if (_context.Listings == null)
-          {
-              return Problem("Entity set 'inside_airbnbContext.Listings'  is null.");
-          }
-          _context.Listings.Add(listing);
-          await _context.SaveChangesAsync();
-
-          return CreatedAtAction("GetListing", new { id = listing.Id }, listing);
-        }
-
-        // DELETE: api/Listing/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteListing(int? id)
-        {
-            if (_context.Listings == null)
-            {
-                return NotFound();
-            }
-            var listing = await _context.Listings.FindAsync(id);
-            if (listing == null)
-            {
-                return NotFound();
-            }
-
-            _context.Listings.Remove(listing);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        private bool ListingExists(int? id)
-        {
-            return (_context.Listings?.Any(e => e.Id == id)).GetValueOrDefault();
+            return listing;
         }
     }
 }

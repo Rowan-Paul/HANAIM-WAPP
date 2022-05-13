@@ -16,79 +16,33 @@ namespace Inside_Airbnb_Server.Controllers
     [ApiController]
     public class NeighbourhoodController : ControllerBase
     {
-        private readonly inside_airbnbContext _context;
-        
-        public NeighbourhoodController(inside_airbnbContext context)
+        private INeighbourhoodRepository NeighbourhoodRepository { get; }
+
+        public NeighbourhoodController(INeighbourhoodRepository neighbourhoodRepository)
         {
-            _context = context;
+            NeighbourhoodRepository = neighbourhoodRepository;
         }
 
         // GET: api/Neighbourhood
         [HttpGet]
         public async Task<ActionResult<dynamic>> GetNeighbourhoods([FromQuery] bool geojson)
         {
-            if (geojson)
-            {
-                var bytes = System.IO.File.ReadAllBytes(@"wwwroot/neighbourhoods.geojson");
+            List<Neighbourhood> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
 
-                return File(bytes, "application/octet-stream", "neighbourhoods.json");
-            }
-            
-            if (_context.Neighbourhoods == null)
-            {
-                return NotFound();
-            }
-            return await _context.Neighbourhoods.ToListAsync();
+            if (!geojson) return neighbourhoods;
+            var bytes = await System.IO.File.ReadAllBytesAsync(@"wwwroot/neighbourhoods.geojson");
+
+            return File(bytes, "application/octet-stream", "neighbourhoods.json");
+
         }
 
         // GET: api/Neighbourhood/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Neighbourhood>> GetNeighbourhood(int? id)
+        public async Task<ActionResult<Neighbourhood>> GetNeighbourhood(int id)
         {
-            if (_context.Neighbourhoods == null)
-            {
-                return NotFound();
-            }
-            var neighbourhood = await _context.Neighbourhoods.FindAsync(id);
+            var listing = await NeighbourhoodRepository.GetNeighbourhoodById(id);
 
-            if (neighbourhood == null)
-            {
-                return NotFound();
-            }
-
-            return neighbourhood;
-        }
-
-        // POST: api/Neighbourhood
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/Neighbourhood/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/Neighbourhood/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteNeighbourhood(int? id)
-        {
-            if (_context.Neighbourhoods == null)
-            {
-                return NotFound();
-            }
-            var neighbourhood = await _context.Neighbourhoods.FindAsync(id);
-            if (neighbourhood == null)
-            {
-                return NotFound();
-            }
-
-            _context.Neighbourhoods.Remove(neighbourhood);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return listing;
         }
     }
 }

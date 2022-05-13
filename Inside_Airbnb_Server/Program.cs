@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<inside_airbnbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("InsideAirbnbContext")));
+builder.Services.AddTransient<INeighbourhoodRepository, NeighbourhoodRepository>();
+builder.Services.AddScoped<IListingRepository, ListingRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
