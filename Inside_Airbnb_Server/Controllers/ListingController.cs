@@ -1,7 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using GeoJSON.Text.Feature;
+using GeoJSON.Text.Geometry;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +33,33 @@ namespace Inside_Airbnb_Server.Controllers
               return NotFound();
           }
           return await _context.Listings.ToListAsync();
+        }
+        
+        // GET: api/Listing/geo
+        [HttpGet("geo")]
+        public async Task<ActionResult<FeatureCollection>> GetGeoListing()
+        {
+            if (_context.Listings == null)
+            {
+                return NotFound();
+            }
+
+            List<Listing> listings = await _context.Listings.ToListAsync();
+            
+            List<Feature> features = new();
+            FeatureCollection featureCollection = new(features);
+
+            foreach (var listing in listings)
+            {
+                Console.WriteLine(listing.Latitude + " " + listing.Longitude);
+                if (listing.Latitude != null && listing.Longitude != null)
+                {
+                    features.Add(new Feature(new Point(new Position((double)listing.Latitude,
+                        (double)listing.Longitude)), new { listing.Id }));
+                }
+            }
+
+            return featureCollection;
         }
 
         // GET: api/Listing/5
