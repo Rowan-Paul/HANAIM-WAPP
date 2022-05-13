@@ -24,7 +24,7 @@
             map.on('load', () => {
                 map.addSource('listings', {
                     type: 'geojson',
-                    data: "https://localhost:7124/api/listing/geo",
+                    data: "https://localhost:7124/api/listings?geojson=true",
                     cluster: true,
                     clusterRadius: 3
                 });

@@ -13,7 +13,7 @@ using Inside_Airbnb_Server;
 
 namespace Inside_Airbnb_Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/listings")]
     [ApiController]
     public class ListingController : ControllerBase
     {
@@ -26,39 +26,32 @@ namespace Inside_Airbnb_Server.Controllers
 
         // GET: api/Listing
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Listing>>> GetListings()
+        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson)
         {
-          if (_context.Listings == null)
-          {
-              return NotFound();
-          }
-          return await _context.Listings.ToListAsync();
-        }
-        
-        // GET: api/Listing/geo
-        [HttpGet("geo")]
-        public async Task<ActionResult<FeatureCollection>> GetGeoListing()
-        {
+            if (geojson)
+            {
+                List<Listing> listings = await _context.Listings.ToListAsync();
+            
+                List<Feature> features = new();
+                FeatureCollection featureCollection = new(features);
+
+                foreach (var listing in listings)
+                {
+                    if (listing.Latitude != null && listing.Longitude != null)
+                    {
+                        features.Add(new Feature(new Point(new Position((double)listing.Latitude,
+                            (double)listing.Longitude)), new { listing.Id, listing.Name, listing.HostName }));
+                    }
+                }
+
+                return featureCollection;
+            }
+
             if (_context.Listings == null)
             {
                 return NotFound();
             }
-
-            List<Listing> listings = await _context.Listings.ToListAsync();
-            
-            List<Feature> features = new();
-            FeatureCollection featureCollection = new(features);
-
-            foreach (var listing in listings)
-            {
-                if (listing.Latitude != null && listing.Longitude != null)
-                {
-                    features.Add(new Feature(new Point(new Position((double)listing.Latitude,
-                        (double)listing.Longitude)), new { listing.Id, listing.Name, listing.HostName }));
-                }
-            }
-
-            return featureCollection;
+            return await _context.Listings.ToListAsync();
         }
 
         // GET: api/Listing/5
