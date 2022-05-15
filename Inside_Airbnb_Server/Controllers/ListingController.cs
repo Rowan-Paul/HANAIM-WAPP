@@ -26,19 +26,17 @@ namespace Inside_Airbnb_Server.Controllers
 
         // GET: api/Listings
         [HttpGet]
-        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood)
+        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
+            int? price)
         {
             List<Listing> listings;
-            Console.WriteLine("neighbourhood: " + neighbourhood);
 
             if (neighbourhood is { Length: > 0 })
             {
-                Console.WriteLine("in");
                 listings = await ListingRepository.GetListingsByNeighbourhood(neighbourhood);
             }
             else
             {
-                Console.WriteLine("in2");
                 listings = await ListingRepository.GetAllListings();
             }
 
