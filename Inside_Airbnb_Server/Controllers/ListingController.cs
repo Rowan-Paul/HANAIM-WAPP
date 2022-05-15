@@ -24,14 +24,26 @@ namespace Inside_Airbnb_Server.Controllers
             ListingRepository = listingRepository;
         }
 
-        // GET: api/Listing
+        // GET: api/Listings
         [HttpGet]
-        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson)
+        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood)
         {
-            List<Listing> listings = await ListingRepository.GetAllListings();
+            List<Listing> listings;
+            Console.WriteLine("neighbourhood: " + neighbourhood);
+
+            if (neighbourhood is { Length: > 0 })
+            {
+                Console.WriteLine("in");
+                listings = await ListingRepository.GetListingsByNeighbourhood(neighbourhood);
+            }
+            else
+            {
+                Console.WriteLine("in2");
+                listings = await ListingRepository.GetAllListings();
+            }
 
             if (!geojson) return listings;
-            
+
             List<Feature> features = new();
             FeatureCollection featureCollection = new(features);
 
@@ -45,10 +57,9 @@ namespace Inside_Airbnb_Server.Controllers
             }
 
             return featureCollection;
-
         }
 
-        // GET: api/Listing/5
+        // GET: api/Listings/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Listing>> GetListing(int id)
         {

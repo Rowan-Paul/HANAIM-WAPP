@@ -23,7 +23,7 @@ namespace Inside_Airbnb_Server.Controllers
             NeighbourhoodRepository = neighbourhoodRepository;
         }
 
-        // GET: api/Neighbourhood
+        // GET: api/Neighbourhoods
         [HttpGet]
         public async Task<ActionResult<dynamic>> GetNeighbourhoods([FromQuery] bool geojson)
         {
@@ -36,7 +36,7 @@ namespace Inside_Airbnb_Server.Controllers
 
         }
 
-        // GET: api/Neighbourhood/5
+        // GET: api/Neighbourhoods/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Neighbourhood>> GetNeighbourhood(int id)
         {

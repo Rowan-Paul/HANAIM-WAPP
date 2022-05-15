@@ -17,6 +17,11 @@ public class ListingRepository : IListingRepository
 
         return list;
     }
+    
+    public async Task<List<Listing>> GetListingsByNeighbourhood(string neighbourhood)
+    {
+        return await _context.Listings.Where(listing => listing.Neighbourhood == neighbourhood).ToListAsync();
+    }
 
     public async Task<Listing> GetListingById(int id)
     {

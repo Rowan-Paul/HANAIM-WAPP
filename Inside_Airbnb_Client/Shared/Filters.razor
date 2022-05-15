@@ -3,22 +3,41 @@
 @using System.Net.Http.Json
 @using System.Threading.Tasks
 @inject HttpClient Http
+@inject IJSRuntime JS
 
-<select class="form-select" aria-label="Default select example">
+<form class="block">
+    <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
         @if (Neighbourhoods != null)
         {
+            <option value="" selected>All neighbourhoods</option>
             @foreach (var n in Neighbourhoods)
             {
                 <option value="@n.Neighbourhood1">@n.Neighbourhood1</option>
             }
         }
-</select>
+    </select>
+    <button
+        type="submit"
+        class="btn btn-primary"
+        @onclick="async () => await FilterNeighbourhoods(Parameters.Neighbourhood)"
+        @onclick:preventDefault>
+        Filter
+    </button>
+</form>
 
 @code {
-    private List<Neighbourhood> Neighbourhoods { get; set; }
+    [Parameter]
+    public FilterParameters Parameters { get; set; } = new();
+    private List<Neighbourhood>? Neighbourhoods { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         Neighbourhoods = await Http.GetFromJsonAsync<List<Neighbourhood>>("https://localhost:7124/api/neighbourhoods");
+    }
+
+    private async Task FilterNeighbourhoods(string neighbourhood)
+    {
+        if (neighbourhood is { Length: > 0 }) await JS.InvokeVoidAsync("mapbox.updateMap", $"https://localhost:7124/api/listings?geojson=true");
+        await JS.InvokeVoidAsync("mapbox.updateMap", $"https://localhost:7124/api/listings?geojson=true&neighbourhood={neighbourhood}");
     }
 }
