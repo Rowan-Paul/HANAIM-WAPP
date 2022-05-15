@@ -5,7 +5,8 @@
 @inject HttpClient Http
 @inject IJSRuntime JS
 
-<form class="block">
+<h2>Filters</h2>
+<form class="d-flex gap-3">
     <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
         @if (Neighbourhoods != null)
         {
