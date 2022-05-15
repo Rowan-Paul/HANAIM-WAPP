@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Client", "Ins
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Server", "Inside_Airbnb_Server\Inside_Airbnb_Server.csproj", "{EB011008-590E-42AA-8893-1DDA0C3D85B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{AB41F04B-4848-415E-8985-5A7B1EE18E2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
