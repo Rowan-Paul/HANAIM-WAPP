@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Shared;
 
 namespace Inside_Airbnb_Server;
 
@@ -18,9 +19,14 @@ public class ListingRepository : IListingRepository
         return list;
     }
     
-    public async Task<List<Listing>> GetListingsByNeighbourhood(string neighbourhood)
+    public async Task<List<Listing>> GetListingsByParameter(FilterParameters parameters)
     {
-        return await _context.Listings.Where(listing => listing.Neighbourhood == neighbourhood).ToListAsync();
+        
+        return await _context.Listings.Where(listing => parameters.Neighbourhood == null || listing.Neighbourhood == parameters.Neighbourhood)
+            .Where(listing => parameters.PriceFrom == null || listing.Price >= parameters.PriceFrom)
+            .Where(listing => parameters.PriceTo == null || listing.Price <= parameters.PriceTo)
+            .Where(listing => parameters.ReviewsMax == null || listing.NumberOfReviews <= parameters.ReviewsMax)
+            .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin).ToListAsync();
     }
 
     public async Task<Listing> GetListingById(int id)

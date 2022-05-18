@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Inside_Airbnb_Server;
+using Shared;
 
 namespace Inside_Airbnb_Server.Controllers
 {
@@ -27,13 +28,15 @@ namespace Inside_Airbnb_Server.Controllers
         // GET: api/Listings
         [HttpGet]
         public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
-            int? price)
+            int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
         {
             List<Listing> listings;
 
-            if (neighbourhood is { Length: > 0 })
+            if (neighbourhood is {Length: > 0} || priceFrom.HasValue || priceTo.HasValue
+                || reviewsMax.HasValue || reviewsMin.HasValue)
             {
-                listings = await ListingRepository.GetListingsByNeighbourhood(neighbourhood);
+                listings = await ListingRepository.GetListingsByParameter(new FilterParameters(neighbourhood, priceFrom,
+                    priceTo, reviewsMax, reviewsMin));
             }
             else
             {
@@ -49,8 +52,8 @@ namespace Inside_Airbnb_Server.Controllers
             {
                 if (listing.Latitude != null && listing.Longitude != null)
                 {
-                    features.Add(new Feature(new Point(new Position((double)listing.Latitude,
-                        (double)listing.Longitude)), new { listing.Id, listing.Name, listing.HostName }));
+                    features.Add(new Feature(new Point(new Position((double) listing.Latitude,
+                        (double) listing.Longitude)), new {listing.Id, listing.Name, listing.HostName}));
                 }
             }
 
