@@ -33,7 +33,7 @@
                 source: 'listings',
                 paint: {
                     'circle-color': '#14248A',
-                    'circle-radius': 6,
+                    'circle-radius': 3,
                 }
             });
             map.addControl(new mapboxgl.NavigationControl());
