@@ -1,0 +1,13 @@
+﻿@inject IJSRuntime JsRuntime
+
+<div id="map" style="width: 100%; height: 60vh;"></div>
+<Filters/>
+
+@code
+{
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        JsRuntime.InvokeVoidAsync("mapbox.init");
+    }
+}

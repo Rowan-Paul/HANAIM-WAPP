@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Client", "Inside_Airbnb_Client\Inside_Airbnb_Client.csproj", "{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32505.426
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb.Server", "Inside_Airbnb\Server\Inside_Airbnb.Server.csproj", "{BADFCE34-CB15-4F20-BCE2-686362DDA7FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb_Server", "Inside_Airbnb_Server\Inside_Airbnb_Server.csproj", "{EB011008-590E-42AA-8893-1DDA0C3D85B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb.Client", "Inside_Airbnb\Client\Inside_Airbnb.Client.csproj", "{5F42B073-A455-439F-9B4E-3521CE286823}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{AB41F04B-4848-415E-8985-5A7B1EE18E2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inside_Airbnb.Shared", "Inside_Airbnb\Shared\Inside_Airbnb.Shared.csproj", "{2460EE66-912E-4211-A08E-50AA521040BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,17 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A87832DC-C4BB-4F04-9F4F-1EDF472A1DAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB011008-590E-42AA-8893-1DDA0C3D85B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB41F04B-4848-415E-8985-5A7B1EE18E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADFCE34-CB15-4F20-BCE2-686362DDA7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADFCE34-CB15-4F20-BCE2-686362DDA7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADFCE34-CB15-4F20-BCE2-686362DDA7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADFCE34-CB15-4F20-BCE2-686362DDA7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F42B073-A455-439F-9B4E-3521CE286823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F42B073-A455-439F-9B4E-3521CE286823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F42B073-A455-439F-9B4E-3521CE286823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F42B073-A455-439F-9B4E-3521CE286823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2460EE66-912E-4211-A08E-50AA521040BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2460EE66-912E-4211-A08E-50AA521040BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2460EE66-912E-4211-A08E-50AA521040BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2460EE66-912E-4211-A08E-50AA521040BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86C3529E-9858-4A11-AD6D-A6636B5FD9E1}
 	EndGlobalSection
 EndGlobal
