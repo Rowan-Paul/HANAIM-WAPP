@@ -6,11 +6,24 @@
 @using Inside_Airbnb.Server
 @using Inside_Airbnb.Shared
 @using Microsoft.AspNetCore.Components
-@inject HttpClient Http
+@inject IHttpClientFactory ClientFactory
 @inject IJSRuntime JS
 
 <h2>Filters</h2>
 <form class="row gap-3">
+    <div class="form-group col-4 mt-auto">
+        <label class="fst-italic">Select neighbourhood</label>
+        <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
+            @if (Neighbourhoods is {Count: > 0 })
+            {
+                <option value="" selected>All neighbourhoods</option>
+                @foreach (var n in Neighbourhoods)
+                {
+                    <option value="@n.Neighbourhood1">@n.Neighbourhood1</option>
+                }
+            }
+        </select>
+    </div>
     <div class="form-group col mt-auto">
         <label class="fst-italic">Lowest price</label>
         <input type="number" class="form-control" id="inputPriceFrom" @bind="Parameters.PriceFrom">
@@ -40,6 +53,14 @@
 
     [Parameter]
     public FilterParameters? Parameters { get; set; } = new();
+
+    private List<Neighbourhood>? Neighbourhoods { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = ClientFactory.CreateClient("WebAPI");
+        Neighbourhoods = await client.GetFromJsonAsync<List<Neighbourhood>>("https://localhost:7000/api/neighbourhoods");
+    }
 
     private async Task FilterNeighbourhoods(string? neighbourhood, int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
     {
