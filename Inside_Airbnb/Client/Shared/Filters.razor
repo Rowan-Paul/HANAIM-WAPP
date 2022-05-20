@@ -9,45 +9,47 @@
 @inject IHttpClientFactory ClientFactory
 @inject IJSRuntime JS
 
-<h2>Filters</h2>
-<form class="row gap-3">
-    <div class="form-group col-4 mt-auto">
-        <label class="fst-italic">Select neighbourhood</label>
-        <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
-            @if (Neighbourhoods is {Count: > 0 })
-            {
-                <option value="" selected>All neighbourhoods</option>
-                @foreach (var n in Neighbourhoods)
+<div class="mt-4">
+    <h2>Filters</h2>
+    <form class="row gap-3">
+        <div class="form-group col-4 mt-auto">
+            <label class="fst-italic">Select neighbourhood</label>
+            <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
+                @if (Neighbourhoods is {Count: > 0 })
                 {
-                    <option value="@n.Neighbourhood1">@n.Neighbourhood1</option>
+                    <option value="" selected>All neighbourhoods</option>
+                    @foreach (var n in Neighbourhoods)
+                    {
+                        <option value="@n.Neighbourhood1">@n.Neighbourhood1</option>
+                    }
                 }
-            }
-        </select>
-    </div>
-    <div class="form-group col mt-auto">
-        <label class="fst-italic">Lowest price</label>
-        <input type="number" class="form-control" id="inputPriceFrom" @bind="Parameters.PriceFrom">
-    </div>
-    <div class="form-group col mt-auto">
-        <label class="fst-italic">Highest price</label>
-        <input type="number" class="form-control" id="inputPriceTo" @bind="Parameters.PriceTo">
-    </div>
-    <div class="form-group col mt-auto">
-        <label class="fst-italic">Maximum amount of reviews</label>
-        <input type="number" class="form-control" id="inputReviewsMax" @bind="Parameters.ReviewsMax">
-    </div>
-    <div class="form-group col mt-auto">
-        <label class="fst-italic">Minimum amount of reviews</label>
-        <input type="number" class="form-control" id="inputReviewsMin" @bind="Parameters.ReviewsMin">
-    </div>
-    <button
-        type="submit"
-        class="btn btn-primary col"
-        @onclick="async () => await FilterNeighbourhoods(Parameters.Neighbourhood, Parameters.PriceFrom, Parameters.PriceTo, Parameters.ReviewsMax, Parameters.ReviewsMin)"
-        @onclick:preventDefault>
-        Filter
-    </button>
-</form>
+            </select>
+        </div>
+        <div class="form-group col mt-auto">
+            <label class="fst-italic">Lowest price</label>
+            <input type="number" class="form-control" id="inputPriceFrom" @bind="Parameters.PriceFrom">
+        </div>
+        <div class="form-group col mt-auto">
+            <label class="fst-italic">Highest price</label>
+            <input type="number" class="form-control" id="inputPriceTo" @bind="Parameters.PriceTo">
+        </div>
+        <div class="form-group col mt-auto">
+            <label class="fst-italic">Maximum amount of reviews</label>
+            <input type="number" class="form-control" id="inputReviewsMax" @bind="Parameters.ReviewsMax">
+        </div>
+        <div class="form-group col mt-auto">
+            <label class="fst-italic">Minimum amount of reviews</label>
+            <input type="number" class="form-control" id="inputReviewsMin" @bind="Parameters.ReviewsMin">
+        </div>
+        <button
+            type="submit"
+            class="btn btn-primary col"
+            @onclick="async () => await FilterNeighbourhoods(Parameters.Neighbourhood, Parameters.PriceFrom, Parameters.PriceTo, Parameters.ReviewsMax, Parameters.ReviewsMin)"
+            @onclick:preventDefault>
+            Filter
+        </button>
+    </form>
+</div>
 
 @code {
 

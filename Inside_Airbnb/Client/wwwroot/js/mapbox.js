@@ -37,11 +37,8 @@
                 }
             });
             map.addControl(new mapboxgl.NavigationControl());
-            map.on('click', 'listings-layer', (e) => {
-                new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML(`<div class="fw-bold">${e.features[0].properties.Name}</div><div>By ${e.features[0].properties.HostName}</div>`)
-                    .addTo(map);
+            map.on('click', 'listings-layer', async (e) => {
+                await dotNetHelper.invokeMethodAsync('FetchInfo', e.features[0].properties.Id)
             });
 
             map.on('mouseenter', 'listings-layer', () => {

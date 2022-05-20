@@ -32,7 +32,7 @@ public class ListingRepository : IListingRepository
 
     public async Task<Listing> GetListingById(int id)
     {
-        Listing listing = await _context.Listings.FindAsync(id);
+        Listing listing = await _context.Listings.FindAsync(Convert.ToInt64(id));
 
         return listing;
     }

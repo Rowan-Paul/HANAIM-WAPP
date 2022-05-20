@@ -56,7 +56,7 @@ namespace Inside_Airbnb.Server
 
             modelBuilder.Entity<Listing>(entity =>
             {
-                entity.HasNoKey();
+                //entity.HasNoKey();
 
                 entity.ToTable("listings");
 

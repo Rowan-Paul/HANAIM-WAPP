@@ -1,0 +1,49 @@
+﻿@page "/Sidebar"
+@using Inside_Airbnb.Server
+@implements IDisposable
+@inject IJSRuntime JS
+@inject IHttpClientFactory ClientFactory
+
+@if (_listing is not null)
+{
+    <div>
+        <h3>@_listing.Name</h3>
+        <div class="d-flex flex-row">
+            <span>By&nbsp;</span>@_listing.HostName <h4 style="margin-left: auto;">$@_listing.Price</h4>
+        </div>
+        <div>
+            <strong>Neighbourhood</strong><br/>@_listing.Neighbourhood
+        </div>
+        <div>
+            <strong>Reviews</strong><br/>@_listing.NumberOfReviews
+        </div>
+    </div>
+}
+
+@code {
+    private Listing? _listing;
+    private DotNetObjectReference<Sidebar>? dotNetHelper;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            dotNetHelper = DotNetObjectReference.Create(this);
+            await JS.InvokeAsync<string>("setDotNetHelper", dotNetHelper);
+        }
+    }
+
+    [JSInvokable]
+    public async Task FetchInfo(int id)
+    {
+        var client = ClientFactory.CreateClient("WebAPI");
+        _listing = await client.GetFromJsonAsync<Listing>("https://localhost:7000/api/listings/" + id);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        dotNetHelper?.Dispose();
+    }
+
+}
