@@ -6,17 +6,24 @@
 
 @if (_listing is not null)
 {
-    <div>
+    <div class="fixed-top bg-white shadow h-100 w-25 py-2 px-4" style="border: 1px solid rgba(0,0,0,.125);">
         <h3>@_listing.Name</h3>
         <div class="d-flex flex-row">
             <span>By&nbsp;</span>@_listing.HostName <h4 style="margin-left: auto;">$@_listing.Price</h4>
         </div>
         <div>
-            <strong>Neighbourhood</strong><br/>@_listing.Neighbourhood
+            <strong>Neighbourhood</strong><br/>@_listing.NeighbourhoodCleansed
         </div>
         <div>
-            <strong>Reviews</strong><br/>@_listing.NumberOfReviews
+            <strong>Reviews</strong><br/>@_listing.NumberOfReviews (@_listing.NumberOfReviewsL30d in the last 30 days)
         </div>
+        <div>
+            <strong>Min - max nights to stay</strong><br/>@_listing.MinimumNights - @_listing.MaximumNights
+        </div>
+        <div>
+            <strong>Amount of bedrooms and bathrooms</strong><br/>@_listing.Bedrooms bedrooms, @_listing.Bathrooms bathrooms
+        </div>
+        <button @onclick="() => _listing = null" class="mt-2">close</button>
     </div>
 }
 
