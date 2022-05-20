@@ -10,7 +10,7 @@
         map.on('load', () => {
             map.addSource('neighbourhoods', {
                 type: 'geojson',
-                data: "https://localhost:7124/api/neighbourhoods?geojson=true",
+                data: "https://localhost:7000/api/neighbourhoods?geojson=true",
             });
             map.addLayer({
                 id: 'neigbourhoods-layer',
@@ -23,7 +23,7 @@
             });
             map.addSource('listings', {
                 type: 'geojson',
-                data: "https://localhost:7124/api/listings?geojson=true",
+                data: "https://localhost:7000/api/listings?geojson=true",
                 cluster: true,
                 clusterRadius: 6
             });

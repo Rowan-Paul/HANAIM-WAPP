@@ -11,19 +11,6 @@
 
 <h2>Filters</h2>
 <form class="row gap-3">
-    <div class="form-group col-4 mt-auto">
-        <label class="fst-italic">Select neighbourhood</label>
-        <select class="form-select" aria-label="Select neighbourhood" @bind="Parameters.Neighbourhood">
-            @if (Neighbourhoods != null)
-            {
-                <option value="" selected>All neighbourhoods</option>
-                @foreach (var n in Neighbourhoods)
-                {
-                    <option value="@n.Neighbourhood1">@n.Neighbourhood1</option>
-                }
-            }
-        </select>
-    </div>
     <div class="form-group col mt-auto">
         <label class="fst-italic">Lowest price</label>
         <input type="number" class="form-control" id="inputPriceFrom" @bind="Parameters.PriceFrom">
@@ -54,13 +41,6 @@
     [Parameter]
     public FilterParameters? Parameters { get; set; } = new();
 
-    private List<Neighbourhood>? Neighbourhoods { get; set; }
-
-    protected override async Task OnInitializedAsync()
-    {
-        Neighbourhoods = await Http.GetFromJsonAsync<List<Neighbourhood>>("https://localhost:7124/api/neighbourhoods");
-    }
-
     private async Task FilterNeighbourhoods(string? neighbourhood, int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
     {
         NameValueCollection queryString = System.Web.HttpUtility.ParseQueryString(string.Empty);
@@ -71,7 +51,7 @@
         if (reviewsMax != null) queryString.Add("reviewsMax", reviewsMax.ToString());
         if (reviewsMin != null) queryString.Add("reviewsMin", reviewsMin.ToString());
 
-        await JS.InvokeVoidAsync("mapbox.updateMap", $"https://localhost:7124/api/listings?geojson=true&{queryString}");
+        await JS.InvokeVoidAsync("mapbox.updateMap", $"https://localhost:7000/api/listings?geojson=true&{queryString}");
     }
 
 }
