@@ -72,9 +72,9 @@ a, .btn-link {
     height: 100%;
     background: white;
     -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 0.5s;
     animation: slide 0.5s forwards;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     border: 1px solid rgba(0,0,0,.125);
     margin-top: 3.5rem;
     padding: 1rem 2rem;
