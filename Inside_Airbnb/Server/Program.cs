@@ -25,6 +25,7 @@ builder.Services.AddDbContext<inside_airbnbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("InsideAirbnbContext")));
 builder.Services.AddTransient<INeighbourhoodRepository, NeighbourhoodRepository>();
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 
 builder.Services.AddMvc();
 builder.Services.AddSwaggerGen(c =>

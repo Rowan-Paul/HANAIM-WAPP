@@ -19,13 +19,16 @@ namespace Inside_Airbnb.Server.Controllers
     {
         private IListingRepository ListingRepository { get; }
         private INeighbourhoodRepository NeighbourhoodRepository { get; }
+        private IReviewRepository ReviewRepository { get; }
 
-        public StatisticsController(IListingRepository listingRepository, INeighbourhoodRepository neighbourhoodRepository)
+        public StatisticsController(IListingRepository listingRepository,
+            INeighbourhoodRepository neighbourhoodRepository, IReviewRepository reviewRepository)
         {
             ListingRepository = listingRepository;
             NeighbourhoodRepository = neighbourhoodRepository;
+            ReviewRepository = reviewRepository;
         }
-        
+
         // GET: api/statistics/neighbourhoods
         [HttpGet("neighbourhoods")]
         public async Task<NeighbourhoodsStats> GetNeighbourhoodStats()
@@ -42,7 +45,7 @@ namespace Inside_Airbnb.Server.Controllers
 
             return new NeighbourhoodsStats(prices, formattedNeighbourhoods);
         }
-        
+
         // GET: api/statistics/property-types
         [HttpGet("property-types")]
         public async Task<PropertyTypesStats> GetPropertyTypesStats()
@@ -51,12 +54,21 @@ namespace Inside_Airbnb.Server.Controllers
 
             return result;
         }
-        
+
         // GET: api/statistics/room-types
         [HttpGet("room-types")]
         public async Task<RoomTypesStats> GetRoomTypesStats()
         {
             var result = await ListingRepository.GetAmountRoomTypes();
+
+            return result;
+        }
+        
+        // GET: api/statistics/reviews
+        [HttpGet("reviews")]
+        public async Task<ReviewsPerDateStats> GetReviewsPerDateStats()
+        {
+            var result = await ReviewRepository.GetReviewsPerDate();
 
             return result;
         }
