@@ -4,9 +4,9 @@
 @inject IJSRuntime JS
 @inject IHttpClientFactory ClientFactory
 
-@if (_listing is not null)
-{
-    <div class="fixed-top bg-white shadow h-100 w-25 py-2 px-4" style="border: 1px solid rgba(0,0,0,.125);">
+<div id="@(_listing is not null ? "slide" : "")" class="@(_listing is not null ? "" : "d-none")">
+    @if (_listing is not null)
+    {
         <h3>@_listing.Name</h3>
         <div class="d-flex flex-row">
             <span>By&nbsp;</span>@_listing.HostName <h4 style="margin-left: auto;">$@_listing.Price</h4>
@@ -24,8 +24,8 @@
             <strong>Amount of bedrooms and bathrooms</strong><br/>@_listing.Bedrooms bedrooms, @_listing.Bathrooms bathrooms
         </div>
         <button @onclick="() => _listing = null" class="mt-2">close</button>
-    </div>
-}
+    }
+</div>
 
 @code {
     private Listing? _listing;
