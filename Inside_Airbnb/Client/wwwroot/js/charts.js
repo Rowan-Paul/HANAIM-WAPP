@@ -20,7 +20,6 @@
         });
     },
     property: (stats) => {
-        console.log(stats)
         const ctx = document.getElementById('propertyChart').getContext('2d');
         const myChart = new Chart(ctx, {
             type: 'pie', data: {
