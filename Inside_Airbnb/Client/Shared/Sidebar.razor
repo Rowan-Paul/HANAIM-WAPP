@@ -21,10 +21,10 @@
             <strong>Reviews</strong><br/>@_listing.NumberOfReviews (@_listing.NumberOfReviewsL30d in the last 30 days)
         </div>
         <div>
-            <strong>Min - max nights to stay</strong><br/>@_listing.MinimumNights - @_listing.MaximumNights
+            <strong>Stay duration</strong><br/>@_listing.MinimumNights night(s) at a minimum, @_listing.MaximumNights night(s) at longest
         </div>
         <div>
-            <strong>Amount of bedrooms and bathrooms</strong><br/>@_listing.Bedrooms bedrooms, @_listing.Bathrooms bathrooms
+            <strong>Amount of bedrooms and bathrooms</strong><br/>@(_listing.Bedrooms ?? 0) bedrooms, @(_listing.Bathrooms ?? 0) bathrooms
         </div>
         <div>
             <strong>Room type</strong><br/>@_listing.RoomType

@@ -33,12 +33,16 @@
                 source: 'listings',
                 paint: {
                     'circle-color': '#14248A',
-                    'circle-radius': 3,
+                    'circle-radius': 4,
                 }
             });
             map.addControl(new mapboxgl.NavigationControl());
             map.on('click', 'listings-layer', async (e) => {
-                await dotNetHelper.invokeMethodAsync('FetchInfo', e.features[0].properties.Id)
+                if(e.features[0].properties.Id !== null) {
+                    await dotNetHelper.invokeMethodAsync('FetchInfo', e.features[0].properties.Id)
+                } else {
+                    console.error("Listing has no id")
+                }
             });
 
             map.on('mouseenter', 'listings-layer', () => {
