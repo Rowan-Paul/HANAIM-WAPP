@@ -4,10 +4,10 @@
 @inject NavigationManager Navigation
 @inject SignOutSessionStateManager SignOutManager
 
-        <a href="admin">Admin</a>
 <AuthorizeView>
     <Authorized>
         Hello, @context.User.Identity?.Name!
+        <a href="admin">Admin</a>
         <button class="nav-link btn btn-link" @onclick="BeginLogout">Log out</button>
     </Authorized>
     <NotAuthorized>

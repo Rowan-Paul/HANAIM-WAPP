@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Inside_Airbnb.Server.Repositories;
 using Inside_Airbnb.Shared;
 using Inside_Airbnb_Server;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,8 @@ namespace Inside_Airbnb.Server.Controllers
 {
     [Route("api/statistics")]
     [ApiController]
+    [Authorize]
+    [Authorize(Roles = "administrator")]
     public class StatisticsController : ControllerBase
     {
         private IListingRepository ListingRepository { get; }

@@ -66,7 +66,7 @@ public class ListingRepository : IListingRepository
             .Select(g => new PropertyRecord(g.Key, g.Count())).ToListAsync();
         // fetching all property types but only sending 20 back since sorting errors the linq function
         amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
-            .Take(20).ToList();
+            .Take(10).ToList();
 
         List<string> propertyTypes = new();
         List<int> counts = new();
