@@ -14,11 +14,16 @@
         Amount of listings for top 20 property types
         <canvas id="propertyChart" width="500px" height="500px"></canvas>
     </div>
+    <div style="max-width: 500px; max-height: 500px; text-align: center;">
+        Amount of listings with room type
+        <canvas id="roomChart" width="500px" height="500px"></canvas>
+    </div>
 </div>
 
 @code {
     private NeighbourhoodsStats? NeighbourStats { get; set; }
     private PropertyTypesStats? PropertyStats { get; set; }
+    private RoomTypesStats? RoomStats { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -27,8 +32,10 @@
             var client = ClientFactory.CreateClient("WebAPI");
             NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>("https://localhost:7000/api/statistics/neighbourhoods");
             PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>("https://localhost:7000/api/statistics/property-types");
+            RoomStats = await client.GetFromJsonAsync<RoomTypesStats>("https://localhost:7000/api/statistics/room-types");
             await JS.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
             await JS.InvokeVoidAsync("setMap.property", PropertyStats);
+            await JS.InvokeVoidAsync("setMap.room", RoomStats);
         }
     }
 

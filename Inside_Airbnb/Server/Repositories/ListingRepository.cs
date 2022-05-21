@@ -45,18 +45,26 @@ public class ListingRepository : IListingRepository
         return (int) averagePrice;
     }
 
-    public record Test(string PropertyType, int count)
+    public record PropertyRecord(string PropertyType, int count)
     {
         public override string ToString()
         {
             return $"{{ PropertyType = {PropertyType}, count = {count} }}";
         }
     }
+    public record RoomRecord(string RoomType, int count)
+    {
+        public override string ToString()
+        {
+            return $"{{ RoomType = {RoomType}, count = {count} }}";
+        }
+    }
 
     public async Task<PropertyTypesStats> GetAmountPropertyTypes()
     {
-        List<Test> amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
-            .Select(g => new Test(g.Key, g.Count())).ToListAsync();
+        List<PropertyRecord> amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
+            .Select(g => new PropertyRecord(g.Key, g.Count())).ToListAsync();
+        // fetching all property types but only sending 20 back since sorting errors the linq function
         amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
             .Take(20).ToList();
 
@@ -70,5 +78,22 @@ public class ListingRepository : IListingRepository
         }
 
         return new PropertyTypesStats(propertyTypes, counts);
+    }
+    
+    public async Task<RoomTypesStats> GetAmountRoomTypes()
+    {
+        List<RoomRecord> amountRoomTypes = await _context.Listings.GroupBy(p => p.RoomType)
+            .Select(g => new RoomRecord(g.Key, g.Count())).ToListAsync();
+
+        List<string> roomTypes = new();
+        List<int> counts = new();
+
+        foreach (var t in amountRoomTypes)
+        {
+            roomTypes.Add(t.RoomType);
+            counts.Add(t.count);
+        }
+
+        return new RoomTypesStats(roomTypes, counts);
     }
 }

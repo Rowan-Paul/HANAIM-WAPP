@@ -48,5 +48,14 @@ namespace Inside_Airbnb.Server.Controllers
 
             return result;
         }
+        
+        // GET: api/statistics/room-types
+        [HttpGet("room-types")]
+        public async Task<RoomTypesStats> GetRoomTypesStats()
+        {
+            var result = await ListingRepository.GetAmountRoomTypes();
+
+            return result;
+        }
     }
 }
