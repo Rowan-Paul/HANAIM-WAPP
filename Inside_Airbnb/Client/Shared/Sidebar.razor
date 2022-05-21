@@ -7,7 +7,10 @@
 <div id="@(_listing is not null ? "slide" : "")" class="@(_listing is not null ? "" : "d-none")">
     @if (_listing is not null)
     {
-        <h3>@_listing.Name</h3>
+        <div class="d-flex flex-row">
+            <h3>@_listing.Name</h3>
+            <button @onclick="() => _listing = null" class="btn-close" style="margin-left: auto;"></button>
+        </div>
         <div class="d-flex flex-row">
             <span>By&nbsp;</span>@_listing.HostName <h4 style="margin-left: auto;">$@_listing.Price</h4>
         </div>
@@ -23,7 +26,9 @@
         <div>
             <strong>Amount of bedrooms and bathrooms</strong><br/>@_listing.Bedrooms bedrooms, @_listing.Bathrooms bathrooms
         </div>
-        <button @onclick="() => _listing = null" class="mt-2">close</button>
+        <div>
+            <strong>Room type</strong><br/>@_listing.RoomType
+        </div>
     }
 </div>
 
