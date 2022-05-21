@@ -36,4 +36,12 @@ public class ListingRepository : IListingRepository
 
         return listing;
     }
+    
+    public async Task<int> GetAveragePriceByNeighbourhood(string neighbourhood)
+    {
+        var averagePrice = _context.Listings.Where(c => c.NeighbourhoodCleansed == neighbourhood && c.Price != null)
+            .Average(c => c.Price);
+
+        return (int) averagePrice;
+    }
 }

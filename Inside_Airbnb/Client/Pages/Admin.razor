@@ -1,18 +1,24 @@
 ﻿@page "/admin"
 @using Microsoft.AspNetCore.Authorization
+@using Inside_Airbnb.Shared
 @inject IJSRuntime JS
+@inject IHttpClientFactory ClientFactory
 
 <h3>Admin</h3>
 <div style="max-width: 500px; max-height: 500px;">
-    <canvas id="myChart" width="400px" height="400px"></canvas>
+    <canvas id="neighbourhoodsChart" width="400px" height="400px"></canvas>
 </div>
 
 @code { 
+    private NeighbourhoodsStats? Stats { get; set; }
+    
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            await JS.InvokeVoidAsync("setMap");
+            var client = ClientFactory.CreateClient("WebAPI");
+            Stats = await client.GetFromJsonAsync<NeighbourhoodsStats>("https://localhost:7000/api/statistics/neighbourhoods");
+            await JS.InvokeVoidAsync("setMap",Stats);
         }
     }
 }
