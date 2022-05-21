@@ -5,20 +5,31 @@
 @inject IHttpClientFactory ClientFactory
 
 <h3>Admin</h3>
-<div style="max-width: 500px; max-height: 500px;">
-    <canvas id="neighbourhoodsChart" width="400px" height="400px"></canvas>
+<div class="row">
+    <div style="max-width: 500px; max-height: 500px; text-align: center;">
+        Average price of listing
+        <canvas id="neighbourhoodsChart" width="500px" height="500px"></canvas>
+    </div>
+    <div style="max-width: 500px; max-height: 500px; text-align: center;">
+        Amount of listings for top 20 property types
+        <canvas id="propertyChart" width="500px" height="500px"></canvas>
+    </div>
 </div>
 
-@code { 
-    private NeighbourhoodsStats? Stats { get; set; }
-    
+@code {
+    private NeighbourhoodsStats? NeighbourStats { get; set; }
+    private PropertyTypesStats? PropertyStats { get; set; }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             var client = ClientFactory.CreateClient("WebAPI");
-            Stats = await client.GetFromJsonAsync<NeighbourhoodsStats>("https://localhost:7000/api/statistics/neighbourhoods");
-            await JS.InvokeVoidAsync("setMap",Stats);
+            NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>("https://localhost:7000/api/statistics/neighbourhoods");
+            PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>("https://localhost:7000/api/statistics/property-types");
+            await JS.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
+            await JS.InvokeVoidAsync("setMap.property", PropertyStats);
         }
     }
+
 }

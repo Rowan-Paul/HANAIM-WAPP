@@ -44,4 +44,31 @@ public class ListingRepository : IListingRepository
 
         return (int) averagePrice;
     }
+
+    public record Test(string PropertyType, int count)
+    {
+        public override string ToString()
+        {
+            return $"{{ PropertyType = {PropertyType}, count = {count} }}";
+        }
+    }
+
+    public async Task<PropertyTypesStats> GetAmountPropertyTypes()
+    {
+        List<Test> amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
+            .Select(g => new Test(g.Key, g.Count())).ToListAsync();
+        amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
+            .Take(20).ToList();
+
+        List<string> propertyTypes = new();
+        List<int> counts = new();
+
+        foreach (var t in amountPropertyTypes)
+        {
+            propertyTypes.Add(t.PropertyType);
+            counts.Add(t.count);
+        }
+
+        return new PropertyTypesStats(propertyTypes, counts);
+    }
 }

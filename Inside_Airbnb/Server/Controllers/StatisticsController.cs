@@ -39,5 +39,14 @@ namespace Inside_Airbnb.Server.Controllers
 
             return new NeighbourhoodsStats(prices, formattedNeighbourhoods);
         }
+        
+        // GET: api/statistics/property-types
+        [HttpGet("property-types")]
+        public async Task<PropertyTypesStats> GetPropertyTypesStats()
+        {
+            var result = await ListingRepository.GetAmountPropertyTypes();
+
+            return result;
+        }
     }
 }

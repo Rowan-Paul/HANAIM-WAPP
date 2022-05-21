@@ -10,4 +10,5 @@ public interface IListingRepository
     Task<List<Listing>> GetListingsByParameter(FilterParameters parameters);
     Task<Listing> GetListingById(int id);
     Task<int> GetAveragePriceByNeighbourhood(string neighbourhood);
+    Task<PropertyTypesStats> GetAmountPropertyTypes();
 }
