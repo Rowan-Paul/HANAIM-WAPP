@@ -8,6 +8,7 @@
 @using Microsoft.AspNetCore.Components
 @inject IHttpClientFactory ClientFactory
 @inject IJSRuntime JS
+@inject IConfiguration _configuration
 
 <div class="mt-4">
     <h2>Filters</h2>
@@ -61,7 +62,7 @@
     protected override async Task OnInitializedAsync()
     {
         var client = ClientFactory.CreateClient("WebAPI");
-        Neighbourhoods = await client.GetFromJsonAsync<List<Neighbourhood>>("https://localhost:7000/api/neighbourhoods");
+        Neighbourhoods = await client.GetFromJsonAsync<List<Neighbourhood>>($"{_configuration["apiUrl"]}/api/neighbourhoods");
     }
 
     private async Task FilterNeighbourhoods(string? neighbourhood, int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
@@ -74,7 +75,7 @@
         if (reviewsMax != null) queryString.Add("reviewsMax", reviewsMax.ToString());
         if (reviewsMin != null) queryString.Add("reviewsMin", reviewsMin.ToString());
 
-        await JS.InvokeVoidAsync("mapbox.updateMap", $"https://localhost:7000/api/listings?geojson=true&{queryString}");
+        await JS.InvokeVoidAsync("mapbox.updateMap", $"{_configuration["apiUrl"]}/api/listings?geojson=true&{queryString}");
     }
 
 }

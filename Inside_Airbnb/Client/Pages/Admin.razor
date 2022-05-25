@@ -3,6 +3,7 @@
 @using Inside_Airbnb.Shared
 @inject IJSRuntime JS
 @inject IHttpClientFactory ClientFactory
+@inject IConfiguration _configuration
 @attribute [Authorize]
 @attribute [Authorize(Roles = "administrator")]
 
@@ -37,10 +38,10 @@
         if (firstRender)
         {
             var client = ClientFactory.CreateClient("WebApiAuth");
-            NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>("https://localhost:7000/api/statistics/neighbourhoods");
-            PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>("https://localhost:7000/api/statistics/property-types");
-            RoomStats = await client.GetFromJsonAsync<RoomTypesStats>("https://localhost:7000/api/statistics/room-types");
-            ReviewsStats = await client.GetFromJsonAsync<ReviewsPerDateStats>("https://localhost:7000/api/statistics/reviews");
+            NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>($"{_configuration["apiUrl"]}/api/statistics/neighbourhoods");
+            PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>($"{_configuration["apiUrl"]}/api/statistics/property-types");
+            RoomStats = await client.GetFromJsonAsync<RoomTypesStats>($"{_configuration["apiUrl"]}/api/statistics/room-types");
+            ReviewsStats = await client.GetFromJsonAsync<ReviewsPerDateStats>($"{_configuration["apiUrl"]}/api/statistics/reviews");
             await JS.InvokeVoidAsync("setMap.reviews", ReviewsStats);
             await JS.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
             await JS.InvokeVoidAsync("setMap.property", PropertyStats);

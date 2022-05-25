@@ -1,5 +1,5 @@
 ﻿window.mapbox = {
-    init: () => {
+    init: (url) => {
         mapboxgl.accessToken = 'pk.eyJ1Ijoicm93YW5wYXVsIiwiYSI6ImNsMzF0M2ZxNTB6dDEzanBzZHF0MmdoZXAifQ.b_qn6AFUlzR5cmPYJmq5Ng';
         map = new mapboxgl.Map({
             container: 'map',
@@ -10,7 +10,7 @@
         map.on('load', () => {
             map.addSource('neighbourhoods', {
                 type: 'geojson',
-                data: "https://localhost:7000/api/neighbourhoods?geojson=true",
+                data: "https://insideairbnb.azurewebsites.net/api/neighbourhoods?geojson=true",
             });
             map.addLayer({
                 id: 'neigbourhoods-layer',
@@ -23,7 +23,7 @@
             });
             map.addSource('listings', {
                 type: 'geojson',
-                data: "https://localhost:7000/api/listings?geojson=true",
+                data: "https://insideairbnb.azurewebsites.net/api/listings?geojson=true",
                 cluster: true,
                 clusterRadius: 6
             });
