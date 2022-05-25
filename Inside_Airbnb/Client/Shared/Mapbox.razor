@@ -12,6 +12,6 @@
     protected override void OnAfterRender(bool firstRender)
     {
         base.OnAfterRender(firstRender);
-        JsRuntime.InvokeVoidAsync("mapbox.init", $"{_configuration["apiUrl"]}/api/neighbourhoods?geojson=true");
+        JsRuntime.InvokeVoidAsync("mapbox.init", $"{_configuration["apiUrl"]}/api/neighbourhoods?geojson=true", $"{_configuration["apiUrl"]}/api/listings?geojson=true");
     }
 }
