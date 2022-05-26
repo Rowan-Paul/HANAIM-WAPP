@@ -54,7 +54,7 @@ namespace Inside_Airbnb_Server.Controllers
                 if (listing.Latitude != null && listing.Longitude != null)
                 {
                     features.Add(new Feature(new Point(new Position((double) listing.Latitude,
-                        (double) listing.Longitude)), new {listing.Id, listing.Name, listing.HostName}));
+                        (double) listing.Longitude)), new {listing.Id}));
                 }
             }
 
