@@ -27,7 +27,8 @@ public class ListingRepository : IListingRepository
             .Where(listing => parameters.PriceFrom == null || listing.Price >= parameters.PriceFrom)
             .Where(listing => parameters.PriceTo == null || listing.Price <= parameters.PriceTo)
             .Where(listing => parameters.ReviewsMax == null || listing.NumberOfReviews <= parameters.ReviewsMax)
-            .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin).ToListAsync();
+            .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin)
+            .AsNoTracking().ToListAsync();
     }
 
     public async Task<Listing> GetListingById(int id)
@@ -40,7 +41,7 @@ public class ListingRepository : IListingRepository
     public async Task<int> GetAveragePriceByNeighbourhood(string neighbourhood)
     {
         var averagePrice = _context.Listings.Where(c => c.NeighbourhoodCleansed == neighbourhood && c.Price != null)
-            .Average(c => c.Price);
+            .AsNoTracking().Average(c => c.Price);
 
         return (int) averagePrice;
     }
@@ -63,7 +64,7 @@ public class ListingRepository : IListingRepository
     public async Task<PropertyTypesStats> GetAmountPropertyTypes()
     {
         List<PropertyRecord> amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
-            .Select(g => new PropertyRecord(g.Key, g.Count())).ToListAsync();
+            .Select(g => new PropertyRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
         // fetching all property types but only sending 20 back since sorting errors the linq function
         amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
             .Take(10).ToList();
@@ -83,7 +84,7 @@ public class ListingRepository : IListingRepository
     public async Task<RoomTypesStats> GetAmountRoomTypes()
     {
         List<RoomRecord> amountRoomTypes = await _context.Listings.GroupBy(p => p.RoomType)
-            .Select(g => new RoomRecord(g.Key, g.Count())).ToListAsync();
+            .Select(g => new RoomRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
 
         List<string> roomTypes = new();
         List<int> counts = new();

@@ -23,7 +23,7 @@ public class ReviewRepository : IReviewRepository
     public async Task<ReviewsPerDateStats> GetReviewsPerDate()
     {
         List<ReviewRecord> amountReviews = await _context.Reviews.GroupBy(p => p.Date)
-            .Select(g => new ReviewRecord(g.Key, g.Count())).ToListAsync();
+            .Select(g => new ReviewRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
         // fetching all reviews but only sending 200 back since sorting errors the linq function
         amountReviews = amountReviews.OrderByDescending(x => x.Date)
             .Take(200).ToList();
