@@ -37,14 +37,5 @@ namespace Inside_Airbnb_Server.Controllers
             return File(bytes, "application/octet-stream", "neighbourhoods.json");
 
         }
-
-        // GET: api/Neighbourhoods/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Neighbourhood>> GetNeighbourhood(int id)
-        {
-            var listing = await NeighbourhoodRepository.GetNeighbourhoodById(id);
-
-            return listing;
-        }
     }
 }
