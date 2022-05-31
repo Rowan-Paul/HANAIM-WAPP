@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using GeoJSON.Text.Feature;
 using GeoJSON.Text.Geometry;
 using Inside_Airbnb.Server;
+using Inside_Airbnb.Server.Repositories;
 using Inside_Airbnb.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -31,7 +32,7 @@ namespace Inside_Airbnb_Server.Controllers
         public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
             int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
         {
-            List<Listing> listings;
+            List<Listing>? listings;
 
             if (neighbourhood is {Length: > 0} || priceFrom.HasValue || priceTo.HasValue
                 || reviewsMax.HasValue || reviewsMin.HasValue)

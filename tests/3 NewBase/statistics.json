@@ -1,0 +1,50 @@
+{
+  "/api/statistics/neighbourhoods" : {
+    "transaction" : "/api/statistics/neighbourhoods",
+    "sampleCount" : 860,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2119.1767441860457,
+    "medianResTime" : 1337.0,
+    "minResTime" : 141.0,
+    "maxResTime" : 7385.0,
+    "pct1ResTime" : 5262.0,
+    "pct2ResTime" : 5747.549999999999,
+    "pct3ResTime" : 6476.24,
+    "throughput" : 21.36805227718836,
+    "receivedKBytesPerSec" : 14.33579288518399,
+    "sentKBytesPerSec" : 3.0883513056873806
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1720,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2277.380813953487,
+    "medianResTime" : 1162.0,
+    "minResTime" : 19.0,
+    "maxResTime" : 9351.0,
+    "pct1ResTime" : 6110.500000000002,
+    "pct2ResTime" : 7016.799999999996,
+    "pct3ResTime" : 8212.96,
+    "throughput" : 42.73610455437672,
+    "receivedKBytesPerSec" : 13062.891333515541,
+    "sentKBytesPerSec" : 6.093233657166993
+  },
+  "/api/listings?geojson=true" : {
+    "transaction" : "/api/listings?geojson=true",
+    "sampleCount" : 860,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2435.584883720932,
+    "medianResTime" : 742.5,
+    "minResTime" : 19.0,
+    "maxResTime" : 9351.0,
+    "pct1ResTime" : 6977.9,
+    "pct2ResTime" : 7592.499999999999,
+    "pct3ResTime" : 8393.46,
+    "throughput" : 21.80748554620144,
+    "receivedKBytesPerSec" : 13316.898641945178,
+    "sentKBytesPerSec" : 3.0666776549345776
+  }
+}

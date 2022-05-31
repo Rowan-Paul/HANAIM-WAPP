@@ -15,10 +15,9 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
         _distributedCache = distributedCache;
     }
 
-    public async Task<List<Neighbourhood>> GetAllNeighbourhoods()
+    public async Task<List<Neighbourhood>?> GetAllNeighbourhoods()
     {
-
-        List<Neighbourhood> neighbourhoods;
+        List<Neighbourhood>? neighbourhoods;
         var cachedNeighbourhoods = await _distributedCache.GetStringAsync("_neighbourhoods");
 
         if (cachedNeighbourhoods != null)

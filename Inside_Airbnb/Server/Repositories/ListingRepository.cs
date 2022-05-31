@@ -1,10 +1,9 @@
 ﻿using System.Text.Json;
-using Inside_Airbnb.Server;
 using Inside_Airbnb.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace Inside_Airbnb_Server;
+namespace Inside_Airbnb.Server.Repositories;
 
 public class ListingRepository : IListingRepository
 {
@@ -17,18 +16,20 @@ public class ListingRepository : IListingRepository
         _distributedCache = distributedCache;
     }
 
-    public async Task<List<Listing>> GetAllListings()
+    public async Task<List<Listing>?> GetAllListings()
     {
-        List<Listing> listings;
+        List<Listing>? listings;
         var cachedListings = await _distributedCache.GetStringAsync("_listings");
-        
+
         if (cachedListings != null)
         {
             listings = JsonSerializer.Deserialize<List<Listing>>(cachedListings);
         }
         else
         {
-            listings = await _context.Listings.ToListAsync();
+            listings = await _context.Listings
+                .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
+                .ToListAsync();
             ;
             cachedListings = JsonSerializer.Serialize(listings);
             var expiryOptions = new DistributedCacheEntryOptions()
@@ -42,11 +43,12 @@ public class ListingRepository : IListingRepository
         return listings;
     }
 
-    public async Task<List<Listing>> GetListingsByParameter(FilterParameters parameters)
+    public async Task<List<Listing>?> GetListingsByParameter(FilterParameters parameters)
     {
-        List<Listing> listings;
-        var cachedListings = await _distributedCache.GetStringAsync($"_listings_{parameters.Neighbourhood}_{parameters.PriceFrom}_{parameters.PriceTo}_{parameters.ReviewsMax}_{parameters.ReviewsMin}");
-        
+        List<Listing>? listings;
+        var cachedListings = await _distributedCache.GetStringAsync(
+            $"_listings_{parameters.Neighbourhood}_{parameters.PriceFrom}_{parameters.PriceTo}_{parameters.ReviewsMax}_{parameters.ReviewsMin}");
+
         if (cachedListings != null)
         {
             listings = JsonSerializer.Deserialize<List<Listing>>(cachedListings);
@@ -59,7 +61,8 @@ public class ListingRepository : IListingRepository
                 .Where(listing => parameters.PriceTo == null || listing.Price <= parameters.PriceTo)
                 .Where(listing => parameters.ReviewsMax == null || listing.NumberOfReviews <= parameters.ReviewsMax)
                 .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin)
-                .AsNoTracking().ToListAsync();
+                .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
+                .ToListAsync();
             ;
             cachedListings = JsonSerializer.Serialize(listings);
             var expiryOptions = new DistributedCacheEntryOptions()
@@ -67,16 +70,17 @@ public class ListingRepository : IListingRepository
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
             };
-            await _distributedCache.SetStringAsync($"_listings_{parameters.Neighbourhood}_{parameters.PriceFrom}_{parameters.PriceTo}_{parameters.ReviewsMax}_{parameters.ReviewsMin}",
+            await _distributedCache.SetStringAsync(
+                $"_listings_{parameters.Neighbourhood}_{parameters.PriceFrom}_{parameters.PriceTo}_{parameters.ReviewsMax}_{parameters.ReviewsMin}",
                 cachedListings, expiryOptions);
         }
 
         return listings;
     }
 
-    public async Task<Listing> GetListingById(int id)
+    public async Task<Listing?> GetListingById(int id)
     {
-        Listing listing;
+        Listing? listing;
         var cachedListing = await _distributedCache.GetStringAsync($"_listings_{id}");
 
         if (cachedListing != null)
@@ -85,7 +89,7 @@ public class ListingRepository : IListingRepository
         }
         else
         {
-            listing = await _context.Listings.FindAsync(Convert.ToInt64(id));
+            listing = await _context.Listings.AsNoTracking().FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
             cachedListing = JsonSerializer.Serialize(listing);
             var expiryOptions = new DistributedCacheEntryOptions()
             {
@@ -125,7 +129,7 @@ public class ListingRepository : IListingRepository
 
     public async Task<PropertyTypesStats> GetAmountPropertyTypes()
     {
-        List<PropertyRecord> amountPropertyTypes;
+        List<PropertyRecord>? amountPropertyTypes;
         var cachedAmountPropertyTypes = await _distributedCache.GetStringAsync("_amountPropertyTypes");
 
         if (cachedAmountPropertyTypes != null)
@@ -162,7 +166,7 @@ public class ListingRepository : IListingRepository
 
     public async Task<RoomTypesStats> GetAmountRoomTypes()
     {
-        List<RoomRecord> amountRoomTypes;
+        List<RoomRecord>? amountRoomTypes;
         var cachedAmountRoomTypes = await _distributedCache.GetStringAsync("_amountRoomTypes");
 
         if (cachedAmountRoomTypes != null)
@@ -172,7 +176,7 @@ public class ListingRepository : IListingRepository
         else
         {
             amountRoomTypes = await _context.Listings.GroupBy(p => p.RoomType)
-                .Select(g => new RoomRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
+                .AsNoTracking().Select(g => new RoomRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
             cachedAmountRoomTypes = JsonSerializer.Serialize(amountRoomTypes);
             var expiryOptions = new DistributedCacheEntryOptions()
             {
@@ -185,6 +189,7 @@ public class ListingRepository : IListingRepository
         List<string> roomTypes = new();
         List<int> counts = new();
 
+        if (amountRoomTypes == null) return new RoomTypesStats(roomTypes, counts);
         foreach (var t in amountRoomTypes)
         {
             roomTypes.Add(t.RoomType);

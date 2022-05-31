@@ -2,5 +2,5 @@
 
 public interface INeighbourhoodRepository
 {
-    Task<List<Neighbourhood>> GetAllNeighbourhoods();
+    Task<List<Neighbourhood>?> GetAllNeighbourhoods();
 }

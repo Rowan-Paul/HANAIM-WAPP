@@ -16,9 +16,17 @@ public class ReviewRepository : IReviewRepository
         _distributedCache = distributedCache;
     }
 
+    public record ReviewRecord(DateTime? Date, int count)
+    {
+        public override string ToString()
+        {
+            return $"{{ Date = {Date}, count = {count} }}";
+        }
+    }
+
     public async Task<ReviewsPerDateStats> GetReviewsPerDate()
     {
-        List<ReviewRecord> amountReviews;
+        List<ReviewRecord>? amountReviews;
         var cachedAmountReviews = await _distributedCache.GetStringAsync($"_reviewsPerDate");
 
         if (cachedAmountReviews != null)
@@ -44,20 +52,13 @@ public class ReviewRepository : IReviewRepository
         List<DateTime> dates = new();
         List<int> counts = new();
 
+        if (amountReviews == null) return new ReviewsPerDateStats(dates, counts);
         foreach (var t in amountReviews)
         {
-            dates.Add((DateTime)t.Date);
+            dates.Add((DateTime) t.Date);
             counts.Add(t.count);
         }
 
         return new ReviewsPerDateStats(dates, counts);
-    }
-}
-
-public record ReviewRecord(DateTime? Date, int count)
-{
-    public override string ToString()
-    {
-        return $"{{ Date = {Date}, count = {count} }}";
     }
 }
