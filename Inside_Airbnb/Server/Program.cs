@@ -1,6 +1,5 @@
 using Inside_Airbnb.Server;
 using Inside_Airbnb.Server.Repositories;
-using Inside_Airbnb_Server;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Web;
@@ -26,6 +25,12 @@ builder.Services.AddDbContext<inside_airbnbContext>(options =>
 builder.Services.AddTransient<INeighbourhoodRepository, NeighbourhoodRepository>();
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+
+builder.Services.AddStackExchangeRedisCache(options => {
+    options.Configuration = builder.Configuration.GetConnectionString("InsideAirbnbRedis");
+    options.InstanceName = "Redis.Inside_Airbnb";
+});
+
 
 builder.Services.AddMvc();
 builder.Services.AddSwaggerGen(c =>

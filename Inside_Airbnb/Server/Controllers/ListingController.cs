@@ -32,7 +32,7 @@ namespace Inside_Airbnb_Server.Controllers
         public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
             int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
         {
-            List<Listing> listings;
+            List<Listing>? listings;
 
             if (neighbourhood is {Length: > 0} || priceFrom.HasValue || priceTo.HasValue
                 || reviewsMax.HasValue || reviewsMin.HasValue)
