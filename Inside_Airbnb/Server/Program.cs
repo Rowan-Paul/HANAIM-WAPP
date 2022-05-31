@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Web;
 using Microsoft.OpenApi.Models;
-using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
