@@ -11,16 +11,16 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
         _context = context;
     }
 
-    public async Task<List<Neighbourhood>> GetAllNeighbourhoods()
+    public async Task<List<Neighbourhood?>> GetAllNeighbourhoods()
     {
-        List<Neighbourhood> neighbourhoods = await _context.Neighbourhoods.ToListAsync();
+        List<Neighbourhood?> neighbourhoods = await _context.Neighbourhoods.ToListAsync();
 
         return neighbourhoods;
     }
 
-    public async Task<Neighbourhood> GetNeighbourhoodById(int id)
+    public async Task<Neighbourhood?> GetNeighbourhoodById(int id)
     {
-        Neighbourhood neighbourhood = await _context.Neighbourhoods.FindAsync(id);
+        Neighbourhood? neighbourhood = await _context.Neighbourhoods.FindAsync(id);
 
         return neighbourhood;
     }

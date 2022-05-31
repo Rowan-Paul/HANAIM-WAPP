@@ -33,7 +33,7 @@ namespace Inside_Airbnb.Server.Controllers
         [HttpGet("neighbourhoods")]
         public async Task<NeighbourhoodsStats> GetNeighbourhoodStats()
         {
-            List<Neighbourhood> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
+            List<Neighbourhood?> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
             List<int> prices = new List<int>();
             List<string> formattedNeighbourhoods = new List<string>();
 

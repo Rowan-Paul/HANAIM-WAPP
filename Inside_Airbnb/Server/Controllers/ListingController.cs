@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using GeoJSON.Text.Feature;
 using GeoJSON.Text.Geometry;
 using Inside_Airbnb.Server;
+using Inside_Airbnb.Server.Repositories;
 using Inside_Airbnb.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -29,7 +29,7 @@ namespace Inside_Airbnb_Server.Controllers
         [HttpGet]
         public async Task<ActionResult<dynamic>> GetNeighbourhoods([FromQuery] bool geojson)
         {
-            List<Neighbourhood> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
+            List<Neighbourhood?> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
 
             if (!geojson) return neighbourhoods;
             var bytes = await System.IO.File.ReadAllBytesAsync(@"wwwroot/neighbourhoods.geojson");

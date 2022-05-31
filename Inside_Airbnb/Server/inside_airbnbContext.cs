@@ -18,7 +18,7 @@ namespace Inside_Airbnb.Server
 
         public virtual DbSet<Calendar> Calendars { get; set; } = null!;
         public virtual DbSet<Listing> Listings { get; set; } = null!;
-        public virtual DbSet<Neighbourhood> Neighbourhoods { get; set; } = null!;
+        public virtual DbSet<Neighbourhood?> Neighbourhoods { get; set; } = null!;
         public virtual DbSet<Review> Reviews { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
