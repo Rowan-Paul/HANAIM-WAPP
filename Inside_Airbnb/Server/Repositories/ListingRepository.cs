@@ -14,7 +14,9 @@ public class ListingRepository : IListingRepository
 
     public async Task<List<Listing>> GetAllListings()
     {
-        List<Listing> list = await _context.Listings.Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).ToListAsync();
+        List<Listing> list = await _context.Listings
+            .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
+            .ToListAsync();
 
         return list;
     }
@@ -27,12 +29,13 @@ public class ListingRepository : IListingRepository
             .Where(listing => parameters.PriceTo == null || listing.Price <= parameters.PriceTo)
             .Where(listing => parameters.ReviewsMax == null || listing.NumberOfReviews <= parameters.ReviewsMax)
             .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin)
-            .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).ToListAsync();
+            .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
+            .ToListAsync();
     }
 
     public async Task<Listing?> GetListingById(int id)
     {
-        Listing? listing = await _context.Listings.FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
+        Listing? listing = await _context.Listings.AsNoTracking().FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
 
         return listing;
     }
@@ -40,7 +43,7 @@ public class ListingRepository : IListingRepository
     public async Task<int> GetAveragePriceByNeighbourhood(string neighbourhood)
     {
         var averagePrice = _context.Listings.Where(c => c.NeighbourhoodCleansed == neighbourhood && c.Price != null)
-            .Average(c => c.Price);
+            .AsNoTracking().Average(c => c.Price);
 
         return (int) averagePrice;
     }
@@ -48,7 +51,7 @@ public class ListingRepository : IListingRepository
     public async Task<PropertyTypesStats> GetAmountPropertyTypes()
     {
         List<PropertyRecord> amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
-            .Select(g => new PropertyRecord(g.Key, g.Count())).ToListAsync();
+            .Select(g => new PropertyRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
         // fetching all property types but only sending 20 back since sorting errors the linq function
         amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
             .Take(10).ToList();
@@ -68,7 +71,7 @@ public class ListingRepository : IListingRepository
     public async Task<RoomTypesStats> GetAmountRoomTypes()
     {
         List<RoomRecord> amountRoomTypes = await _context.Listings.GroupBy(p => p.RoomType)
-            .Select(g => new RoomRecord(g.Key, g.Count())).ToListAsync();
+            .AsNoTracking().Select(g => new RoomRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
 
         List<string> roomTypes = new();
         List<int> counts = new();

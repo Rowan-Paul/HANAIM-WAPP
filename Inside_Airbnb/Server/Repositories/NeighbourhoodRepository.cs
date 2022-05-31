@@ -13,15 +13,8 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
 
     public async Task<List<Neighbourhood?>> GetAllNeighbourhoods()
     {
-        List<Neighbourhood?> neighbourhoods = await _context.Neighbourhoods.ToListAsync();
+        List<Neighbourhood?> neighbourhoods = await _context.Neighbourhoods.AsNoTracking().ToListAsync();
 
         return neighbourhoods;
-    }
-
-    public async Task<Neighbourhood?> GetNeighbourhoodById(int id)
-    {
-        Neighbourhood? neighbourhood = await _context.Neighbourhoods.FindAsync(id);
-
-        return neighbourhood;
     }
 }
