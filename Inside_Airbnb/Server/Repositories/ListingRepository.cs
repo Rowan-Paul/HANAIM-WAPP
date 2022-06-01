@@ -89,7 +89,16 @@ public class ListingRepository : IListingRepository
         }
         else
         {
-            listing = await _context.Listings.AsNoTracking().FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
+            listing = await _context.Listings
+                .Select(l => new Listing
+                {
+                    Id = l.Id, Name = l.Name, HostName = l.HostName, Price = l.Price,
+                    NeighbourhoodCleansed = l.NeighbourhoodCleansed, NumberOfReviews = l.NumberOfReviews,
+                    NumberOfReviewsL30d = l.NumberOfReviewsL30d, MinimumNights = l.MinimumNights,
+                    MaximumNights = l.MaximumNights, Bedrooms = l.Bedrooms, Bathrooms = l.Bathrooms,
+                    RoomType = l.RoomType
+                }).AsNoTracking()
+                .FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
             cachedListing = JsonSerializer.Serialize(listing);
             var expiryOptions = new DistributedCacheEntryOptions()
             {
