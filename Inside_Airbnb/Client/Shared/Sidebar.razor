@@ -10,10 +10,10 @@
     {
         <div class="d-flex flex-row">
             <h3>@_listing.Name</h3>
-            <button @onclick="() => _listing = null" class="btn-close" style="margin-left: auto;"></button>
+            <button @onclick="() => _listing = null" class="btn-close marginleftAuto"></button>
         </div>
         <div class="d-flex flex-row">
-            <span>By&nbsp;</span>@_listing.HostName <h4 style="margin-left: auto;">$@_listing.Price</h4>
+            <span>By&nbsp;</span>@_listing.HostName <h4 class="marginleftAuto">$@_listing.Price</h4>
         </div>
         <div>
             <strong>Neighbourhood</strong><br/>@_listing.NeighbourhoodCleansed
@@ -42,7 +42,7 @@
         if (firstRender)
         {
             dotNetHelper = DotNetObjectReference.Create(this);
-            await JS.InvokeAsync<string>("setDotNetHelper", dotNetHelper);
+            await JS.InvokeAsync<string>("mapbox.setDotNetHelper", dotNetHelper);
         }
     }
 

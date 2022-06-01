@@ -1,4 +1,7 @@
 ﻿window.mapbox = {
+    setDotNetHelper: (value) => {
+        dotNetHelper = value
+    },
     init: (neighbourhoodUrl, listingsUrl) => {
         console.log(neighbourhoodUrl)
         console.log(listingsUrl)
