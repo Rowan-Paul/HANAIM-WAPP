@@ -72,6 +72,13 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+    context.Response.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
+
+    await next();
+});
 
 app.MapRazorPages();
 app.MapControllers();
