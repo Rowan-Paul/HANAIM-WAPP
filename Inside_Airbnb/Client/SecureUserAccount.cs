@@ -5,6 +5,5 @@ namespace Inside_Airbnb.Client;
 
 public class SecureUserAccount : RemoteUserAccount
 {
-    [JsonPropertyName("roles")]
-    public string[] Roles { get; set; } = Array.Empty<string>();
+    [JsonPropertyName("roles")] public string[] Roles { get; set; } = Array.Empty<string>();
 }

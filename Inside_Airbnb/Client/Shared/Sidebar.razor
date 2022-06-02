@@ -1,9 +1,9 @@
 ﻿@page "/Sidebar"
-@using Inside_Airbnb.Server
+@using Inside_Airbnb.Shared
 @implements IDisposable
-@inject IJSRuntime JS
+@inject IJSRuntime Js
 @inject IHttpClientFactory ClientFactory
-@inject IConfiguration _configuration
+@inject IConfiguration Configuration
 
 <div id="@(_listing is not null ? "slide" : "")" class="@(_listing is not null ? "" : "d-none")">
     @if (_listing is not null)
@@ -35,14 +35,14 @@
 
 @code {
     private Listing? _listing;
-    private DotNetObjectReference<Sidebar>? dotNetHelper;
+    private DotNetObjectReference<Sidebar>? _dotNetHelper;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            dotNetHelper = DotNetObjectReference.Create(this);
-            await JS.InvokeAsync<string>("mapbox.setDotNetHelper", dotNetHelper);
+            _dotNetHelper = DotNetObjectReference.Create(this);
+            await Js.InvokeAsync<string>("mapbox.setDotNetHelper", _dotNetHelper);
         }
     }
 
@@ -50,13 +50,13 @@
     public async Task FetchInfo(int id)
     {
         var client = ClientFactory.CreateClient("WebAPI");
-        _listing = await client.GetFromJsonAsync<Listing>($"{_configuration["apiUrl"]}/api/listings/" + id);
+        _listing = await client.GetFromJsonAsync<Listing>($"{Configuration["apiUrl"]}/api/listings/" + id);
         StateHasChanged();
     }
 
     public void Dispose()
     {
-        dotNetHelper?.Dispose();
+        _dotNetHelper?.Dispose();
     }
 
 }

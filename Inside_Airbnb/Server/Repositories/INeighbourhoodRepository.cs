@@ -1,4 +1,6 @@
-﻿namespace Inside_Airbnb.Server.Repositories;
+﻿using Inside_Airbnb.Shared;
+
+namespace Inside_Airbnb.Server.Repositories;
 
 public interface INeighbourhoodRepository
 {

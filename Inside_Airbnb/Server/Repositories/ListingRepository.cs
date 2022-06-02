@@ -7,10 +7,10 @@ namespace Inside_Airbnb.Server.Repositories;
 
 public class ListingRepository : IListingRepository
 {
-    private readonly inside_airbnbContext _context;
+    private readonly InsideAirbnbContext _context;
     private readonly IDistributedCache _distributedCache;
 
-    public ListingRepository(inside_airbnbContext context, IDistributedCache distributedCache)
+    public ListingRepository(InsideAirbnbContext context, IDistributedCache distributedCache)
     {
         _context = context;
         _distributedCache = distributedCache;
@@ -30,9 +30,8 @@ public class ListingRepository : IListingRepository
             listings = await _context.Listings
                 .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
                 .ToListAsync();
-            ;
             cachedListings = JsonSerializer.Serialize(listings);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -63,9 +62,8 @@ public class ListingRepository : IListingRepository
                 .Where(listing => parameters.ReviewsMin == null || listing.NumberOfReviews >= parameters.ReviewsMin)
                 .Select(l => new Listing {Id = l.Id, Latitude = l.Latitude, Longitude = l.Longitude}).AsNoTracking()
                 .ToListAsync();
-            ;
             cachedListings = JsonSerializer.Serialize(listings);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -100,7 +98,7 @@ public class ListingRepository : IListingRepository
                 }).AsNoTracking()
                 .FirstOrDefaultAsync(l => l.Id == Convert.ToInt64(id));
             cachedListing = JsonSerializer.Serialize(listing);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -111,7 +109,7 @@ public class ListingRepository : IListingRepository
         return listing;
     }
 
-    public async Task<int> GetAveragePriceByNeighbourhood(string neighbourhood)
+    public async Task<int?> GetAveragePriceByNeighbourhood(string neighbourhood)
     {
         double? averagePrice;
         var cachedAveragePrice = await _distributedCache.GetStringAsync($"_avg_price_{neighbourhood}");
@@ -125,7 +123,7 @@ public class ListingRepository : IListingRepository
             averagePrice = _context.Listings.Where(c => c.NeighbourhoodCleansed == neighbourhood && c.Price != null)
                 .AsNoTracking().Average(c => c.Price);
             cachedAveragePrice = JsonSerializer.Serialize(averagePrice);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -133,10 +131,12 @@ public class ListingRepository : IListingRepository
             await _distributedCache.SetStringAsync($"_avg_price_{neighbourhood}", cachedAveragePrice, expiryOptions);
         }
 
+        if (averagePrice == null) return null;
+
         return (int) averagePrice;
     }
 
-    public async Task<PropertyTypesStats> GetAmountPropertyTypes()
+    public async Task<PropertyTypesStats?> GetAmountPropertyTypes()
     {
         List<PropertyRecord>? amountPropertyTypes;
         var cachedAmountPropertyTypes = await _distributedCache.GetStringAsync("_amountPropertyTypes");
@@ -150,10 +150,10 @@ public class ListingRepository : IListingRepository
             amountPropertyTypes = await _context.Listings.GroupBy(p => p.PropertyType)
                 .Select(g => new PropertyRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
             // fetching all property types but only sending 20 back since sorting errors the linq function
-            amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.count)
+            amountPropertyTypes = amountPropertyTypes.OrderByDescending(x => x.Count)
                 .Take(10).ToList();
             cachedAmountPropertyTypes = JsonSerializer.Serialize(amountPropertyTypes);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -164,10 +164,11 @@ public class ListingRepository : IListingRepository
         List<string> propertyTypes = new();
         List<int> counts = new();
 
+        if (amountPropertyTypes == null) return null;
         foreach (var t in amountPropertyTypes)
         {
             propertyTypes.Add(t.PropertyType);
-            counts.Add(t.count);
+            counts.Add(t.Count);
         }
 
         return new PropertyTypesStats(propertyTypes, counts);
@@ -187,7 +188,7 @@ public class ListingRepository : IListingRepository
             amountRoomTypes = await _context.Listings.GroupBy(p => p.RoomType)
                 .AsNoTracking().Select(g => new RoomRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
             cachedAmountRoomTypes = JsonSerializer.Serialize(amountRoomTypes);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
@@ -202,25 +203,25 @@ public class ListingRepository : IListingRepository
         foreach (var t in amountRoomTypes)
         {
             roomTypes.Add(t.RoomType);
-            counts.Add(t.count);
+            counts.Add(t.Count);
         }
 
         return new RoomTypesStats(roomTypes, counts);
     }
 }
 
-public record PropertyRecord(string PropertyType, int count)
+public record PropertyRecord(string PropertyType, int Count)
 {
     public override string ToString()
     {
-        return $"{{ PropertyType = {PropertyType}, count = {count} }}";
+        return $"{{ PropertyType = {PropertyType}, count = {Count} }}";
     }
 }
 
-public record RoomRecord(string RoomType, int count)
+public record RoomRecord(string RoomType, int Count)
 {
     public override string ToString()
     {
-        return $"{{ RoomType = {RoomType}, count = {count} }}";
+        return $"{{ RoomType = {RoomType}, count = {Count} }}";
     }
 }

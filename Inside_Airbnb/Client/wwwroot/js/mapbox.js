@@ -43,7 +43,7 @@
             });
             map.addControl(new mapboxgl.NavigationControl());
             map.on('click', 'listings-layer', async (e) => {
-                if(e.features[0].properties.Id !== null) {
+                if (e.features[0].properties.Id !== null) {
                     await dotNetHelper.invokeMethodAsync('FetchInfo', e.features[0].properties.Id)
                 } else {
                     console.error("Listing has no id")

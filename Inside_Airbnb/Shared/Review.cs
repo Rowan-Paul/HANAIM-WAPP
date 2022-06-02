@@ -1,15 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Inside_Airbnb.Shared;
 
-namespace Inside_Airbnb.Server
+public class Review
 {
-    public partial class Review
+    public Review(long? listingId, long? id, DateTime? date, int? reviewerId, string? reviewerName, string? comments)
     {
-        public long? ListingId { get; set; }
-        public long? Id { get; set; }
-        public DateTime? Date { get; set; }
-        public int? ReviewerId { get; set; }
-        public string? ReviewerName { get; set; }
-        public string? Comments { get; set; }
+        ListingId = listingId;
+        Id = id;
+        Date = date;
+        ReviewerId = reviewerId;
+        ReviewerName = reviewerName;
+        Comments = comments;
     }
+
+    public long? ListingId { get; }
+    public long? Id { get; }
+    public DateTime? Date { get; }
+    public int? ReviewerId { get; }
+    public string? ReviewerName { get; }
+    public string? Comments { get; set; }
 }

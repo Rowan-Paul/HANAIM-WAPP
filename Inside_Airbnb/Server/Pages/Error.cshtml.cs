@@ -1,27 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Diagnostics;
 
-namespace Inside_Airbnb.Server.Pages
+namespace Inside_Airbnb.Server.Pages;
+
+[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+[IgnoreAntiforgeryToken]
+public class ErrorModel : PageModel
 {
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    [IgnoreAntiforgeryToken]
-    public class ErrorModel : PageModel
+    public ErrorModel(ILogger<ErrorModel> logger)
     {
-        public string? RequestId { get; set; }
+    }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    public string? RequestId { get; set; }
 
-        private readonly ILogger<ErrorModel> _logger;
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        public ErrorModel(ILogger<ErrorModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-        }
+    public void OnGet()
+    {
+        RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
     }
 }

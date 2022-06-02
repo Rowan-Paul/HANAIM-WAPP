@@ -1,9 +1,9 @@
 ﻿@page "/admin"
-@using Microsoft.AspNetCore.Authorization
 @using Inside_Airbnb.Shared
-@inject IJSRuntime JS
+@using Microsoft.AspNetCore.Authorization
+@inject IJSRuntime Js
 @inject IHttpClientFactory ClientFactory
-@inject IConfiguration _configuration
+@inject IConfiguration Configuration
 @attribute [Authorize]
 @attribute [Authorize(Roles = "administrator")]
 
@@ -38,14 +38,14 @@
         if (firstRender)
         {
             var client = ClientFactory.CreateClient("WebApiAuth");
-            NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>($"{_configuration["apiUrl"]}/api/statistics/neighbourhoods");
-            PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>($"{_configuration["apiUrl"]}/api/statistics/property-types");
-            RoomStats = await client.GetFromJsonAsync<RoomTypesStats>($"{_configuration["apiUrl"]}/api/statistics/room-types");
-            ReviewsStats = await client.GetFromJsonAsync<ReviewsPerDateStats>($"{_configuration["apiUrl"]}/api/statistics/reviews");
-            await JS.InvokeVoidAsync("setMap.reviews", ReviewsStats);
-            await JS.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
-            await JS.InvokeVoidAsync("setMap.property", PropertyStats);
-            await JS.InvokeVoidAsync("setMap.room", RoomStats);
+            NeighbourStats = await client.GetFromJsonAsync<NeighbourhoodsStats>($"{Configuration["apiUrl"]}/api/statistics/neighbourhoods");
+            PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>($"{Configuration["apiUrl"]}/api/statistics/property-types");
+            RoomStats = await client.GetFromJsonAsync<RoomTypesStats>($"{Configuration["apiUrl"]}/api/statistics/room-types");
+            ReviewsStats = await client.GetFromJsonAsync<ReviewsPerDateStats>($"{Configuration["apiUrl"]}/api/statistics/reviews");
+            await Js.InvokeVoidAsync("setMap.reviews", ReviewsStats);
+            await Js.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
+            await Js.InvokeVoidAsync("setMap.property", PropertyStats);
+            await Js.InvokeVoidAsync("setMap.room", RoomStats);
         }
     }
 

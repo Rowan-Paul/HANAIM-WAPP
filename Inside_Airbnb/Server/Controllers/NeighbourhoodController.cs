@@ -1,41 +1,31 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text.Json;
-using System.Threading.Tasks;
-using GeoJSON.Text.Feature;
-using GeoJSON.Text.Geometry;
-using Inside_Airbnb.Server;
 using Inside_Airbnb.Server.Repositories;
-using Microsoft.AspNetCore.Http;
+using Inside_Airbnb.Shared;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
-namespace Inside_Airbnb_Server.Controllers
+namespace Inside_Airbnb.Server.Controllers;
+
+[Route("api/neighbourhoods")]
+[ApiController]
+public class NeighbourhoodController : ControllerBase
 {
-    [Route("api/neighbourhoods")]
-    [ApiController]
-    public class NeighbourhoodController : ControllerBase
+    public NeighbourhoodController(INeighbourhoodRepository neighbourhoodRepository)
     {
-        private INeighbourhoodRepository NeighbourhoodRepository { get; }
+        NeighbourhoodRepository = neighbourhoodRepository;
+    }
 
-        public NeighbourhoodController(INeighbourhoodRepository neighbourhoodRepository)
-        {
-            NeighbourhoodRepository = neighbourhoodRepository;
-        }
+    private INeighbourhoodRepository NeighbourhoodRepository { get; }
 
-        // GET: api/Neighbourhoods
-        [HttpGet]
-        public async Task<ActionResult<dynamic>> GetNeighbourhoods([FromQuery] bool geojson)
-        {
-            List<Neighbourhood?> neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
+    // GET: api/Neighbourhoods
+    [HttpGet]
+    public async Task<ActionResult<dynamic>> GetNeighbourhoods([FromQuery] bool geojson)
+    {
+        List<Neighbourhood>? neighbourhoods = await NeighbourhoodRepository.GetAllNeighbourhoods();
 
-            if (!geojson) return neighbourhoods;
-            var bytes = await System.IO.File.ReadAllBytesAsync(@"wwwroot/neighbourhoods.geojson");
+        if (neighbourhoods == null) return NotFound();
 
-            return File(bytes, "application/octet-stream", "neighbourhoods.json");
+        if (!geojson) return neighbourhoods;
+        var bytes = await System.IO.File.ReadAllBytesAsync(@"wwwroot/neighbourhoods.geojson");
 
-        }
+        return File(bytes, "application/octet-stream", "neighbourhoods.json");
     }
 }

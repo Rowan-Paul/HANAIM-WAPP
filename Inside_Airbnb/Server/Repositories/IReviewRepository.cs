@@ -4,5 +4,5 @@ namespace Inside_Airbnb.Server.Repositories;
 
 public interface IReviewRepository
 {
-    Task<ReviewsPerDateStats> GetReviewsPerDate();
+    Task<ReviewsPerDateStats?> GetReviewsPerDate();
 }

@@ -7,27 +7,19 @@ namespace Inside_Airbnb.Server.Repositories;
 
 public class ReviewRepository : IReviewRepository
 {
-    private readonly inside_airbnbContext _context;
+    private readonly InsideAirbnbContext _context;
     private readonly IDistributedCache _distributedCache;
 
-    public ReviewRepository(inside_airbnbContext context, IDistributedCache distributedCache)
+    public ReviewRepository(InsideAirbnbContext context, IDistributedCache distributedCache)
     {
         _context = context;
         _distributedCache = distributedCache;
     }
 
-    public record ReviewRecord(DateTime? Date, int count)
-    {
-        public override string ToString()
-        {
-            return $"{{ Date = {Date}, count = {count} }}";
-        }
-    }
-
-    public async Task<ReviewsPerDateStats> GetReviewsPerDate()
+    public async Task<ReviewsPerDateStats?> GetReviewsPerDate()
     {
         List<ReviewRecord>? amountReviews;
-        var cachedAmountReviews = await _distributedCache.GetStringAsync($"_reviewsPerDate");
+        var cachedAmountReviews = await _distributedCache.GetStringAsync("_reviewsPerDate");
 
         if (cachedAmountReviews != null)
         {
@@ -41,12 +33,12 @@ public class ReviewRepository : IReviewRepository
             amountReviews = amountReviews.OrderByDescending(x => x.Date)
                 .Take(200).ToList();
             cachedAmountReviews = JsonSerializer.Serialize(amountReviews);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)
             };
-            await _distributedCache.SetStringAsync($"_reviewsPerDate", cachedAmountReviews, expiryOptions);
+            await _distributedCache.SetStringAsync("_reviewsPerDate", cachedAmountReviews, expiryOptions);
         }
 
         List<DateTime> dates = new();
@@ -55,10 +47,20 @@ public class ReviewRepository : IReviewRepository
         if (amountReviews == null) return new ReviewsPerDateStats(dates, counts);
         foreach (var t in amountReviews)
         {
+            if (t.Date == null) return null;
+            
             dates.Add((DateTime) t.Date);
-            counts.Add(t.count);
+            counts.Add(t.Count);
         }
 
         return new ReviewsPerDateStats(dates, counts);
+    }
+
+    private record ReviewRecord(DateTime? Date, int Count)
+    {
+        public override string ToString()
+        {
+            return $"{{ Date = {Date}, count = {Count} }}";
+        }
     }
 }

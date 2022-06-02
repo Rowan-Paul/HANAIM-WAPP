@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Inside_Airbnb.Shared;
 
-namespace Inside_Airbnb.Server
+public class Neighbourhood
 {
-    public partial class Neighbourhood
+    public Neighbourhood(string? neighbourhoodGroup, string? neighbourhood1)
     {
-        public string? NeighbourhoodGroup { get; set; }
-        public string? Neighbourhood1 { get; set; }
+        NeighbourhoodGroup = neighbourhoodGroup;
+        Neighbourhood1 = neighbourhood1;
     }
+
+    public string? NeighbourhoodGroup { get; }
+    public string? Neighbourhood1 { get; }
 }

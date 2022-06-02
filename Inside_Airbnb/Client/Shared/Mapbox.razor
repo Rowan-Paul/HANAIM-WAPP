@@ -1,6 +1,6 @@
 ﻿@inject IJSRuntime JsRuntime
 
-@inject IConfiguration _configuration
+@inject IConfiguration Configuration
 
 <div>
     <div id="map"></div>
@@ -12,6 +12,6 @@
     protected override void OnAfterRender(bool firstRender)
     {
         base.OnAfterRender(firstRender);
-        JsRuntime.InvokeVoidAsync("mapbox.init", $"{_configuration["apiUrl"]}/api/neighbourhoods?geojson=true", $"{_configuration["apiUrl"]}/api/listings?geojson=true");
+        JsRuntime.InvokeVoidAsync("mapbox.init", $"{Configuration["apiUrl"]}/api/neighbourhoods?geojson=true", $"{Configuration["apiUrl"]}/api/listings?geojson=true");
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Inside_Airbnb.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 
@@ -6,10 +7,10 @@ namespace Inside_Airbnb.Server.Repositories;
 
 public class NeighbourhoodRepository : INeighbourhoodRepository
 {
-    private readonly inside_airbnbContext _context;
+    private readonly InsideAirbnbContext _context;
     private readonly IDistributedCache _distributedCache;
 
-    public NeighbourhoodRepository(inside_airbnbContext context, IDistributedCache distributedCache)
+    public NeighbourhoodRepository(InsideAirbnbContext context, IDistributedCache distributedCache)
     {
         _context = context;
         _distributedCache = distributedCache;
@@ -28,7 +29,7 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
         {
             neighbourhoods = await _context.Neighbourhoods.AsNoTracking().ToListAsync();
             cachedNeighbourhoods = JsonSerializer.Serialize(neighbourhoods);
-            var expiryOptions = new DistributedCacheEntryOptions()
+            var expiryOptions = new DistributedCacheEntryOptions
             {
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
                 SlidingExpiration = TimeSpan.FromSeconds(30)

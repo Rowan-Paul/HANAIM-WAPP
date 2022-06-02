@@ -1,74 +1,59 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text.Json;
-using System.Threading.Tasks;
 using GeoJSON.Text.Feature;
 using GeoJSON.Text.Geometry;
-using Inside_Airbnb.Server;
 using Inside_Airbnb.Server.Repositories;
 using Inside_Airbnb.Shared;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Inside_Airbnb_Server;
 
-namespace Inside_Airbnb_Server.Controllers
+namespace Inside_Airbnb.Server.Controllers;
+
+[Route("api/listings")]
+[ApiController]
+public class ListingController : ControllerBase
 {
-    [Route("api/listings")]
-    [ApiController]
-    public class ListingController : ControllerBase
+    public ListingController(IListingRepository listingRepository)
     {
-        private IListingRepository ListingRepository { get; }
+        ListingRepository = listingRepository;
+    }
 
-        public ListingController(IListingRepository listingRepository)
-        {
-            ListingRepository = listingRepository;
-        }
+    private IListingRepository ListingRepository { get; }
 
-        // GET: api/Listings
-        [HttpGet]
-        public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
-            int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
-        {
-            List<Listing>? listings;
+    // GET: api/Listings
+    [HttpGet]
+    public async Task<ActionResult<dynamic>> GetListings([FromQuery] bool geojson, string? neighbourhood,
+        int? priceFrom, int? priceTo, int? reviewsMax, int? reviewsMin)
+    {
+        List<Listing>? listings;
 
-            if (neighbourhood is {Length: > 0} || priceFrom.HasValue || priceTo.HasValue
-                || reviewsMax.HasValue || reviewsMin.HasValue)
-            {
-                listings = await ListingRepository.GetListingsByParameter(new FilterParameters(neighbourhood, priceFrom,
-                    priceTo, reviewsMax, reviewsMin));
-            }
-            else
-            {
-                listings = await ListingRepository.GetAllListings();
-            }
+        if (neighbourhood is {Length: > 0} || priceFrom.HasValue || priceTo.HasValue
+            || reviewsMax.HasValue || reviewsMin.HasValue)
+            listings = await ListingRepository.GetListingsByParameter(new FilterParameters(neighbourhood, priceFrom,
+                priceTo, reviewsMax, reviewsMin));
+        else
+            listings = await ListingRepository.GetAllListings();
 
-            if (!geojson) return listings;
+        if (listings == null) return NotFound();
 
-            List<Feature> features = new();
-            FeatureCollection featureCollection = new(features);
+        if (!geojson) return listings;
 
-            foreach (var listing in listings)
-            {
-                if (listing.Latitude != null && listing.Longitude != null)
-                {
-                    features.Add(new Feature(new Point(new Position((double) listing.Latitude,
-                        (double) listing.Longitude)), new {listing.Id}));
-                }
-            }
+        List<Feature> features = new();
+        FeatureCollection featureCollection = new(features);
 
-            return featureCollection;
-        }
+        foreach (var listing in listings)
+            if (listing.Latitude != null && listing.Longitude != null)
+                features.Add(new Feature(new Point(new Position((double) listing.Latitude,
+                    (double) listing.Longitude)), new {listing.Id}));
 
-        // GET: api/Listings/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Listing>> GetListing(int id)
-        {
-            var listing = await ListingRepository.GetListingById(id);
+        return featureCollection;
+    }
 
-            return listing;
-        }
+    // GET: api/Listings/5
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Listing>> GetListing(int id)
+    {
+        var listing = await ListingRepository.GetListingById(id);
+
+        if (listing == null) return NotFound();
+
+        return listing;
     }
 }

@@ -10,18 +10,17 @@ public class SecureAccountFactory : AccountClaimsPrincipalFactory<SecureUserAcco
         : base(accessor)
     {
     }
-    public async override ValueTask<ClaimsPrincipal> CreateUserAsync(SecureUserAccount account,
+
+    public override async ValueTask<ClaimsPrincipal> CreateUserAsync(SecureUserAccount account,
         RemoteAuthenticationUserOptions options)
     {
         var initialUser = await base.CreateUserAsync(account, options);
-        if (initialUser.Identity.IsAuthenticated)
+        if (initialUser.Identity is {IsAuthenticated: true})
         {
-            var userIdentity = (ClaimsIdentity)initialUser.Identity;
-            foreach (var role in account.Roles)
-            {
-                userIdentity.AddClaim(new Claim("appRole", role));
-            }
+            var userIdentity = (ClaimsIdentity) initialUser.Identity;
+            foreach (var role in account.Roles) userIdentity.AddClaim(new Claim("appRole", role));
         }
+
         return initialUser;
     }
 }

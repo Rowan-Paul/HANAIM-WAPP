@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Inside_Airbnb.Shared;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Inside_Airbnb.Server
 {
-    public partial class inside_airbnbContext : DbContext
+    public partial class InsideAirbnbContext : DbContext
     {
-        public inside_airbnbContext()
+        public InsideAirbnbContext()
         {
         }
 
-        public inside_airbnbContext(DbContextOptions<inside_airbnbContext> options)
+        public InsideAirbnbContext(DbContextOptions<InsideAirbnbContext> options)
             : base(options)
         {
         }
 
         public virtual DbSet<Calendar> Calendars { get; set; } = null!;
         public virtual DbSet<Listing> Listings { get; set; } = null!;
-        public virtual DbSet<Neighbourhood?> Neighbourhoods { get; set; } = null!;
+        public virtual DbSet<Neighbourhood> Neighbourhoods { get; set; } = null!;
         public virtual DbSet<Review> Reviews { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

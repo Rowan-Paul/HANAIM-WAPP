@@ -20,7 +20,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-builder.Services.AddDbContext<inside_airbnbContext>(options =>
+builder.Services.AddDbContext<InsideAirbnbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("InsideAirbnbContext")));
 builder.Services.AddTransient<INeighbourhoodRepository, NeighbourhoodRepository>();
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
@@ -66,9 +66,10 @@ app.Use(async (context, next) =>
     context.Response.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
     context.Response.Headers.Add("Content-Security-Policy",
-        "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.mapbox.com https://events.mapbox.com https://login.microsoftonline.com; " + "script-src 'self' 'sha256-v8v3RKRPmN4odZ1CWM5gw80QKPCCWMcpNeOmimNL2AA=' 'unsafe-eval' https://api.mapbox.com https://code.jquery.com https://cdn.jsdelivr.net blob: data:; " 
-        + "style-src 'self' https://api.mapbox.com; " 
-        + "img-src 'self' blob: data:; frame-ancestors 'none'; form-action 'none';" );
+        "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.mapbox.com https://events.mapbox.com https://login.microsoftonline.com; " +
+        "script-src 'self' 'sha256-v8v3RKRPmN4odZ1CWM5gw80QKPCCWMcpNeOmimNL2AA=' 'unsafe-eval' https://api.mapbox.com https://code.jquery.com https://cdn.jsdelivr.net blob: data:; "
+        + "style-src 'self' https://api.mapbox.com; "
+        + "img-src 'self' blob: data:; frame-ancestors 'none'; form-action 'none';");
 
     await next();
 });
