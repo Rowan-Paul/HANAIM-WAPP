@@ -31,7 +31,7 @@ main {
     text-decoration: underline;
 }
 
-.top-row ::deep a:first-child {
+.top-row ::deep a:last-child {
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -68,7 +68,7 @@ main {
         z-index: 1;
     }
 
-    .top-row.auth ::deep a:first-child {
+    .top-row.auth ::deep a:last-child {
         flex: 1;
         text-align: right;
         width: 0;
