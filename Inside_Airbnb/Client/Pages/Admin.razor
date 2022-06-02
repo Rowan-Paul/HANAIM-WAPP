@@ -32,6 +32,7 @@
     private PropertyTypesStats? PropertyStats { get; set; }
     private RoomTypesStats? RoomStats { get; set; }
     private ReviewsPerDateStats? ReviewsStats { get; set; }
+    private List<string> _reviewStatsFormatted = new();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -42,7 +43,17 @@
             PropertyStats = await client.GetFromJsonAsync<PropertyTypesStats>($"{Configuration["apiUrl"]}/api/statistics/property-types");
             RoomStats = await client.GetFromJsonAsync<RoomTypesStats>($"{Configuration["apiUrl"]}/api/statistics/room-types");
             ReviewsStats = await client.GetFromJsonAsync<ReviewsPerDateStats>($"{Configuration["apiUrl"]}/api/statistics/reviews");
-            await Js.InvokeVoidAsync("setMap.reviews", ReviewsStats);
+
+            if (ReviewsStats != null)
+            {
+                foreach (var r in ReviewsStats.Dates)
+                {
+                    DateTime date = r.Date;
+                    var formatted = date.ToString("dd/M/yyyy");
+                    _reviewStatsFormatted.Add(formatted);
+                }
+                await Js.InvokeVoidAsync("setMap.reviews", ReviewsStats, _reviewStatsFormatted);
+            }
             await Js.InvokeVoidAsync("setMap.neighbourhood", NeighbourStats);
             await Js.InvokeVoidAsync("setMap.property", PropertyStats);
             await Js.InvokeVoidAsync("setMap.room", RoomStats);

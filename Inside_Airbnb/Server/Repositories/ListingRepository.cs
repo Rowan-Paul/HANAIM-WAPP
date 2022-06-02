@@ -236,8 +236,8 @@ public class ListingRepository : IListingRepository
                 cachedAmountRoomTypes = JsonSerializer.Serialize(amountRoomTypes);
                 var expiryOptions = new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
-                    SlidingExpiration = TimeSpan.FromSeconds(30)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(120),
+                    SlidingExpiration = TimeSpan.FromSeconds(60)
                 };
                 await _distributedCache.SetStringAsync("_amountRoomTypes", cachedAmountRoomTypes, expiryOptions);
             }

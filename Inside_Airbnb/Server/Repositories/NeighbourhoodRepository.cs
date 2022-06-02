@@ -33,8 +33,8 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
                 cachedNeighbourhoods = JsonSerializer.Serialize(neighbourhoods);
                 var expiryOptions = new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
-                    SlidingExpiration = TimeSpan.FromSeconds(30)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(120),
+                    SlidingExpiration = TimeSpan.FromSeconds(60)
                 };
                 await _distributedCache.SetStringAsync("_neighbourhoods", cachedNeighbourhoods, expiryOptions);
             }

@@ -33,12 +33,12 @@ public class ReviewRepository : IReviewRepository
                     .Select(g => new ReviewRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
                 // fetching all reviews but only sending 200 back since sorting errors the linq function
                 amountReviews = amountReviews.OrderByDescending(x => x.Date)
-                    .Take(200).ToList();
+                    .Take(100).OrderBy(x => x.Date).ToList();
                 cachedAmountReviews = JsonSerializer.Serialize(amountReviews);
                 var expiryOptions = new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
-                    SlidingExpiration = TimeSpan.FromSeconds(30)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(120),
+                    SlidingExpiration = TimeSpan.FromSeconds(60)
                 };
                 await _distributedCache.SetStringAsync("_reviewsPerDate", cachedAmountReviews, expiryOptions);
             }
