@@ -18,25 +18,33 @@ public class NeighbourhoodRepository : INeighbourhoodRepository
 
     public async Task<List<Neighbourhood>?> GetAllNeighbourhoods()
     {
-        List<Neighbourhood>? neighbourhoods;
-        var cachedNeighbourhoods = await _distributedCache.GetStringAsync("_neighbourhoods");
+        try
+        {
+            List<Neighbourhood>? neighbourhoods;
+            var cachedNeighbourhoods = await _distributedCache.GetStringAsync("_neighbourhoods");
 
-        if (cachedNeighbourhoods != null)
-        {
-            neighbourhoods = JsonSerializer.Deserialize<List<Neighbourhood>>(cachedNeighbourhoods);
-        }
-        else
-        {
-            neighbourhoods = await _context.Neighbourhoods.AsNoTracking().ToListAsync();
-            cachedNeighbourhoods = JsonSerializer.Serialize(neighbourhoods);
-            var expiryOptions = new DistributedCacheEntryOptions
+            if (cachedNeighbourhoods != null)
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
-                SlidingExpiration = TimeSpan.FromSeconds(30)
-            };
-            await _distributedCache.SetStringAsync("_neighbourhoods", cachedNeighbourhoods, expiryOptions);
-        }
+                neighbourhoods = JsonSerializer.Deserialize<List<Neighbourhood>>(cachedNeighbourhoods);
+            }
+            else
+            {
+                neighbourhoods = await _context.Neighbourhoods.AsNoTracking().ToListAsync();
+                cachedNeighbourhoods = JsonSerializer.Serialize(neighbourhoods);
+                var expiryOptions = new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
+                    SlidingExpiration = TimeSpan.FromSeconds(30)
+                };
+                await _distributedCache.SetStringAsync("_neighbourhoods", cachedNeighbourhoods, expiryOptions);
+            }
 
-        return neighbourhoods;
+            return neighbourhoods;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return null;
+        }
     }
 }

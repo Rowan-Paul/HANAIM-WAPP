@@ -9,5 +9,5 @@ public interface IListingRepository
     Task<Listing?> GetListingById(int id);
     Task<int?> GetAveragePriceByNeighbourhood(string neighbourhood);
     Task<PropertyTypesStats?> GetAmountPropertyTypes();
-    Task<RoomTypesStats> GetAmountRoomTypes();
+    Task<RoomTypesStats?> GetAmountRoomTypes();
 }

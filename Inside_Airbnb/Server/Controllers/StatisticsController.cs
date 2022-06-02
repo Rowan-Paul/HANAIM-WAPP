@@ -54,7 +54,7 @@ public class StatisticsController : ControllerBase
 
     // GET: api/statistics/room-types
     [HttpGet("room-types")]
-    public async Task<RoomTypesStats> GetRoomTypesStats()
+    public async Task<RoomTypesStats?> GetRoomTypesStats()
     {
         var result = await ListingRepository.GetAmountRoomTypes();
 

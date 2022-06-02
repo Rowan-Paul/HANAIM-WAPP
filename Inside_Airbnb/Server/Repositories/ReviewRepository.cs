@@ -18,42 +18,50 @@ public class ReviewRepository : IReviewRepository
 
     public async Task<ReviewsPerDateStats?> GetReviewsPerDate()
     {
-        List<ReviewRecord>? amountReviews;
-        var cachedAmountReviews = await _distributedCache.GetStringAsync("_reviewsPerDate");
+        try
+        {
+            List<ReviewRecord>? amountReviews;
+            var cachedAmountReviews = await _distributedCache.GetStringAsync("_reviewsPerDate");
 
-        if (cachedAmountReviews != null)
-        {
-            amountReviews = JsonSerializer.Deserialize<List<ReviewRecord>>(cachedAmountReviews);
-        }
-        else
-        {
-            amountReviews = await _context.Reviews.GroupBy(p => p.Date)
-                .Select(g => new ReviewRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
-            // fetching all reviews but only sending 200 back since sorting errors the linq function
-            amountReviews = amountReviews.OrderByDescending(x => x.Date)
-                .Take(200).ToList();
-            cachedAmountReviews = JsonSerializer.Serialize(amountReviews);
-            var expiryOptions = new DistributedCacheEntryOptions
+            if (cachedAmountReviews != null)
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
-                SlidingExpiration = TimeSpan.FromSeconds(30)
-            };
-            await _distributedCache.SetStringAsync("_reviewsPerDate", cachedAmountReviews, expiryOptions);
+                amountReviews = JsonSerializer.Deserialize<List<ReviewRecord>>(cachedAmountReviews);
+            }
+            else
+            {
+                amountReviews = await _context.Reviews.GroupBy(p => p.Date)
+                    .Select(g => new ReviewRecord(g.Key, g.Count())).AsNoTracking().ToListAsync();
+                // fetching all reviews but only sending 200 back since sorting errors the linq function
+                amountReviews = amountReviews.OrderByDescending(x => x.Date)
+                    .Take(200).ToList();
+                cachedAmountReviews = JsonSerializer.Serialize(amountReviews);
+                var expiryOptions = new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60),
+                    SlidingExpiration = TimeSpan.FromSeconds(30)
+                };
+                await _distributedCache.SetStringAsync("_reviewsPerDate", cachedAmountReviews, expiryOptions);
+            }
+
+            List<DateTime> dates = new();
+            List<int> counts = new();
+
+            if (amountReviews == null) return new ReviewsPerDateStats(dates, counts);
+            foreach (var t in amountReviews)
+            {
+                if (t.Date == null) return null;
+
+                dates.Add((DateTime) t.Date);
+                counts.Add(t.Count);
+            }
+
+            return new ReviewsPerDateStats(dates, counts);
         }
-
-        List<DateTime> dates = new();
-        List<int> counts = new();
-
-        if (amountReviews == null) return new ReviewsPerDateStats(dates, counts);
-        foreach (var t in amountReviews)
+        catch (Exception e)
         {
-            if (t.Date == null) return null;
-            
-            dates.Add((DateTime) t.Date);
-            counts.Add(t.Count);
+            Console.WriteLine(e);
+            return null;
         }
-
-        return new ReviewsPerDateStats(dates, counts);
     }
 
     private record ReviewRecord(DateTime? Date, int Count)
