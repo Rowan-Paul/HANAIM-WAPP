@@ -1,23 +1,13 @@
-﻿namespace Inside_Airbnb.Shared;
-
-public class Calendar
+﻿namespace Inside_Airbnb.Shared
 {
-    public Calendar(long? listingId, DateTime? date, string? available, int? price, int? adjustedPrice, int? minimumNights, int? maximumNights)
+    public partial class Calendar
     {
-        ListingId = listingId;
-        Date = date;
-        Available = available;
-        Price = price;
-        AdjustedPrice = adjustedPrice;
-        MinimumNights = minimumNights;
-        MaximumNights = maximumNights;
+        public long? ListingId { get; set; }
+        public DateTime? Date { get; set; }
+        public string? Available { get; set; }
+        public int? Price { get; set; }
+        public int? AdjustedPrice { get; set; }
+        public int? MinimumNights { get; set; }
+        public int? MaximumNights { get; set; }
     }
-
-    public long? ListingId { get; }
-    public DateTime? Date { get; }
-    public string? Available { get; }
-    public int? Price { get; }
-    public int? AdjustedPrice { get; }
-    public int? MinimumNights { get; }
-    public int? MaximumNights { get; }
 }

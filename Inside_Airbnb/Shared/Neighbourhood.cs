@@ -1,13 +1,8 @@
-﻿namespace Inside_Airbnb.Shared;
-
-public class Neighbourhood
+﻿namespace Inside_Airbnb.Shared
 {
-    public Neighbourhood(string? neighbourhoodGroup, string? neighbourhood1)
+    public partial class Neighbourhood
     {
-        NeighbourhoodGroup = neighbourhoodGroup;
-        Neighbourhood1 = neighbourhood1;
+        public string? NeighbourhoodGroup { get; set; }
+        public string? Neighbourhood1 { get; set; }
     }
-
-    public string? NeighbourhoodGroup { get; }
-    public string? Neighbourhood1 { get; }
 }

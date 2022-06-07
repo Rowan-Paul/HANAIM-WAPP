@@ -22,7 +22,7 @@ namespace Inside_Airbnb.Server
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            { 
+            {
                 optionsBuilder.UseSqlServer("InsideAirbnbContext");
             }
         }
@@ -54,9 +54,12 @@ namespace Inside_Airbnb.Server
 
             modelBuilder.Entity<Listing>(entity =>
             {
-                //entity.HasNoKey();
+                entity.HasNoKey();
 
                 entity.ToTable("listings");
+
+                entity.HasIndex(e => e.Id, "pk_listings")
+                    .IsClustered();
 
                 entity.Property(e => e.Accommodates).HasColumnName("accommodates");
 
@@ -80,11 +83,14 @@ namespace Inside_Airbnb.Server
 
                 entity.Property(e => e.CalculatedHostListingsCount).HasColumnName("calculated_host_listings_count");
 
-                entity.Property(e => e.CalculatedHostListingsCountEntireHomes).HasColumnName("calculated_host_listings_count_entire_homes");
+                entity.Property(e => e.CalculatedHostListingsCountEntireHomes)
+                    .HasColumnName("calculated_host_listings_count_entire_homes");
 
-                entity.Property(e => e.CalculatedHostListingsCountPrivateRooms).HasColumnName("calculated_host_listings_count_private_rooms");
+                entity.Property(e => e.CalculatedHostListingsCountPrivateRooms)
+                    .HasColumnName("calculated_host_listings_count_private_rooms");
 
-                entity.Property(e => e.CalculatedHostListingsCountSharedRooms).HasColumnName("calculated_host_listings_count_shared_rooms");
+                entity.Property(e => e.CalculatedHostListingsCountSharedRooms)
+                    .HasColumnName("calculated_host_listings_count_shared_rooms");
 
                 entity.Property(e => e.CalendarLastScraped)
                     .HasColumnType("datetime")
@@ -225,7 +231,11 @@ namespace Inside_Airbnb.Server
 
                 entity.ToTable("neighbourhoods");
 
+                entity.HasIndex(e => e.Neighbourhood1, "pk_neighbourhoods")
+                    .IsClustered();
+
                 entity.Property(e => e.Neighbourhood1)
+                    .HasMaxLength(100)
                     .IsUnicode(false)
                     .HasColumnName("neighbourhood");
 
@@ -240,6 +250,9 @@ namespace Inside_Airbnb.Server
                 entity.HasNoKey();
 
                 entity.ToTable("reviews");
+
+                entity.HasIndex(e => e.Id, "pk_reviews")
+                    .IsClustered();
 
                 entity.Property(e => e.Comments).HasColumnName("comments");
 
