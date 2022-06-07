@@ -1,0 +1,861 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Filename,Latency,Encoding,SampleCount,ErrorCount,Hostname,IdleTime,Connect
+1654609451252,1059,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,1053,utf-8,1,0,VEGA,0,30
+1654609451756,640,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,639,utf-8,1,0,VEGA,0,5
+1654609452265,314,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,313,utf-8,1,0,VEGA,0,6
+1654609451756,853,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,853,utf-8,1,0,VEGA,0,5
+1654609452265,344,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,344,utf-8,1,0,VEGA,0,6
+1654609451252,1357,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,1357,utf-8,1,0,VEGA,0,30
+1654609452757,118,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,118,utf-8,1,0,VEGA,0,6
+1654609452757,189,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,188,utf-8,1,0,VEGA,0,6
+1654609453258,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,5
+1654609453258,179,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,178,utf-8,1,0,VEGA,0,5
+1654609453758,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,5
+1654609453758,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,5
+1654609454258,115,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,115,utf-8,1,0,VEGA,0,6
+1654609454258,151,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,6
+1654609454505,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,6
+1654609454505,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,6
+1654609454752,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,6
+1654609454752,144,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,143,utf-8,1,0,VEGA,0,6
+1654609455002,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,7
+1654609455002,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,7
+1654609455266,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,5
+1654609455266,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,5
+1654609455502,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,6
+1654609455502,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,6
+1654609455766,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,5
+1654609455766,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,5
+1654609456013,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,5
+1654609456028,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,5
+1654609456261,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,5
+1654609456261,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,5
+1654609456507,107,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,107,utf-8,1,0,VEGA,0,6
+1654609456507,144,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,143,utf-8,1,0,VEGA,0,6
+1654609456755,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,5
+1654609456755,150,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,5
+1654609457018,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,6
+1654609457018,144,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609457267,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,6
+1654609457267,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,6
+1654609457419,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,6
+1654609457419,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,6
+1654609457590,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,5
+1654609457590,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,5
+1654609457775,95,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,95,utf-8,1,0,VEGA,0,6
+1654609457760,145,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,143,utf-8,1,0,VEGA,0,6
+1654609457929,108,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,108,utf-8,1,0,VEGA,0,6
+1654609457929,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609458100,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,6
+1654609458100,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,144,utf-8,1,0,VEGA,0,6
+1654609458255,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,6
+1654609458255,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609458426,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,5
+1654609458426,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,5
+1654609458597,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,6
+1654609458597,145,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,143,utf-8,1,0,VEGA,0,6
+1654609458753,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,6
+1654609458753,144,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,143,utf-8,1,0,VEGA,0,6
+1654609458922,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,6
+1654609458922,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,6
+1654609459091,110,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,110,utf-8,1,0,VEGA,0,6
+1654609459091,142,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,140,utf-8,1,0,VEGA,0,6
+1654609459261,106,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,106,utf-8,1,0,VEGA,0,6
+1654609459261,141,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,140,utf-8,1,0,VEGA,0,5
+1654609459432,107,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,107,utf-8,1,0,VEGA,0,6
+1654609459432,138,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,137,utf-8,1,0,VEGA,0,6
+1654609459586,108,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,108,utf-8,1,0,VEGA,0,6
+1654609459586,142,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,141,utf-8,1,0,VEGA,0,6
+1654609459757,108,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,108,utf-8,1,0,VEGA,0,6
+1654609459757,145,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,144,utf-8,1,0,VEGA,0,5
+1654609459927,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,6
+1654609459927,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609460097,107,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,107,utf-8,1,0,VEGA,0,5
+1654609460097,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,1,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,5
+1654609460267,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,5
+1654609460267,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,5
+1654609460390,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,6
+1654609460390,145,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,144,utf-8,1,0,VEGA,0,6
+1654609460514,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,6
+1654609460514,152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,151,utf-8,1,0,VEGA,0,6
+1654609460638,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,5
+1654609460638,150,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,6
+1654609460761,109,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,109,utf-8,1,0,VEGA,0,6
+1654609460761,143,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609460885,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,5
+1654609460885,159,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,158,utf-8,1,0,VEGA,0,5
+1654609461009,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,5
+1654609461009,151,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,5
+1654609461132,115,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,115,utf-8,1,0,VEGA,0,5
+1654609461132,152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,150,utf-8,1,0,VEGA,0,5
+1654609461253,108,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,108,utf-8,1,0,VEGA,0,7
+1654609461253,144,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,142,utf-8,1,0,VEGA,0,6
+1654609461378,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,6
+1654609461378,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,6
+1654609461504,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,6
+1654609461504,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,5
+1654609461628,115,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,115,utf-8,1,0,VEGA,0,8
+1654609461628,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,8
+1654609461766,114,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,114,utf-8,1,0,VEGA,0,6
+1654609461766,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,6
+1654609461890,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,6
+1654609461890,149,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,148,utf-8,1,0,VEGA,0,6
+1654609462014,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,5
+1654609462014,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,5
+1654609462138,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,5
+1654609462138,153,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,151,utf-8,1,0,VEGA,0,5
+1654609462262,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,6
+1654609462262,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,6
+1654609462386,117,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,117,utf-8,1,0,VEGA,0,6
+1654609462386,153,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,152,utf-8,1,0,VEGA,0,6
+1654609462509,122,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,122,utf-8,1,0,VEGA,0,5
+1654609462509,158,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,157,utf-8,1,0,VEGA,0,5
+1654609462631,113,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,113,utf-8,1,0,VEGA,0,6
+1654609462631,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,6
+1654609462753,112,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,112,utf-8,1,0,VEGA,0,6
+1654609462753,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,6
+1654609462877,111,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,111,utf-8,1,0,VEGA,0,6
+1654609462877,148,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,147,utf-8,1,0,VEGA,0,6
+1654609463016,107,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,106,utf-8,1,0,VEGA,0,5
+1654609463016,146,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,145,utf-8,1,0,VEGA,0,5
+1654609463141,114,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,1,https://localhost:7000/api/statistics/neighbourhoods,,114,utf-8,1,0,VEGA,0,8
+1654609463141,152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,151,utf-8,1,0,VEGA,0,8
+1654609463265,147,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,146,utf-8,1,0,VEGA,0,6
+1654609463357,152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,151,utf-8,1,0,VEGA,0,6
+1654609463265,291,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,291,utf-8,1,0,VEGA,0,6
+1654609463357,207,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,207,utf-8,1,0,VEGA,0,6
+1654609463453,155,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,153,utf-8,1,0,VEGA,0,7
+1654609463453,210,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,210,utf-8,1,0,VEGA,0,7
+1654609463562,156,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,155,utf-8,1,0,VEGA,0,6
+1654609463657,161,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,160,utf-8,1,0,VEGA,0,7
+1654609463765,256,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,5,https://localhost:7000/api/listings?geojson=true,,255,utf-8,1,0,VEGA,0,7
+1654609463562,494,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,5,https://localhost:7000/api/statistics/neighbourhoods,,494,utf-8,1,0,VEGA,0,8
+1654609463657,407,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,5,https://localhost:7000/api/statistics/neighbourhoods,,406,utf-8,1,0,VEGA,0,7
+1654609463954,165,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,164,utf-8,1,0,VEGA,0,6
+1654609463860,260,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,258,utf-8,1,0,VEGA,0,6
+1654609463765,492,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,6,https://localhost:7000/api/statistics/neighbourhoods,,492,utf-8,1,0,VEGA,0,7
+1654609463860,398,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,6,https://localhost:7000/api/statistics/neighbourhoods,,398,utf-8,1,0,VEGA,0,6
+1654609463954,304,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,304,utf-8,1,0,VEGA,0,6
+1654609464157,158,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,157,utf-8,1,0,VEGA,0,7
+1654609464064,253,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,252,utf-8,1,0,VEGA,0,7
+1654609464064,295,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,295,utf-8,1,0,VEGA,0,6
+1654609464157,202,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,2,https://localhost:7000/api/statistics/neighbourhoods,,202,utf-8,1,0,VEGA,0,7
+1654609464253,156,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,155,utf-8,1,0,VEGA,0,10
+1654609464253,209,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,209,utf-8,1,0,VEGA,0,10
+1654609464363,163,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,162,utf-8,1,0,VEGA,0,7
+1654609464456,170,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,169,utf-8,1,0,VEGA,0,7
+1654609464363,304,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,304,utf-8,1,0,VEGA,0,8
+1654609464456,212,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,212,utf-8,1,0,VEGA,0,6
+1654609464566,162,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,161,utf-8,1,0,VEGA,0,6
+1654609464661,185,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,184,utf-8,1,0,VEGA,0,7
+1654609464566,307,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,307,utf-8,1,0,VEGA,0,6
+1654609464757,162,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,161,utf-8,1,0,VEGA,0,9
+1654609464661,308,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,308,utf-8,1,0,VEGA,0,8
+1654609464867,155,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,154,utf-8,1,0,VEGA,0,7
+1654609464758,301,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,301,utf-8,1,0,VEGA,0,8
+1654609464962,156,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,155,utf-8,1,0,VEGA,0,7
+1654609464867,394,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,394,utf-8,1,0,VEGA,0,6
+1654609464962,306,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,306,utf-8,1,0,VEGA,0,7
+1654609465058,261,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,260,utf-8,1,0,VEGA,0,7
+1654609465152,171,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,3,https://localhost:7000/api/listings?geojson=true,,170,utf-8,1,0,VEGA,0,8
+1654609465058,394,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,394,utf-8,1,0,VEGA,0,7
+1654609465152,300,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,300,utf-8,1,0,VEGA,0,8
+1654609465264,207,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,3,https://localhost:7000/api/statistics/neighbourhoods,,207,utf-8,1,0,VEGA,0,7
+1654609465358,114,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,3,https://localhost:7000/api/statistics/neighbourhoods,,114,utf-8,1,0,VEGA,0,7
+1654609465358,150,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,3,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,7
+1654609465264,246,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,245,utf-8,1,0,VEGA,0,8
+1654609465466,199,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,2,https://localhost:7000/api/statistics/neighbourhoods,,199,utf-8,1,0,VEGA,0,6
+1654609465481,254,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,3,https://localhost:7000/api/listings?geojson=true,,253,utf-8,1,0,VEGA,0,5
+1654609465557,180,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,179,utf-8,1,0,VEGA,0,7
+1654609465666,246,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,245,utf-8,1,0,VEGA,0,7
+1654609465761,157,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,156,utf-8,1,0,VEGA,0,7
+1654609465557,395,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,395,utf-8,1,0,VEGA,0,7
+1654609465666,300,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,300,utf-8,1,0,VEGA,0,7
+1654609465761,205,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,205,utf-8,1,0,VEGA,0,6
+1654609465855,116,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,2,2,https://localhost:7000/api/statistics/neighbourhoods,,116,utf-8,1,0,VEGA,0,7
+1654609465855,151,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,1,2,https://localhost:7000/api/listings?geojson=true,,149,utf-8,1,0,VEGA,0,6
+1654609465964,167,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,2,https://localhost:7000/api/listings?geojson=true,,166,utf-8,1,0,VEGA,0,7
+1654609466060,279,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,278,utf-8,1,0,VEGA,0,7
+1654609466155,185,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,4,https://localhost:7000/api/listings?geojson=true,,183,utf-8,1,0,VEGA,0,7
+1654609466264,278,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,7,https://localhost:7000/api/listings?geojson=true,,277,utf-8,1,0,VEGA,0,9
+1654609466342,299,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,8,https://localhost:7000/api/listings?geojson=true,,298,utf-8,1,0,VEGA,0,7
+1654609466422,330,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,9,https://localhost:7000/api/listings?geojson=true,,329,utf-8,1,0,VEGA,0,6
+1654609466516,326,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,10,https://localhost:7000/api/listings?geojson=true,,325,utf-8,1,0,VEGA,0,9
+1654609466597,433,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,13,https://localhost:7000/api/listings?geojson=true,,432,utf-8,1,0,VEGA,0,8
+1654609466677,451,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,14,https://localhost:7000/api/listings?geojson=true,,450,utf-8,1,0,VEGA,0,10
+1654609466756,467,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,15,https://localhost:7000/api/listings?geojson=true,,466,utf-8,1,0,VEGA,0,7
+1654609466850,457,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,16,https://localhost:7000/api/listings?geojson=true,,456,utf-8,1,0,VEGA,0,7
+1654609466927,465,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,17,https://localhost:7000/api/listings?geojson=true,,464,utf-8,1,0,VEGA,0,8
+1654609467005,493,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,18,https://localhost:7000/api/listings?geojson=true,,492,utf-8,1,0,VEGA,0,9
+1654609467098,476,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,19,https://localhost:7000/api/listings?geojson=true,,475,utf-8,1,0,VEGA,0,7
+1654609467176,480,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,20,https://localhost:7000/api/listings?geojson=true,,479,utf-8,1,0,VEGA,0,7
+1654609467255,583,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,22,https://localhost:7000/api/listings?geojson=true,,582,utf-8,1,0,VEGA,0,7
+1654609467350,490,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,22,https://localhost:7000/api/listings?geojson=true,,489,utf-8,1,0,VEGA,0,6
+1654609467428,581,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,25,https://localhost:7000/api/listings?geojson=true,,580,utf-8,1,0,VEGA,0,7
+1654609467506,584,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,25,https://localhost:7000/api/listings?geojson=true,,583,utf-8,1,0,VEGA,0,6
+1654609467600,575,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,26,https://localhost:7000/api/listings?geojson=true,,574,utf-8,1,0,VEGA,0,7
+1654609467676,585,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,28,https://localhost:7000/api/listings?geojson=true,,584,utf-8,1,0,VEGA,0,7
+1654609467754,597,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,29,https://localhost:7000/api/listings?geojson=true,,595,utf-8,1,0,VEGA,0,6
+1654609467849,581,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,30,https://localhost:7000/api/listings?geojson=true,,580,utf-8,1,0,VEGA,0,8
+1654609467925,589,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,30,https://localhost:7000/api/listings?geojson=true,,588,utf-8,1,0,VEGA,0,7
+1654609468005,592,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,32,https://localhost:7000/api/listings?geojson=true,,590,utf-8,1,0,VEGA,0,9
+1654609468101,572,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,33,https://localhost:7000/api/listings?geojson=true,,571,utf-8,1,0,VEGA,0,7
+1654609468181,585,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,34,https://localhost:7000/api/listings?geojson=true,,584,utf-8,1,0,VEGA,0,7
+1654609468261,584,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,35,https://localhost:7000/api/listings?geojson=true,,583,utf-8,1,0,VEGA,0,8
+1654609468341,590,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,36,https://localhost:7000/api/listings?geojson=true,,589,utf-8,1,0,VEGA,0,6
+1654609468421,590,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,36,https://localhost:7000/api/listings?geojson=true,,589,utf-8,1,0,VEGA,0,6
+1654609468516,597,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,38,https://localhost:7000/api/listings?geojson=true,,596,utf-8,1,0,VEGA,0,7
+1654609468593,596,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,39,https://localhost:7000/api/listings?geojson=true,,595,utf-8,1,0,VEGA,0,7
+1654609468671,595,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,40,https://localhost:7000/api/listings?geojson=true,,593,utf-8,1,0,VEGA,0,9
+1654609468764,586,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,41,https://localhost:7000/api/listings?geojson=true,,585,utf-8,1,0,VEGA,0,7
+1654609468845,592,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,42,https://localhost:7000/api/listings?geojson=true,,591,utf-8,1,0,VEGA,0,6
+1654609468924,598,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,43,https://localhost:7000/api/listings?geojson=true,,597,utf-8,1,0,VEGA,0,7
+1654609469016,592,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,44,https://localhost:7000/api/listings?geojson=true,,591,utf-8,1,0,VEGA,0,6
+1654609469093,598,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,45,https://localhost:7000/api/listings?geojson=true,,597,utf-8,1,0,VEGA,0,7
+1654609469171,604,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,47,https://localhost:7000/api/listings?geojson=true,,603,utf-8,1,0,VEGA,0,7
+1654609469265,598,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,48,https://localhost:7000/api/listings?geojson=true,,596,utf-8,1,0,VEGA,0,8
+1654609469344,684,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,50,https://localhost:7000/api/listings?geojson=true,,683,utf-8,1,0,VEGA,0,8
+1654609469408,708,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,51,https://localhost:7000/api/listings?geojson=true,,707,utf-8,1,0,VEGA,0,6
+1654609469486,714,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,52,https://localhost:7000/api/listings?geojson=true,,713,utf-8,1,0,VEGA,0,7
+1654609469563,715,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,54,https://localhost:7000/api/listings?geojson=true,,714,utf-8,1,0,VEGA,0,7
+1654609469625,748,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,55,https://localhost:7000/api/listings?geojson=true,,747,utf-8,1,0,VEGA,0,7
+1654609469703,748,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,56,https://localhost:7000/api/listings?geojson=true,,747,utf-8,1,0,VEGA,0,6
+1654609469765,854,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,58,https://localhost:7000/api/listings?geojson=true,,853,utf-8,1,0,VEGA,0,6
+1654609469843,860,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,60,https://localhost:7000/api/listings?geojson=true,,859,utf-8,1,0,VEGA,0,7
+1654609469908,879,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,61,https://localhost:7000/api/listings?geojson=true,,878,utf-8,1,0,VEGA,0,6
+1654609469986,889,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,62,https://localhost:7000/api/listings?geojson=true,,888,utf-8,1,0,VEGA,0,7
+1654609470065,894,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,63,https://localhost:7000/api/listings?geojson=true,,893,utf-8,1,0,VEGA,0,12
+1654609465964,5031,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,64,https://localhost:7000/api/statistics/neighbourhoods,,5031,utf-8,1,0,VEGA,0,7
+1654609470128,926,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,63,https://localhost:7000/api/listings?geojson=true,,925,utf-8,1,0,VEGA,0,6
+1654609470206,1005,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,66,https://localhost:7000/api/listings?geojson=true,,1004,utf-8,1,0,VEGA,0,6
+1654609470269,1031,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,67,https://localhost:7000/api/listings?geojson=true,,1029,utf-8,1,0,VEGA,0,7
+1654609470347,1038,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,68,https://localhost:7000/api/listings?geojson=true,,1037,utf-8,1,0,VEGA,0,6
+1654609470409,1064,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,69,https://localhost:7000/api/listings?geojson=true,,1063,utf-8,1,0,VEGA,0,6
+1654609470488,1152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,72,https://localhost:7000/api/listings?geojson=true,,1151,utf-8,1,0,VEGA,0,6
+1654609470552,1166,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,73,https://localhost:7000/api/listings?geojson=true,,1165,utf-8,1,0,VEGA,0,8
+1654609470632,1170,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,74,https://localhost:7000/api/listings?geojson=true,,1169,utf-8,1,0,VEGA,0,7
+1654609470696,1200,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,75,https://localhost:7000/api/listings?geojson=true,,1198,utf-8,1,0,VEGA,0,7
+1654609470776,1209,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,77,https://localhost:7000/api/listings?geojson=true,,1207,utf-8,1,0,VEGA,0,6
+1654609470840,1231,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,78,https://localhost:7000/api/listings?geojson=true,,1230,utf-8,1,0,VEGA,0,6
+1654609470918,1317,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,80,https://localhost:7000/api/listings?geojson=true,,1316,utf-8,1,0,VEGA,0,7
+1654609470980,1338,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,81,https://localhost:7000/api/listings?geojson=true,,1337,utf-8,1,0,VEGA,0,7
+1654609471059,1342,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,82,https://localhost:7000/api/listings?geojson=true,,1341,utf-8,1,0,VEGA,0,7
+1654609471123,1374,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,84,https://localhost:7000/api/listings?geojson=true,,1373,utf-8,1,0,VEGA,0,6
+1654609471200,1385,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,85,https://localhost:7000/api/listings?geojson=true,,1384,utf-8,1,0,VEGA,0,7
+1654609471278,1394,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,87,https://localhost:7000/api/listings?geojson=true,,1393,utf-8,1,0,VEGA,0,7
+1654609471339,1494,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,89,https://localhost:7000/api/listings?geojson=true,,1493,utf-8,1,0,VEGA,0,8
+1654609471417,1502,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,91,https://localhost:7000/api/listings?geojson=true,,1501,utf-8,1,0,VEGA,0,8
+1654609471481,1520,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,92,https://localhost:7000/api/listings?geojson=true,,1519,utf-8,1,0,VEGA,0,6
+1654609471559,1570,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,94,https://localhost:7000/api/listings?geojson=true,,1569,utf-8,1,0,VEGA,0,6
+1654609471623,1551,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,95,https://localhost:7000/api/listings?geojson=true,,1550,utf-8,1,0,VEGA,0,6
+1654609471701,1644,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,98,https://localhost:7000/api/listings?geojson=true,,1643,utf-8,1,0,VEGA,0,7
+1654609471779,1647,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,99,https://localhost:7000/api/listings?geojson=true,,1646,utf-8,1,0,VEGA,0,7
+1654609471842,1754,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,101,https://localhost:7000/api/listings?geojson=true,,1753,utf-8,1,0,VEGA,0,7
+1654609471917,1768,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,103,https://localhost:7000/api/listings?geojson=true,,1767,utf-8,1,0,VEGA,0,9
+1654609471980,1789,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,104,https://localhost:7000/api/listings?geojson=true,,1788,utf-8,1,0,VEGA,0,6
+1654609472058,1880,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,107,https://localhost:7000/api/listings?geojson=true,,1879,utf-8,1,0,VEGA,0,7
+1654609472136,1892,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,109,https://localhost:7000/api/listings?geojson=true,,1890,utf-8,1,0,VEGA,0,6
+1654609472200,1993,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,111,https://localhost:7000/api/listings?geojson=true,,1992,utf-8,1,0,VEGA,0,6
+1654609472276,2004,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,113,https://localhost:7000/api/listings?geojson=true,,2003,utf-8,1,0,VEGA,0,7
+1654609472341,2019,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,114,https://localhost:7000/api/listings?geojson=true,,2018,utf-8,1,0,VEGA,0,6
+1654609472403,2129,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,117,https://localhost:7000/api/listings?geojson=true,,2127,utf-8,1,0,VEGA,0,7
+1654609472465,2154,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,118,https://localhost:7000/api/listings?geojson=true,,2153,utf-8,1,0,VEGA,0,7
+1654609472528,2181,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,119,https://localhost:7000/api/listings?geojson=true,,2180,utf-8,1,0,VEGA,0,7
+1654609472590,2282,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,122,https://localhost:7000/api/listings?geojson=true,,2281,utf-8,1,0,VEGA,0,6
+1654609472652,2303,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,124,https://localhost:7000/api/listings?geojson=true,,2302,utf-8,1,0,VEGA,0,6
+1654609472714,2328,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,125,https://localhost:7000/api/listings?geojson=true,,2327,utf-8,1,0,VEGA,0,6
+1654609472778,2430,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,128,https://localhost:7000/api/listings?geojson=true,,2429,utf-8,1,0,VEGA,0,7
+1654609472842,2491,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,130,https://localhost:7000/api/listings?geojson=true,,2489,utf-8,1,0,VEGA,0,7
+1654609472890,2524,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,131,https://localhost:7000/api/listings?geojson=true,,2523,utf-8,1,0,VEGA,0,6
+1654609472953,2629,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,134,https://localhost:7000/api/listings?geojson=true,,2628,utf-8,1,0,VEGA,0,8
+1654609466155,9450,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,134,https://localhost:7000/api/statistics/neighbourhoods,,9450,utf-8,1,0,VEGA,0,7
+1654609466060,9545,/api/statistics/neighbourhoods,200,OK,parallel bzm - Parallel Controller,text,true,,1228,148,1,134,https://localhost:7000/api/statistics/neighbourhoods,,9545,utf-8,1,0,VEGA,0,7
+1654609473016,2649,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,134,https://localhost:7000/api/listings?geojson=true,,2648,utf-8,1,0,VEGA,0,7
+1654609473079,2670,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,135,https://localhost:7000/api/listings?geojson=true,,2669,utf-8,1,0,VEGA,0,7
+1654609473140,2775,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,138,https://localhost:7000/api/listings?geojson=true,,2774,utf-8,1,0,VEGA,0,6
+1654609473203,2796,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,140,https://localhost:7000/api/listings?geojson=true,,2795,utf-8,1,0,VEGA,0,6
+1654609473265,2905,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,143,https://localhost:7000/api/listings?geojson=true,,2904,utf-8,1,0,VEGA,0,6
+1654609473328,2924,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,144,https://localhost:7000/api/listings?geojson=true,,2923,utf-8,1,0,VEGA,0,6
+1654609473403,2932,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,146,https://localhost:7000/api/listings?geojson=true,,2931,utf-8,1,0,VEGA,0,7
+1654609473452,3055,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,149,https://localhost:7000/api/listings?geojson=true,,3054,utf-8,1,0,VEGA,0,7
+1654609473515,3072,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,150,https://localhost:7000/api/listings?geojson=true,,3071,utf-8,1,0,VEGA,0,7
+1654609473592,3169,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,153,https://localhost:7000/api/listings?geojson=true,,3168,utf-8,1,0,VEGA,0,7
+1654609473653,3205,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,155,https://localhost:7000/api/listings?geojson=true,,3204,utf-8,1,0,VEGA,0,8
+1654609473716,3231,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,157,https://localhost:7000/api/listings?geojson=true,,3230,utf-8,1,0,VEGA,0,7
+1654609473778,3336,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,160,https://localhost:7000/api/listings?geojson=true,,3335,utf-8,1,0,VEGA,0,6
+1654609473840,3353,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,161,https://localhost:7000/api/listings?geojson=true,,3352,utf-8,1,0,VEGA,0,6
+1654609473901,3504,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,165,https://localhost:7000/api/listings?geojson=true,,3502,utf-8,1,0,VEGA,0,7
+1654609473965,3512,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,166,https://localhost:7000/api/listings?geojson=true,,3511,utf-8,1,0,VEGA,0,7
+1654609474025,3616,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,169,https://localhost:7000/api/listings?geojson=true,,3615,utf-8,1,0,VEGA,0,7
+1654609474089,3638,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,171,https://localhost:7000/api/listings?geojson=true,,3637,utf-8,1,0,VEGA,0,6
+1654609474153,3742,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,174,https://localhost:7000/api/listings?geojson=true,,3741,utf-8,1,0,VEGA,0,7
+1654609474215,3844,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,177,https://localhost:7000/api/listings?geojson=true,,3843,utf-8,1,0,VEGA,0,7
+1654609474293,3853,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,178,https://localhost:7000/api/listings?geojson=true,,3852,utf-8,1,0,VEGA,0,6
+1654609474340,3971,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,181,https://localhost:7000/api/listings?geojson=true,,3970,utf-8,1,0,VEGA,0,6
+1654609474403,4104,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,185,https://localhost:7000/api/listings?geojson=true,,4102,utf-8,1,0,VEGA,0,6
+1654609474465,4049,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,185,https://localhost:7000/api/listings?geojson=true,,4048,utf-8,1,0,VEGA,0,7
+1654609474526,4137,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,188,https://localhost:7000/api/listings?geojson=true,,4136,utf-8,1,0,VEGA,0,8
+1654609474590,4152,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,190,https://localhost:7000/api/listings?geojson=true,,4151,utf-8,1,0,VEGA,0,6
+1654609474653,4261,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,193,https://localhost:7000/api/listings?geojson=true,,4260,utf-8,1,0,VEGA,0,7
+1654609474715,4371,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,197,https://localhost:7000/api/listings?geojson=true,,4370,utf-8,1,0,VEGA,0,7
+1654609474779,4389,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,198,https://localhost:7000/api/listings?geojson=true,,4388,utf-8,1,0,VEGA,0,6
+1654609474842,4497,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,202,https://localhost:7000/api/listings?geojson=true,,4496,utf-8,1,0,VEGA,0,7
+1654609474890,4537,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,204,https://localhost:7000/api/listings?geojson=true,,4536,utf-8,1,0,VEGA,0,6
+1654609474953,4639,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,207,https://localhost:7000/api/listings?geojson=true,,4638,utf-8,1,0,VEGA,0,7
+1654609475015,4661,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,209,https://localhost:7000/api/listings?geojson=true,,4660,utf-8,1,0,VEGA,0,7
+1654609475078,4766,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,212,https://localhost:7000/api/listings?geojson=true,,4764,utf-8,1,0,VEGA,0,7
+1654609475143,4868,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,215,https://localhost:7000/api/listings?geojson=true,,4866,utf-8,1,0,VEGA,0,6
+1654609475204,4903,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,217,https://localhost:7000/api/listings?geojson=true,,4902,utf-8,1,0,VEGA,0,7
+1654609475268,5005,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,221,https://localhost:7000/api/listings?geojson=true,,5003,utf-8,1,0,VEGA,0,30
+1654609475329,5044,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,222,https://localhost:7000/api/listings?geojson=true,,5043,utf-8,1,0,VEGA,0,7
+1654609475391,5154,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,226,https://localhost:7000/api/listings?geojson=true,,5153,utf-8,1,0,VEGA,0,10
+1654609475439,5188,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,228,https://localhost:7000/api/listings?geojson=true,,5187,utf-8,1,0,VEGA,0,6
+1654609475501,5302,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,231,https://localhost:7000/api/listings?geojson=true,,5301,utf-8,1,0,VEGA,0,7
+1654609475547,5420,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,234,https://localhost:7000/api/listings?geojson=true,,5419,utf-8,1,0,VEGA,0,8
+1654609475608,5466,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,237,https://localhost:7000/api/listings?geojson=true,,5464,utf-8,1,0,VEGA,0,7
+1654609475654,5591,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,240,https://localhost:7000/api/listings?geojson=true,,5590,utf-8,1,0,VEGA,0,7
+1654609475718,5640,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,242,https://localhost:7000/api/listings?geojson=true,,5609,utf-8,1,0,VEGA,0,8
+1654609475765,5665,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,244,https://localhost:7000/api/listings?geojson=true,,5664,utf-8,1,0,VEGA,0,7
+1654609475826,5773,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,247,https://localhost:7000/api/listings?geojson=true,,5772,utf-8,1,0,VEGA,0,6
+1654609475888,5892,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,251,https://localhost:7000/api/listings?geojson=true,,5891,utf-8,1,0,VEGA,0,7
+1654609475936,5935,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,253,https://localhost:7000/api/listings?geojson=true,,5934,utf-8,1,0,VEGA,0,6
+1654609475998,6040,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,256,https://localhost:7000/api/listings?geojson=true,,6038,utf-8,1,0,VEGA,0,7
+1654609476043,6080,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,258,https://localhost:7000/api/listings?geojson=true,,6079,utf-8,1,0,VEGA,0,7
+1654609476106,6185,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,261,https://localhost:7000/api/listings?geojson=true,,6184,utf-8,1,0,VEGA,0,7
+1654609476167,6289,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,264,https://localhost:7000/api/listings?geojson=true,,6288,utf-8,1,0,VEGA,0,7
+1654609476213,6435,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,268,https://localhost:7000/api/listings?geojson=true,,6434,utf-8,1,0,VEGA,0,6
+1654609476290,6517,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,271,https://localhost:7000/api/listings?geojson=true,,6516,utf-8,1,0,VEGA,0,6
+1654609476322,6568,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,273,https://localhost:7000/api/listings?geojson=true,,6567,utf-8,1,0,VEGA,0,7
+1654609476386,6672,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,276,https://localhost:7000/api/listings?geojson=true,,6671,utf-8,1,0,VEGA,0,7
+1654609476433,6713,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,278,https://localhost:7000/api/listings?geojson=true,,6712,utf-8,1,0,VEGA,0,7
+1654609476496,6817,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,281,https://localhost:7000/api/listings?geojson=true,,6815,utf-8,1,0,VEGA,0,6
+1654609476542,6943,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,285,https://localhost:7000/api/listings?geojson=true,,6942,utf-8,1,0,VEGA,0,9
+1654609476605,7043,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,288,https://localhost:7000/api/listings?geojson=true,,7042,utf-8,1,0,VEGA,0,7
+1654609476668,7073,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,290,https://localhost:7000/api/listings?geojson=true,,7072,utf-8,1,0,VEGA,0,7
+1654609476715,7194,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,293,https://localhost:7000/api/listings?geojson=true,,7193,utf-8,1,0,VEGA,0,7
+1654609476779,7295,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,296,https://localhost:7000/api/listings?geojson=true,,7294,utf-8,1,0,VEGA,0,6
+1654609476827,7335,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,298,https://localhost:7000/api/listings?geojson=true,,7334,utf-8,1,0,VEGA,0,6
+1654609476891,7445,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,302,https://localhost:7000/api/listings?geojson=true,,7443,utf-8,1,0,VEGA,0,6
+1654609476938,7582,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,305,https://localhost:7000/api/listings?geojson=true,,7580,utf-8,1,0,VEGA,0,8
+1654609477000,7602,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,307,https://localhost:7000/api/listings?geojson=true,,7600,utf-8,1,0,VEGA,0,6
+1654609477047,7720,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,310,https://localhost:7000/api/listings?geojson=true,,7719,utf-8,1,0,VEGA,0,6
+1654609477110,7851,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,314,https://localhost:7000/api/listings?geojson=true,,7850,utf-8,1,0,VEGA,0,6
+1654609477157,7975,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,318,https://localhost:7000/api/listings?geojson=true,,7974,utf-8,1,0,VEGA,0,7
+1654609477219,8016,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,320,https://localhost:7000/api/listings?geojson=true,,8015,utf-8,1,0,VEGA,0,6
+1654609477266,8130,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,323,https://localhost:7000/api/listings?geojson=true,,8129,utf-8,1,0,VEGA,0,6
+1654609480421,5127,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,326,https://localhost:7000/api/listings?geojson=true,,5127,utf-8,1,1,VEGA,0,6
+1654609480421,5127,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,326,https://localhost:7000/api/statistics/neighbourhoods,,5127,utf-8,1,1,VEGA,0,6
+1654609480468,5081,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,326,https://localhost:7000/api/statistics/neighbourhoods,,5081,utf-8,1,1,VEGA,0,6
+1654609480468,5081,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,325,https://localhost:7000/api/listings?geojson=true,,5081,utf-8,1,1,VEGA,0,6
+1654609477376,8174,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,324,https://localhost:7000/api/listings?geojson=true,,8174,utf-8,1,1,VEGA,0,33
+1654609480515,5035,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,324,https://localhost:7000/api/statistics/neighbourhoods,,5035,utf-8,1,1,VEGA,0,8
+1654609480515,5037,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,324,https://localhost:7000/api/listings?geojson=true,,5037,utf-8,1,1,VEGA,0,8
+1654609475439,10122,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,323,https://localhost:7000/api/statistics/neighbourhoods,,10122,utf-8,1,1,VEGA,0,6
+1654609474025,11536,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,323,https://localhost:7000/api/statistics/neighbourhoods,,11536,utf-8,1,1,VEGA,0,7
+1654609473965,11596,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,323,https://localhost:7000/api/statistics/neighbourhoods,,11596,utf-8,1,1,VEGA,0,7
+1654609477328,8238,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,320,https://localhost:7000/api/listings?geojson=true,,8237,utf-8,1,0,VEGA,0,8
+1654609477439,8391,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,326,https://localhost:7000/api/listings?geojson=true,,8390,utf-8,1,0,VEGA,0,6
+1654609477501,8496,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,329,https://localhost:7000/api/listings?geojson=true,,8495,utf-8,1,0,VEGA,0,7
+1654609477547,8637,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,333,https://localhost:7000/api/listings?geojson=true,,8636,utf-8,1,0,VEGA,0,6
+1654609477608,8743,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,334,https://localhost:7000/api/listings?geojson=true,,8742,utf-8,1,0,VEGA,0,8
+1654609477656,8773,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,334,https://localhost:7000/api/listings?geojson=true,,8772,utf-8,1,0,VEGA,0,7
+1654609477766,8764,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,334,https://localhost:7000/api/statistics/neighbourhoods,,8764,utf-8,1,1,VEGA,0,6
+1654609480972,5558,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,334,https://localhost:7000/api/listings?geojson=true,,5558,utf-8,1,1,VEGA,0,6
+1654609477718,8813,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,334,https://localhost:7000/api/statistics/neighbourhoods,,8813,utf-8,1,1,VEGA,0,8
+1654609477718,8814,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,334,https://localhost:7000/api/listings?geojson=true,,8814,utf-8,1,1,VEGA,0,7
+1654609477766,8769,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,333,https://localhost:7000/api/listings?geojson=true,,8769,utf-8,1,1,VEGA,0,6
+1654609475654,10881,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,333,https://localhost:7000/api/statistics/neighbourhoods,,10881,utf-8,1,1,VEGA,0,7
+1654609481020,5515,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,333,https://localhost:7000/api/listings?geojson=true,,5515,utf-8,1,1,VEGA,0,7
+1654609481066,5469,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,333,https://localhost:7000/api/listings?geojson=true,,5469,utf-8,1,1,VEGA,0,8
+1654609481020,5515,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,333,https://localhost:7000/api/statistics/neighbourhoods,,5515,utf-8,1,1,VEGA,0,7
+1654609481066,5469,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,333,https://localhost:7000/api/statistics/neighbourhoods,,5469,utf-8,1,1,VEGA,0,7
+1654609481176,5359,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,333,https://localhost:7000/api/listings?geojson=true,,5359,utf-8,1,1,VEGA,0,7
+1654609477830,8705,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,333,https://localhost:7000/api/statistics/neighbourhoods,,8705,utf-8,1,1,VEGA,0,6
+1654609477830,8708,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,331,https://localhost:7000/api/listings?geojson=true,,8708,utf-8,1,1,VEGA,0,6
+1654609481176,5362,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,331,https://localhost:7000/api/statistics/neighbourhoods,,5362,utf-8,1,1,VEGA,0,7
+1654609481129,5409,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,331,https://localhost:7000/api/statistics/neighbourhoods,,5409,utf-8,1,1,VEGA,0,6
+1654609481522,5016,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,331,https://localhost:7000/api/listings?geojson=true,,5016,utf-8,1,1,VEGA,0,7
+1654609481129,5409,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,331,https://localhost:7000/api/listings?geojson=true,,5409,utf-8,1,1,VEGA,0,6
+1654609477877,8666,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,331,https://localhost:7000/api/statistics/neighbourhoods,,8666,utf-8,1,1,VEGA,0,6
+1654609471059,15484,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,331,https://localhost:7000/api/statistics/neighbourhoods,,15484,utf-8,1,1,VEGA,0,7
+1654609471123,15420,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,331,https://localhost:7000/api/statistics/neighbourhoods,,15420,utf-8,1,1,VEGA,0,6
+1654609477877,8679,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,8679,utf-8,1,1,VEGA,0,6
+1654609472341,14215,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,14215,utf-8,1,1,VEGA,0,6
+1654609474153,12403,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,12403,utf-8,1,1,VEGA,0,8
+1654609481224,5332,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5332,utf-8,1,1,VEGA,0,8
+1654609475718,10838,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,10838,utf-8,1,1,VEGA,0,8
+1654609481272,5284,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5284,utf-8,1,1,VEGA,0,8
+1654609473140,13417,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,13417,utf-8,1,1,VEGA,0,6
+1654609481224,5332,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,5332,utf-8,1,1,VEGA,0,8
+1654609470632,15925,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,15925,utf-8,1,1,VEGA,0,7
+1654609478002,8554,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,8554,utf-8,1,1,VEGA,0,8
+1654609474215,12342,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,12342,utf-8,1,1,VEGA,0,7
+1654609475765,10791,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,10791,utf-8,1,1,VEGA,0,6
+1654609481522,5034,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,5034,utf-8,1,1,VEGA,0,6
+1654609481426,5130,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5130,utf-8,1,1,VEGA,0,8
+1654609471701,14855,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,330,https://localhost:7000/api/statistics/neighbourhoods,,14855,utf-8,1,1,VEGA,0,7
+1654609481475,5082,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,5082,utf-8,1,1,VEGA,0,7
+1654609481272,5287,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,5287,utf-8,1,1,VEGA,0,8
+1654609481364,5195,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5195,utf-8,1,1,VEGA,0,7
+1654609481426,5130,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,5130,utf-8,1,1,VEGA,0,8
+1654609481317,5242,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5242,utf-8,1,1,VEGA,0,7
+1654609477939,8617,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,330,https://localhost:7000/api/statistics/neighbourhoods,,8617,utf-8,1,1,VEGA,0,6
+1654609481475,5084,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,5084,utf-8,1,1,VEGA,0,6
+1654609478002,8557,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,330,https://localhost:7000/api/listings?geojson=true,,8557,utf-8,1,1,VEGA,0,8
+1654609477939,8623,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,328,https://localhost:7000/api/listings?geojson=true,,8623,utf-8,1,1,VEGA,0,6
+1654609481357,5205,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,328,https://localhost:7000/api/statistics/neighbourhoods,,5205,utf-8,1,1,VEGA,0,8
+1654609481364,5198,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,329,https://localhost:7000/api/statistics/neighbourhoods,,5198,utf-8,1,1,VEGA,0,8
+1654609474278,12286,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,329,https://localhost:7000/api/statistics/neighbourhoods,,12286,utf-8,1,1,VEGA,0,6
+1654609478048,9464,/api/listings?geojson=true,200,OK,parallel bzm - Parallel Controller,text,true,,625854,144,2,305,https://localhost:7000/api/listings?geojson=true,,9463,utf-8,1,0,VEGA,0,7
+1654609481618,5914,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,305,https://localhost:7000/api/statistics/neighbourhoods,,5914,utf-8,1,1,VEGA,0,13
+1654609481678,5855,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,305,https://localhost:7000/api/statistics/neighbourhoods,,5855,utf-8,1,1,VEGA,0,6
+1654609481618,5916,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,305,https://localhost:7000/api/listings?geojson=true,,5916,utf-8,1,1,VEGA,0,13
+1654609481568,5967,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,304,https://localhost:7000/api/listings?geojson=true,,5967,utf-8,1,1,VEGA,0,7
+1654609481678,5858,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,304,https://localhost:7000/api/listings?geojson=true,,5858,utf-8,1,1,VEGA,0,6
+1654609481773,5764,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,303,https://localhost:7000/api/statistics/neighbourhoods,,5764,utf-8,1,1,VEGA,0,7
+1654609481726,5811,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,303,https://localhost:7000/api/statistics/neighbourhoods,,5811,utf-8,1,1,VEGA,0,8
+1654609478157,9380,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,303,https://localhost:7000/api/statistics/neighbourhoods,,9380,utf-8,1,1,VEGA,0,6
+1654609475888,11650,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,303,https://localhost:7000/api/statistics/neighbourhoods,,11650,utf-8,1,1,VEGA,0,8
+1654609478157,9381,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,303,https://localhost:7000/api/listings?geojson=true,,9381,utf-8,1,1,VEGA,0,6
+1654609478110,9429,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,301,https://localhost:7000/api/listings?geojson=true,,9428,utf-8,1,1,VEGA,0,7
+1654609481726,5814,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,301,https://localhost:7000/api/listings?geojson=true,,5814,utf-8,1,1,VEGA,0,7
+1654609478218,9322,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,300,https://localhost:7000/api/statistics/neighbourhoods,,9322,utf-8,1,1,VEGA,0,7
+1654609481773,5768,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,300,https://localhost:7000/api/listings?geojson=true,,5768,utf-8,1,1,VEGA,0,7
+1654609474403,13138,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,299,https://localhost:7000/api/statistics/neighbourhoods,,13138,utf-8,1,1,VEGA,0,6
+1654609478266,9276,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,298,https://localhost:7000/api/statistics/neighbourhoods,,9276,utf-8,1,1,VEGA,0,7
+1654609481820,5722,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,298,https://localhost:7000/api/statistics/neighbourhoods,,5722,utf-8,1,1,VEGA,0,9
+1654609478218,9325,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,298,https://localhost:7000/api/listings?geojson=true,,9325,utf-8,1,1,VEGA,0,7
+1654609475998,11545,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,297,https://localhost:7000/api/statistics/neighbourhoods,,11545,utf-8,1,1,VEGA,0,6
+1654609481820,5724,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,296,https://localhost:7000/api/listings?geojson=true,,5724,utf-8,1,1,VEGA,0,9
+1654609481868,5677,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,295,https://localhost:7000/api/listings?geojson=true,,5677,utf-8,1,1,VEGA,0,7
+1654609481868,5677,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,295,https://localhost:7000/api/statistics/neighbourhoods,,5677,utf-8,1,1,VEGA,0,7
+1654609473265,14280,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,295,https://localhost:7000/api/statistics/neighbourhoods,,14280,utf-8,1,1,VEGA,0,7
+1654609475936,11610,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,293,https://localhost:7000/api/statistics/neighbourhoods,,11610,utf-8,1,1,VEGA,0,6
+1654609478314,9232,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,293,https://localhost:7000/api/statistics/neighbourhoods,,9232,utf-8,1,1,VEGA,0,7
+1654609478266,9280,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,292,https://localhost:7000/api/listings?geojson=true,,9280,utf-8,1,1,VEGA,0,8
+1654609481915,5633,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,291,https://localhost:7000/api/statistics/neighbourhoods,,5633,utf-8,1,1,VEGA,0,7
+1654609482515,5033,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,291,https://localhost:7000/api/listings?geojson=true,,5033,utf-8,1,1,VEGA,0,6
+1654609481915,5634,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,291,https://localhost:7000/api/listings?geojson=true,,5634,utf-8,1,1,VEGA,0,7
+1654609478314,9236,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,290,https://localhost:7000/api/listings?geojson=true,,9236,utf-8,1,1,VEGA,0,7
+1654609474465,13086,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,289,https://localhost:7000/api/statistics/neighbourhoods,,13086,utf-8,1,1,VEGA,0,7
+1654609476043,11509,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,288,https://localhost:7000/api/statistics/neighbourhoods,,11509,utf-8,1,1,VEGA,0,7
+1654609470269,17289,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,287,https://localhost:7000/api/statistics/neighbourhoods,,17289,utf-8,1,1,VEGA,0,7
+1654609474526,13032,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,287,https://localhost:7000/api/statistics/neighbourhoods,,13032,utf-8,1,1,VEGA,0,7
+1654609471200,16359,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,285,https://localhost:7000/api/statistics/neighbourhoods,,16359,utf-8,1,1,VEGA,0,7
+1654609482073,5486,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,284,https://localhost:7000/api/listings?geojson=true,,5486,utf-8,1,1,VEGA,0,6
+1654609482073,5487,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,284,https://localhost:7000/api/statistics/neighbourhoods,,5487,utf-8,1,1,VEGA,0,7
+1654609469625,17935,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,284,https://localhost:7000/api/statistics/neighbourhoods,,17935,utf-8,1,1,VEGA,0,7
+1654609470696,16864,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,284,https://localhost:7000/api/statistics/neighbourhoods,,16864,utf-8,1,1,VEGA,0,7
+1654609482121,5439,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,281,https://localhost:7000/api/statistics/neighbourhoods,,5439,utf-8,1,1,VEGA,0,7
+1654609471779,15782,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,281,https://localhost:7000/api/statistics/neighbourhoods,,15782,utf-8,1,1,VEGA,0,6
+1654609482121,5440,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,281,https://localhost:7000/api/listings?geojson=true,,5440,utf-8,1,1,VEGA,0,7
+1654609478426,9135,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,279,https://localhost:7000/api/listings?geojson=true,,9135,utf-8,1,1,VEGA,0,11
+1654609478426,9137,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,279,https://localhost:7000/api/statistics/neighbourhoods,,9137,utf-8,1,1,VEGA,0,11
+1654609478472,9091,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,278,https://localhost:7000/api/statistics/neighbourhoods,,9091,utf-8,1,1,VEGA,0,7
+1654609482169,5395,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,278,https://localhost:7000/api/statistics/neighbourhoods,,5395,utf-8,1,1,VEGA,0,6
+1654609482169,5395,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,278,https://localhost:7000/api/listings?geojson=true,,5395,utf-8,1,1,VEGA,0,6
+1654609482515,5050,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,277,https://localhost:7000/api/statistics/neighbourhoods,,5050,utf-8,1,1,VEGA,0,6
+1654609482217,5348,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,277,https://localhost:7000/api/listings?geojson=true,,5348,utf-8,1,1,VEGA,0,6
+1654609482217,5349,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,276,https://localhost:7000/api/statistics/neighbourhoods,,5349,utf-8,1,1,VEGA,0,6
+1654609478516,9050,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,275,https://localhost:7000/api/statistics/neighbourhoods,,9050,utf-8,1,1,VEGA,0,8
+1654609481979,5588,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,275,https://localhost:7000/api/listings?geojson=true,,5588,utf-8,1,1,VEGA,0,7
+1654609481979,5589,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,275,https://localhost:7000/api/statistics/neighbourhoods,,5589,utf-8,1,1,VEGA,0,8
+1654609482025,5544,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,274,https://localhost:7000/api/statistics/neighbourhoods,,5544,utf-8,1,1,VEGA,0,7
+1654609476106,11463,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,274,https://localhost:7000/api/statistics/neighbourhoods,,11463,utf-8,1,1,VEGA,0,8
+1654609482025,5544,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,274,https://localhost:7000/api/listings?geojson=true,,5544,utf-8,1,1,VEGA,0,7
+1654609478376,9194,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,272,https://localhost:7000/api/statistics/neighbourhoods,,9194,utf-8,1,1,VEGA,0,7
+1654609476167,11403,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,272,https://localhost:7000/api/statistics/neighbourhoods,,11403,utf-8,1,1,VEGA,0,7
+1654609478376,9195,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,271,https://localhost:7000/api/listings?geojson=true,,9195,utf-8,1,1,VEGA,0,7
+1654609482374,5203,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,270,https://localhost:7000/api/listings?geojson=true,,5203,utf-8,1,1,VEGA,0,7
+1654609482374,5204,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,270,https://localhost:7000/api/statistics/neighbourhoods,,5204,utf-8,1,1,VEGA,0,7
+1654609478587,8991,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,269,https://localhost:7000/api/listings?geojson=true,,8991,utf-8,1,1,VEGA,0,7
+1654609472528,15052,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,269,https://localhost:7000/api/statistics/neighbourhoods,,15052,utf-8,1,1,VEGA,0,7
+1654609468924,18656,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,268,https://localhost:7000/api/statistics/neighbourhoods,,18656,utf-8,1,1,VEGA,0,6
+1654609478625,8955,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,268,https://localhost:7000/api/statistics/neighbourhoods,,8955,utf-8,1,1,VEGA,0,7
+1654609469344,18237,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,267,https://localhost:7000/api/statistics/neighbourhoods,,18237,utf-8,1,1,VEGA,0,8
+1654609470776,16806,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,266,https://localhost:7000/api/statistics/neighbourhoods,,16806,utf-8,1,1,VEGA,0,6
+1654609473403,14180,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,265,https://localhost:7000/api/statistics/neighbourhoods,,14180,utf-8,1,1,VEGA,0,7
+1654609469408,18175,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,264,https://localhost:7000/api/statistics/neighbourhoods,,18175,utf-8,1,1,VEGA,0,6
+1654609469171,18413,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,263,https://localhost:7000/api/statistics/neighbourhoods,,18413,utf-8,1,1,VEGA,0,7
+1654609468181,19404,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,262,https://localhost:7000/api/statistics/neighbourhoods,,19403,utf-8,1,1,VEGA,0,6
+1654609467676,19909,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,261,https://localhost:7000/api/statistics/neighbourhoods,,19909,utf-8,1,1,VEGA,0,7
+1654609471842,15743,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,260,https://localhost:7000/api/statistics/neighbourhoods,,15743,utf-8,1,1,VEGA,0,7
+1654609468671,18915,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,260,https://localhost:7000/api/statistics/neighbourhoods,,18915,utf-8,1,1,VEGA,0,9
+1654609478472,9115,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,258,https://localhost:7000/api/listings?geojson=true,,9115,utf-8,1,1,VEGA,0,7
+1654609472465,15122,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,257,https://localhost:7000/api/statistics/neighbourhoods,,15122,utf-8,1,1,VEGA,0,7
+1654609471278,16309,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,257,https://localhost:7000/api/statistics/neighbourhoods,,16309,utf-8,1,1,VEGA,0,7
+1654609474590,12997,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,257,https://localhost:7000/api/statistics/neighbourhoods,,12997,utf-8,1,1,VEGA,0,6
+1654609482280,5307,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,257,https://localhost:7000/api/statistics/neighbourhoods,,5307,utf-8,1,1,VEGA,0,7
+1654609469908,17680,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,254,https://localhost:7000/api/statistics/neighbourhoods,,17680,utf-8,1,1,VEGA,0,7
+1654609482280,5308,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,254,https://localhost:7000/api/listings?geojson=true,,5308,utf-8,1,1,VEGA,0,7
+1654609478516,9073,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,252,https://localhost:7000/api/listings?geojson=true,,9073,utf-8,1,1,VEGA,0,8
+1654609478587,9002,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,251,https://localhost:7000/api/statistics/neighbourhoods,,9002,utf-8,1,1,VEGA,0,7
+1654609482327,5263,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,251,https://localhost:7000/api/statistics/neighbourhoods,,5263,utf-8,1,1,VEGA,0,6
+1654609482327,5263,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,250,https://localhost:7000/api/listings?geojson=true,,5263,utf-8,1,1,VEGA,0,6
+1654609473328,14265,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,249,https://localhost:7000/api/statistics/neighbourhoods,,14265,utf-8,1,1,VEGA,0,6
+1654609469986,17607,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,249,https://localhost:7000/api/statistics/neighbourhoods,,17607,utf-8,1,1,VEGA,0,6
+1654609468421,19172,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,247,https://localhost:7000/api/statistics/neighbourhoods,,19172,utf-8,1,1,VEGA,0,6
+1654609482420,5174,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,247,https://localhost:7000/api/listings?geojson=true,,5174,utf-8,1,1,VEGA,0,7
+1654609482467,5139,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,246,https://localhost:7000/api/statistics/neighbourhoods,,5139,utf-8,1,1,VEGA,0,7
+1654609482467,5140,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,246,https://localhost:7000/api/listings?geojson=true,,5140,utf-8,1,1,VEGA,0,7
+1654609478625,8982,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,245,https://localhost:7000/api/listings?geojson=true,,8982,utf-8,1,1,VEGA,0,6
+1654609482420,5188,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,244,https://localhost:7000/api/statistics/neighbourhoods,,5188,utf-8,1,1,VEGA,0,7
+1654609478671,8937,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,243,https://localhost:7000/api/statistics/neighbourhoods,,8937,utf-8,1,1,VEGA,0,7
+1654609478718,9832,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,243,https://localhost:7000/api/statistics/neighbourhoods,,9832,utf-8,1,1,VEGA,0,6
+1654609478671,9880,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,243,https://localhost:7000/api/listings?geojson=true,,9880,utf-8,1,1,VEGA,0,7
+1654609482579,5972,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,242,https://localhost:7000/api/statistics/neighbourhoods,,5972,utf-8,1,1,VEGA,0,7
+1654609482579,5973,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,242,https://localhost:7000/api/listings?geojson=true,,5973,utf-8,1,1,VEGA,0,7
+1654609476213,12340,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,241,https://localhost:7000/api/statistics/neighbourhoods,,12340,utf-8,1,1,VEGA,0,8
+1654609473452,15102,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,240,https://localhost:7000/api/statistics/neighbourhoods,,15102,utf-8,1,1,VEGA,0,7
+1654609482627,5927,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,239,https://localhost:7000/api/listings?geojson=true,,5927,utf-8,1,1,VEGA,0,9
+1654609482680,5874,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,239,https://localhost:7000/api/listings?geojson=true,,5874,utf-8,1,1,VEGA,0,6
+1654609482627,5928,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,239,https://localhost:7000/api/statistics/neighbourhoods,,5928,utf-8,1,1,VEGA,0,9
+1654609476275,12280,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,239,https://localhost:7000/api/statistics/neighbourhoods,,12280,utf-8,1,1,VEGA,0,6
+1654609474653,13902,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,239,https://localhost:7000/api/statistics/neighbourhoods,,13902,utf-8,1,1,VEGA,0,6
+1654609478733,9822,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,236,https://localhost:7000/api/listings?geojson=true,,9822,utf-8,1,1,VEGA,0,6
+1654609478765,9791,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,235,https://localhost:7000/api/statistics/neighbourhoods,,9791,utf-8,1,1,VEGA,0,7
+1654609482680,5876,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,235,https://localhost:7000/api/statistics/neighbourhoods,,5876,utf-8,1,1,VEGA,0,6
+1654609482718,5839,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,234,https://localhost:7000/api/listings?geojson=true,,5839,utf-8,1,1,VEGA,0,6
+1654609483516,5042,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,234,https://localhost:7000/api/listings?geojson=true,,5042,utf-8,1,1,VEGA,0,7
+1654609482718,5840,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,234,https://localhost:7000/api/statistics/neighbourhoods,,5840,utf-8,1,1,VEGA,0,6
+1654609478765,9794,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,233,https://localhost:7000/api/listings?geojson=true,,9794,utf-8,1,1,VEGA,0,7
+1654609482766,5796,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,232,https://localhost:7000/api/listings?geojson=true,,5796,utf-8,1,1,VEGA,0,8
+1654609478814,9749,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,232,https://localhost:7000/api/listings?geojson=true,,9749,utf-8,1,1,VEGA,0,6
+1654609482828,5736,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,232,https://localhost:7000/api/statistics/neighbourhoods,,5736,utf-8,1,1,VEGA,0,8
+1654609482828,5736,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,232,https://localhost:7000/api/listings?geojson=true,,5736,utf-8,1,1,VEGA,0,8
+1654609474715,13849,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,232,https://localhost:7000/api/statistics/neighbourhoods,,13849,utf-8,1,1,VEGA,0,6
+1654609476386,12179,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,230,https://localhost:7000/api/statistics/neighbourhoods,,12179,utf-8,1,1,VEGA,0,7
+1654609482876,5689,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,230,https://localhost:7000/api/statistics/neighbourhoods,,5689,utf-8,1,1,VEGA,0,7
+1654609482891,5674,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,229,https://localhost:7000/api/listings?geojson=true,,5674,utf-8,1,1,VEGA,0,7
+1654609478876,9690,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,228,https://localhost:7000/api/listings?geojson=true,,9690,utf-8,1,1,VEGA,0,7
+1654609478876,9690,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,228,https://localhost:7000/api/statistics/neighbourhoods,,9690,utf-8,1,1,VEGA,0,7
+1654609482923,5645,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,227,https://localhost:7000/api/statistics/neighbourhoods,,5645,utf-8,1,1,VEGA,0,7
+1654609483516,5052,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,227,https://localhost:7000/api/statistics/neighbourhoods,,5052,utf-8,1,1,VEGA,0,7
+1654609482923,5645,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,226,https://localhost:7000/api/listings?geojson=true,,5645,utf-8,1,1,VEGA,0,7
+1654609478814,9755,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,225,https://localhost:7000/api/statistics/neighbourhoods,,9755,utf-8,1,1,VEGA,0,6
+1654609482766,5804,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,224,https://localhost:7000/api/statistics/neighbourhoods,,5804,utf-8,1,1,VEGA,0,7
+1654609482970,5600,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,223,https://localhost:7000/api/statistics/neighbourhoods,,5600,utf-8,1,1,VEGA,0,6
+1654609482970,5601,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,223,https://localhost:7000/api/listings?geojson=true,,5601,utf-8,1,1,VEGA,0,6
+1654609476322,12249,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,222,https://localhost:7000/api/statistics/neighbourhoods,,12249,utf-8,1,1,VEGA,0,7
+1654609478969,9605,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,221,https://localhost:7000/api/statistics/neighbourhoods,,9605,utf-8,1,1,VEGA,0,7
+1654609483017,5558,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,221,https://localhost:7000/api/listings?geojson=true,,5558,utf-8,1,1,VEGA,0,6
+1654609483017,5558,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,221,https://localhost:7000/api/statistics/neighbourhoods,,5558,utf-8,1,1,VEGA,0,6
+1654609476433,12142,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,220,https://localhost:7000/api/statistics/neighbourhoods,,12142,utf-8,1,1,VEGA,0,7
+1654609483078,5497,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,220,https://localhost:7000/api/listings?geojson=true,,5497,utf-8,1,1,VEGA,0,7
+1654609483078,5498,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,219,https://localhost:7000/api/statistics/neighbourhoods,,5498,utf-8,1,1,VEGA,0,8
+1654609479220,9357,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,218,https://localhost:7000/api/listings?geojson=true,,9357,utf-8,1,1,VEGA,0,7
+1654609478969,9608,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,218,https://localhost:7000/api/listings?geojson=true,,9608,utf-8,1,1,VEGA,0,7
+1654609479017,9561,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,217,https://localhost:7000/api/statistics/neighbourhoods,,9561,utf-8,1,1,VEGA,0,6
+1654609479064,9515,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,217,https://localhost:7000/api/listings?geojson=true,,9515,utf-8,1,1,VEGA,0,8
+1654609483124,5455,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,217,https://localhost:7000/api/statistics/neighbourhoods,,5455,utf-8,1,1,VEGA,0,7
+1654609474779,13800,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,217,https://localhost:7000/api/statistics/neighbourhoods,,13800,utf-8,1,1,VEGA,0,6
+1654609483124,5455,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,216,https://localhost:7000/api/listings?geojson=true,,5455,utf-8,1,1,VEGA,0,7
+1654609473515,15065,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,215,https://localhost:7000/api/statistics/neighbourhoods,,15065,utf-8,1,1,VEGA,0,6
+1654609478922,9658,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,214,https://localhost:7000/api/listings?geojson=true,,9658,utf-8,1,1,VEGA,0,7
+1654609478922,9658,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,214,https://localhost:7000/api/statistics/neighbourhoods,,9658,utf-8,1,1,VEGA,0,16
+1654609479064,9517,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,213,https://localhost:7000/api/statistics/neighbourhoods,,9517,utf-8,1,1,VEGA,0,7
+1654609483171,5415,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,212,https://localhost:7000/api/listings?geojson=true,,5415,utf-8,1,1,VEGA,0,6
+1654609483218,5368,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,212,https://localhost:7000/api/statistics/neighbourhoods,,5368,utf-8,1,1,VEGA,0,6
+1654609483218,5369,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,212,https://localhost:7000/api/listings?geojson=true,,5369,utf-8,1,1,VEGA,0,7
+1654609479267,9320,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,212,https://localhost:7000/api/statistics/neighbourhoods,,9320,utf-8,1,1,VEGA,0,7
+1654609476496,12093,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,211,https://localhost:7000/api/statistics/neighbourhoods,,12093,utf-8,1,1,VEGA,0,6
+1654609471339,17251,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,210,https://localhost:7000/api/statistics/neighbourhoods,,17251,utf-8,1,1,VEGA,0,7
+1654609472590,16000,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,209,https://localhost:7000/api/statistics/neighbourhoods,,16000,utf-8,1,1,VEGA,0,6
+1654609469265,19326,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,208,https://localhost:7000/api/statistics/neighbourhoods,,19326,utf-8,1,1,VEGA,0,7
+1654609469703,18888,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,207,https://localhost:7000/api/statistics/neighbourhoods,,18888,utf-8,1,1,VEGA,0,7
+1654609468764,19827,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,206,https://localhost:7000/api/statistics/neighbourhoods,,19827,utf-8,1,1,VEGA,0,7
+1654609470409,18183,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,205,https://localhost:7000/api/statistics/neighbourhoods,,18183,utf-8,1,1,VEGA,0,6
+1654609479127,9465,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,205,https://localhost:7000/api/statistics/neighbourhoods,,9465,utf-8,1,1,VEGA,0,6
+1654609479032,9561,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,204,https://localhost:7000/api/listings?geojson=true,,9561,utf-8,1,1,VEGA,0,7
+1654609469765,18828,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,204,https://localhost:7000/api/statistics/neighbourhoods,,18828,utf-8,1,1,VEGA,0,6
+1654609483171,5422,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,202,https://localhost:7000/api/statistics/neighbourhoods,,5422,utf-8,1,1,VEGA,0,6
+1654609474842,13751,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,202,https://localhost:7000/api/statistics/neighbourhoods,,13751,utf-8,1,1,VEGA,0,7
+1654609479220,9375,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,200,https://localhost:7000/api/statistics/neighbourhoods,,9375,utf-8,1,1,VEGA,0,7
+1654609471917,16678,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,200,https://localhost:7000/api/statistics/neighbourhoods,,16678,utf-8,1,1,VEGA,0,9
+1654609468516,20081,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,199,https://localhost:7000/api/statistics/neighbourhoods,,20081,utf-8,1,1,VEGA,0,7
+1654609479174,9423,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,199,https://localhost:7000/api/listings?geojson=true,,9423,utf-8,1,1,VEGA,0,7
+1654609469486,19111,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,199,https://localhost:7000/api/statistics/neighbourhoods,,19111,utf-8,1,1,VEGA,0,7
+1654609467506,21094,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,196,https://localhost:7000/api/statistics/neighbourhoods,,21094,utf-8,1,1,VEGA,0,6
+1654609467925,20675,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,195,https://localhost:7000/api/statistics/neighbourhoods,,20675,utf-8,1,1,VEGA,0,7
+1654609483265,5336,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,195,https://localhost:7000/api/listings?geojson=true,,5336,utf-8,1,1,VEGA,0,7
+1654609469016,19585,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,194,https://localhost:7000/api/statistics/neighbourhoods,,19585,utf-8,1,1,VEGA,0,6
+1654609483265,5336,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,193,https://localhost:7000/api/statistics/neighbourhoods,,5336,utf-8,1,1,VEGA,0,8
+1654609470347,18255,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,192,https://localhost:7000/api/statistics/neighbourhoods,,18254,utf-8,1,1,VEGA,0,7
+1654609483327,5275,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,192,https://localhost:7000/api/statistics/neighbourhoods,,5275,utf-8,1,1,VEGA,0,7
+1654609476542,12060,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,191,https://localhost:7000/api/statistics/neighbourhoods,,12060,utf-8,1,1,VEGA,0,9
+1654609483327,5275,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,190,https://localhost:7000/api/listings?geojson=true,,5275,utf-8,1,1,VEGA,0,7
+1654609479127,9476,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,189,https://localhost:7000/api/listings?geojson=true,,9476,utf-8,1,1,VEGA,0,6
+1654609483374,5230,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,188,https://localhost:7000/api/statistics/neighbourhoods,,5229,utf-8,1,1,VEGA,0,7
+1654609483374,5230,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,188,https://localhost:7000/api/listings?geojson=true,,5230,utf-8,1,1,VEGA,0,7
+1654609483469,5135,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,187,https://localhost:7000/api/listings?geojson=true,,5135,utf-8,1,1,VEGA,0,8
+1654609479174,9431,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,187,https://localhost:7000/api/statistics/neighbourhoods,,9431,utf-8,1,1,VEGA,0,7
+1654609483469,5148,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,186,https://localhost:7000/api/statistics/neighbourhoods,,5148,utf-8,1,1,VEGA,0,8
+1654609483423,5194,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,185,https://localhost:7000/api/listings?geojson=true,,5194,utf-8,1,1,VEGA,0,7
+1654609483423,5195,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,185,https://localhost:7000/api/statistics/neighbourhoods,,5195,utf-8,1,1,VEGA,0,8
+1654609476605,12014,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,184,https://localhost:7000/api/statistics/neighbourhoods,,12014,utf-8,1,1,VEGA,0,6
+1654609479267,10260,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,183,https://localhost:7000/api/listings?geojson=true,,10260,utf-8,1,1,VEGA,0,7
+1654609483578,5949,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,183,https://localhost:7000/api/listings?geojson=true,,5949,utf-8,1,1,VEGA,0,6
+1654609483578,5950,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,182,https://localhost:7000/api/statistics/neighbourhoods,,5950,utf-8,1,1,VEGA,0,6
+1654609476654,12874,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,182,https://localhost:7000/api/statistics/neighbourhoods,,12874,utf-8,1,1,VEGA,0,6
+1654609474890,14638,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,182,https://localhost:7000/api/statistics/neighbourhoods,,14638,utf-8,1,1,VEGA,0,6
+1654609483670,5858,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,179,https://localhost:7000/api/statistics/neighbourhoods,,5858,utf-8,1,1,VEGA,0,7
+1654609483875,5654,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,179,https://localhost:7000/api/listings?geojson=true,,5654,utf-8,1,1,VEGA,0,6
+1654609483623,5907,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,179,https://localhost:7000/api/statistics/neighbourhoods,,5907,utf-8,1,1,VEGA,0,7
+1654609479315,10215,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,179,https://localhost:7000/api/listings?geojson=true,,10215,utf-8,1,1,VEGA,0,7
+1654609483670,5861,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,179,https://localhost:7000/api/listings?geojson=true,,5861,utf-8,1,1,VEGA,0,7
+1654609472652,16879,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,178,https://localhost:7000/api/statistics/neighbourhoods,,16879,utf-8,1,1,VEGA,0,6
+1654609479377,10154,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,178,https://localhost:7000/api/statistics/neighbourhoods,,10154,utf-8,1,1,VEGA,0,6
+1654609483623,5910,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,177,https://localhost:7000/api/listings?geojson=true,,5910,utf-8,1,1,VEGA,0,8
+1654609471980,17553,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,177,https://localhost:7000/api/statistics/neighbourhoods,,17553,utf-8,1,1,VEGA,0,6
+1654609483717,5817,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,175,https://localhost:7000/api/listings?geojson=true,,5817,utf-8,1,1,VEGA,0,7
+1654609474953,14581,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,175,https://localhost:7000/api/statistics/neighbourhoods,,14581,utf-8,1,1,VEGA,0,6
+1654609473653,15882,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,174,https://localhost:7000/api/statistics/neighbourhoods,,15882,utf-8,1,1,VEGA,0,7
+1654609483717,5818,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,174,https://localhost:7000/api/statistics/neighbourhoods,,5818,utf-8,1,1,VEGA,0,7
+1654609479422,10113,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,172,https://localhost:7000/api/statistics/neighbourhoods,,10113,utf-8,1,1,VEGA,0,7
+1654609473603,15933,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,172,https://localhost:7000/api/statistics/neighbourhoods,,15933,utf-8,1,1,VEGA,0,6
+1654609483766,5770,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,172,https://localhost:7000/api/statistics/neighbourhoods,,5770,utf-8,1,1,VEGA,0,11
+1654609479377,10159,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,171,https://localhost:7000/api/listings?geojson=true,,10159,utf-8,1,1,VEGA,0,6
+1654609483826,5711,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,170,https://localhost:7000/api/listings?geojson=true,,5711,utf-8,1,1,VEGA,0,7
+1654609483826,5711,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,170,https://localhost:7000/api/statistics/neighbourhoods,,5711,utf-8,1,1,VEGA,0,7
+1654609483766,5772,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,169,https://localhost:7000/api/listings?geojson=true,,5772,utf-8,1,1,VEGA,0,12
+1654609479422,10116,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,168,https://localhost:7000/api/listings?geojson=true,,10116,utf-8,1,1,VEGA,0,7
+1654609484523,5017,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,167,https://localhost:7000/api/listings?geojson=true,,5017,utf-8,1,1,VEGA,0,6
+1654609479484,10061,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,167,https://localhost:7000/api/listings?geojson=true,,10061,utf-8,1,1,VEGA,0,6
+1654609483967,5578,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,167,https://localhost:7000/api/statistics/neighbourhoods,,5578,utf-8,1,1,VEGA,0,6
+1654609483967,5578,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,167,https://localhost:7000/api/listings?geojson=true,,5578,utf-8,1,1,VEGA,0,7
+1654609479516,10030,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,166,https://localhost:7000/api/listings?geojson=true,,10030,utf-8,1,1,VEGA,0,7
+1654609479516,10031,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,166,https://localhost:7000/api/statistics/neighbourhoods,,10031,utf-8,1,1,VEGA,0,7
+1654609472729,16819,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,165,https://localhost:7000/api/statistics/neighbourhoods,,16819,utf-8,1,1,VEGA,0,6
+1654609472058,17491,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,164,https://localhost:7000/api/statistics/neighbourhoods,,17491,utf-8,1,1,VEGA,0,7
+1654609470065,19485,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,163,https://localhost:7000/api/statistics/neighbourhoods,,19485,utf-8,1,1,VEGA,0,12
+1654609473716,15834,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,162,https://localhost:7000/api/statistics/neighbourhoods,,15834,utf-8,1,1,VEGA,0,7
+1654609470840,18711,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,161,https://localhost:7000/api/statistics/neighbourhoods,,18711,utf-8,1,1,VEGA,0,7
+1654609470918,18633,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,160,https://localhost:7000/api/statistics/neighbourhoods,,18633,utf-8,1,1,VEGA,0,6
+1654609479578,9974,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,159,https://localhost:7000/api/statistics/neighbourhoods,,9974,utf-8,1,1,VEGA,0,6
+1654609471417,18135,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,159,https://localhost:7000/api/statistics/neighbourhoods,,18135,utf-8,1,1,VEGA,0,8
+1654609476827,12725,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,159,https://localhost:7000/api/statistics/neighbourhoods,,12725,utf-8,1,1,VEGA,0,6
+1654609484015,5537,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,157,https://localhost:7000/api/statistics/neighbourhoods,,5537,utf-8,1,1,VEGA,0,7
+1654609476779,12774,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,157,https://localhost:7000/api/statistics/neighbourhoods,,12773,utf-8,1,1,VEGA,0,6
+1654609484015,5538,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,156,https://localhost:7000/api/listings?geojson=true,,5538,utf-8,1,1,VEGA,0,6
+1654609484078,5475,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,155,https://localhost:7000/api/statistics/neighbourhoods,,5475,utf-8,1,1,VEGA,0,7
+1654609484078,5476,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,155,https://localhost:7000/api/listings?geojson=true,,5476,utf-8,1,1,VEGA,0,7
+1654609484523,5032,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,154,https://localhost:7000/api/statistics/neighbourhoods,,5032,utf-8,1,1,VEGA,0,6
+1654609479470,10085,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,154,https://localhost:7000/api/statistics/neighbourhoods,,10085,utf-8,1,1,VEGA,0,6
+1654609483875,5681,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,152,https://localhost:7000/api/statistics/neighbourhoods,,5681,utf-8,1,1,VEGA,0,6
+1654609476715,12842,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,151,https://localhost:7000/api/statistics/neighbourhoods,,12842,utf-8,1,1,VEGA,0,8
+1654609479315,10242,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,151,https://localhost:7000/api/statistics/neighbourhoods,,10242,utf-8,1,1,VEGA,0,7
+1654609475015,14542,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,150,https://localhost:7000/api/statistics/neighbourhoods,,14542,utf-8,1,1,VEGA,0,7
+1654609483921,5637,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,148,https://localhost:7000/api/statistics/neighbourhoods,,5637,utf-8,1,1,VEGA,0,6
+1654609483921,5637,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,148,https://localhost:7000/api/listings?geojson=true,,5637,utf-8,1,1,VEGA,0,6
+1654609479578,9981,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,147,https://localhost:7000/api/listings?geojson=true,,9981,utf-8,1,1,VEGA,0,6
+1654609475078,14483,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,146,https://localhost:7000/api/statistics/neighbourhoods,,14483,utf-8,1,1,VEGA,0,7
+1654609473778,15783,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,145,https://localhost:7000/api/statistics/neighbourhoods,,15783,utf-8,1,1,VEGA,0,6
+1654609476891,12671,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,144,https://localhost:7000/api/statistics/neighbourhoods,,12671,utf-8,1,1,VEGA,0,6
+1654609484268,5302,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,143,https://localhost:7000/api/listings?geojson=true,,5302,utf-8,1,1,VEGA,0,9
+1654609484316,5255,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,143,https://localhost:7000/api/statistics/neighbourhoods,,5255,utf-8,1,1,VEGA,0,7
+1654609484475,5096,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,143,https://localhost:7000/api/listings?geojson=true,,5096,utf-8,1,1,VEGA,0,7
+1654609484316,5255,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,143,https://localhost:7000/api/listings?geojson=true,,5255,utf-8,1,1,VEGA,0,7
+1654609479718,9854,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,142,https://localhost:7000/api/listings?geojson=true,,9854,utf-8,1,1,VEGA,0,6
+1654609479765,9807,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,142,https://localhost:7000/api/statistics/neighbourhoods,,9807,utf-8,1,1,VEGA,0,6
+1654609484365,5208,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,142,https://localhost:7000/api/statistics/neighbourhoods,,5208,utf-8,1,1,VEGA,0,6
+1654609484365,5209,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,142,https://localhost:7000/api/listings?geojson=true,,5209,utf-8,1,1,VEGA,0,6
+1654609484427,5147,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,141,https://localhost:7000/api/statistics/neighbourhoods,,5147,utf-8,1,1,VEGA,0,7
+1654609484427,5148,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,141,https://localhost:7000/api/listings?geojson=true,,5148,utf-8,1,1,VEGA,0,7
+1654609479765,9810,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,140,https://localhost:7000/api/listings?geojson=true,,9810,utf-8,1,1,VEGA,0,6
+1654609484126,5450,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,139,https://localhost:7000/api/statistics/neighbourhoods,,5450,utf-8,1,1,VEGA,0,6
+1654609479825,9752,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,139,https://localhost:7000/api/statistics/neighbourhoods,,9752,utf-8,1,1,VEGA,0,6
+1654609484126,5451,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,139,https://localhost:7000/api/listings?geojson=true,,5451,utf-8,1,1,VEGA,0,6
+1654609484475,5103,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,138,https://localhost:7000/api/statistics/neighbourhoods,,5103,utf-8,1,1,VEGA,0,7
+1654609475143,14435,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,137,https://localhost:7000/api/statistics/neighbourhoods,,14435,utf-8,1,1,VEGA,0,6
+1654609484173,5405,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,137,https://localhost:7000/api/statistics/neighbourhoods,,5405,utf-8,1,1,VEGA,0,6
+1654609484173,5406,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,136,https://localhost:7000/api/listings?geojson=true,,5406,utf-8,1,1,VEGA,0,6
+1654609479626,9953,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,135,https://localhost:7000/api/listings?geojson=true,,9953,utf-8,1,1,VEGA,0,7
+1654609479672,9908,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,135,https://localhost:7000/api/statistics/neighbourhoods,,9908,utf-8,1,1,VEGA,0,6
+1654609479626,9954,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,135,https://localhost:7000/api/statistics/neighbourhoods,,9954,utf-8,1,1,VEGA,0,8
+1654609484220,5361,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,134,https://localhost:7000/api/statistics/neighbourhoods,,5361,utf-8,1,1,VEGA,0,6
+1654609484220,5361,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,134,https://localhost:7000/api/listings?geojson=true,,5361,utf-8,1,1,VEGA,0,6
+1654609479672,9910,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,133,https://localhost:7000/api/listings?geojson=true,,9910,utf-8,1,1,VEGA,0,7
+1654609479718,9864,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,132,https://localhost:7000/api/statistics/neighbourhoods,,9864,utf-8,1,1,VEGA,0,6
+1654609484268,5315,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,131,https://localhost:7000/api/statistics/neighbourhoods,,5315,utf-8,1,1,VEGA,0,9
+1654609476938,12646,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,130,https://localhost:7000/api/statistics/neighbourhoods,,12646,utf-8,1,1,VEGA,0,6
+1654609484618,5910,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,129,https://localhost:7000/api/statistics/neighbourhoods,,5910,utf-8,1,1,VEGA,0,6
+1654609479871,10657,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,129,https://localhost:7000/api/statistics/neighbourhoods,,10657,utf-8,1,1,VEGA,0,6
+1654609484618,5912,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,129,https://localhost:7000/api/listings?geojson=true,,5912,utf-8,1,1,VEGA,0,7
+1654609479917,10613,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,128,https://localhost:7000/api/statistics/neighbourhoods,,10613,utf-8,1,1,VEGA,0,6
+1654609479825,10705,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,128,https://localhost:7000/api/listings?geojson=true,,10705,utf-8,1,1,VEGA,0,6
+1654609477047,13483,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,128,https://localhost:7000/api/statistics/neighbourhoods,,13483,utf-8,1,1,VEGA,0,6
+1654609477000,13531,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,127,https://localhost:7000/api/statistics/neighbourhoods,,13531,utf-8,1,1,VEGA,0,6
+1654609484665,5866,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,125,https://localhost:7000/api/statistics/neighbourhoods,,5866,utf-8,1,1,VEGA,0,6
+1654609484571,5960,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,125,https://localhost:7000/api/statistics/neighbourhoods,,5960,utf-8,1,1,VEGA,0,7
+1654609484571,5961,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,125,https://localhost:7000/api/listings?geojson=true,,5961,utf-8,1,1,VEGA,0,7
+1654609479871,10661,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,124,https://localhost:7000/api/listings?geojson=true,,10661,utf-8,1,1,VEGA,0,6
+1654609484665,5868,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,123,https://localhost:7000/api/listings?geojson=true,,5868,utf-8,1,1,VEGA,0,6
+1654609479917,10617,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,122,https://localhost:7000/api/listings?geojson=true,,10617,utf-8,1,1,VEGA,0,6
+1654609475204,15331,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,121,https://localhost:7000/api/statistics/neighbourhoods,,15331,utf-8,1,1,VEGA,0,7
+1654609485525,5010,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,121,https://localhost:7000/api/statistics/neighbourhoods,,5010,utf-8,1,1,VEGA,0,8
+1654609472778,17757,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,121,https://localhost:7000/api/statistics/neighbourhoods,,17757,utf-8,1,1,VEGA,0,7
+1654609479965,10570,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,119,https://localhost:7000/api/statistics/neighbourhoods,,10570,utf-8,1,1,VEGA,0,8
+1654609472842,17695,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,119,https://localhost:7000/api/statistics/neighbourhoods,,17695,utf-8,1,1,VEGA,0,6
+1654609484775,5765,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,118,https://localhost:7000/api/statistics/neighbourhoods,,5765,utf-8,1,1,VEGA,0,6
+1654609484775,5765,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,118,https://localhost:7000/api/listings?geojson=true,,5765,utf-8,1,1,VEGA,0,7
+1654609480028,10513,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,117,https://localhost:7000/api/statistics/neighbourhoods,,10513,utf-8,1,1,VEGA,0,7
+1654609479965,10576,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,117,https://localhost:7000/api/listings?geojson=true,,10576,utf-8,1,1,VEGA,0,8
+1654609484823,5719,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,116,https://localhost:7000/api/statistics/neighbourhoods,,5719,utf-8,1,1,VEGA,0,6
+1654609484823,5719,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,116,https://localhost:7000/api/listings?geojson=true,,5719,utf-8,1,1,VEGA,0,6
+1654609484871,5672,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,115,https://localhost:7000/api/statistics/neighbourhoods,,5672,utf-8,1,1,VEGA,0,31
+1654609485525,5019,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,115,https://localhost:7000/api/listings?geojson=true,,5019,utf-8,1,1,VEGA,0,8
+1654609484871,5673,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,115,https://localhost:7000/api/listings?geojson=true,,5673,utf-8,1,1,VEGA,0,31
+1654609480028,10517,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,113,https://localhost:7000/api/listings?geojson=true,,10517,utf-8,1,1,VEGA,0,7
+1654609472890,17657,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,112,https://localhost:7000/api/statistics/neighbourhoods,,17657,utf-8,1,1,VEGA,0,6
+1654609484729,5818,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,112,https://localhost:7000/api/statistics/neighbourhoods,,5818,utf-8,1,1,VEGA,0,8
+1654609477110,13438,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,111,https://localhost:7000/api/statistics/neighbourhoods,,13437,utf-8,1,1,VEGA,0,6
+1654609484729,5819,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,111,https://localhost:7000/api/listings?geojson=true,,5819,utf-8,1,1,VEGA,0,8
+1654609471481,19067,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,109,https://localhost:7000/api/statistics/neighbourhoods,,19067,utf-8,1,1,VEGA,0,6
+1654609473840,16709,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,108,https://localhost:7000/api/statistics/neighbourhoods,,16709,utf-8,1,1,VEGA,0,6
+1654609475268,15282,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,107,https://localhost:7000/api/statistics/neighbourhoods,,15282,utf-8,1,1,VEGA,0,29
+1654609484917,5633,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,107,https://localhost:7000/api/statistics/neighbourhoods,,5633,utf-8,1,1,VEGA,0,6
+1654609484917,5633,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,106,https://localhost:7000/api/listings?geojson=true,,5633,utf-8,1,1,VEGA,0,7
+1654609473901,16650,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,106,https://localhost:7000/api/statistics/neighbourhoods,,16650,utf-8,1,1,VEGA,0,7
+1654609484965,5586,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,105,https://localhost:7000/api/statistics/neighbourhoods,,5586,utf-8,1,1,VEGA,0,6
+1654609477157,13394,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,104,https://localhost:7000/api/statistics/neighbourhoods,,13394,utf-8,1,1,VEGA,0,7
+1654609484965,5586,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,104,https://localhost:7000/api/listings?geojson=true,,5586,utf-8,1,1,VEGA,0,6
+1654609480075,10477,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,102,https://localhost:7000/api/listings?geojson=true,,10477,utf-8,1,1,VEGA,0,6
+1654609480075,10478,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,102,https://localhost:7000/api/statistics/neighbourhoods,,10478,utf-8,1,1,VEGA,0,10
+1654609485074,5485,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,101,https://localhost:7000/api/listings?geojson=true,,5485,utf-8,1,1,VEGA,0,9
+1654609477376,13183,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,101,https://localhost:7000/api/statistics/neighbourhoods,,13183,utf-8,1,1,VEGA,0,32
+1654609485121,5438,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,101,https://localhost:7000/api/listings?geojson=true,,5438,utf-8,1,1,VEGA,0,7
+1654609480171,10389,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,100,https://localhost:7000/api/listings?geojson=true,,10389,utf-8,1,1,VEGA,0,7
+1654609485169,5393,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,100,https://localhost:7000/api/statistics/neighbourhoods,,5393,utf-8,1,1,VEGA,0,7
+1654609475329,15233,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,100,https://localhost:7000/api/statistics/neighbourhoods,,15233,utf-8,1,1,VEGA,0,6
+1654609485169,5393,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,100,https://localhost:7000/api/listings?geojson=true,,5393,utf-8,1,1,VEGA,0,7
+1654609480374,10189,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,98,https://localhost:7000/api/listings?geojson=true,,10189,utf-8,1,1,VEGA,0,7
+1654609477266,13297,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,98,https://localhost:7000/api/statistics/neighbourhoods,,13297,utf-8,1,1,VEGA,0,6
+1654609477219,13344,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,98,https://localhost:7000/api/statistics/neighbourhoods,,13344,utf-8,1,1,VEGA,0,6
+1654609485026,5537,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,98,https://localhost:7000/api/statistics/neighbourhoods,,5537,utf-8,1,1,VEGA,0,7
+1654609480123,10441,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,96,https://localhost:7000/api/statistics/neighbourhoods,,10441,utf-8,1,1,VEGA,0,6
+1654609485026,5538,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,96,https://localhost:7000/api/listings?geojson=true,,5538,utf-8,1,1,VEGA,0,7
+1654609480123,10442,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,95,https://localhost:7000/api/listings?geojson=true,,10442,utf-8,1,1,VEGA,0,6
+1654609480171,10394,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,94,https://localhost:7000/api/statistics/neighbourhoods,,10394,utf-8,1,1,VEGA,0,6
+1654609485074,5492,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,93,https://localhost:7000/api/statistics/neighbourhoods,,5492,utf-8,1,1,VEGA,0,8
+1654609485121,5445,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,92,https://localhost:7000/api/statistics/neighbourhoods,,5445,utf-8,1,1,VEGA,0,7
+1654609485215,5352,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,91,https://localhost:7000/api/statistics/neighbourhoods,,5352,utf-8,1,1,VEGA,0,8
+1654609485215,5352,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,91,https://localhost:7000/api/listings?geojson=true,,5352,utf-8,1,1,VEGA,0,8
+1654609480219,10349,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,90,https://localhost:7000/api/listings?geojson=true,,10349,utf-8,1,1,VEGA,0,8
+1654609485276,5294,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,90,https://localhost:7000/api/statistics/neighbourhoods,,5294,utf-8,1,1,VEGA,0,6
+1654609485479,5092,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,90,https://localhost:7000/api/listings?geojson=true,,5092,utf-8,1,1,VEGA,0,7
+1654609485276,5295,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,90,https://localhost:7000/api/listings?geojson=true,,5295,utf-8,1,1,VEGA,0,6
+1654609485323,5248,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,89,https://localhost:7000/api/statistics/neighbourhoods,,5248,utf-8,1,1,VEGA,0,6
+1654609485323,5249,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,89,https://localhost:7000/api/listings?geojson=true,,5249,utf-8,1,1,VEGA,0,6
+1654609480329,10243,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,88,https://localhost:7000/api/statistics/neighbourhoods,,10243,utf-8,1,1,VEGA,0,6
+1654609480265,10308,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,88,https://localhost:7000/api/listings?geojson=true,,10308,utf-8,1,1,VEGA,0,8
+1654609472953,17622,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,88,https://localhost:7000/api/statistics/neighbourhoods,,17622,utf-8,1,1,VEGA,0,6
+1654609475391,15184,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,88,https://localhost:7000/api/statistics/neighbourhoods,,15184,utf-8,1,1,VEGA,0,10
+1654609470980,19596,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,86,https://localhost:7000/api/statistics/neighbourhoods,,19596,utf-8,1,1,VEGA,0,7
+1654609472136,18440,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,85,https://localhost:7000/api/statistics/neighbourhoods,,18440,utf-8,1,1,VEGA,0,6
+1654609472200,18377,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,84,https://localhost:7000/api/statistics/neighbourhoods,,18377,utf-8,1,1,VEGA,0,6
+1654609485369,5208,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,83,https://localhost:7000/api/statistics/neighbourhoods,,5208,utf-8,1,1,VEGA,0,7
+1654609485369,5209,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,83,https://localhost:7000/api/listings?geojson=true,,5209,utf-8,1,1,VEGA,0,7
+1654609480219,10359,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,82,https://localhost:7000/api/statistics/neighbourhoods,,10359,utf-8,1,1,VEGA,0,8
+1654609477328,13250,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,82,https://localhost:7000/api/statistics/neighbourhoods,,13250,utf-8,1,1,VEGA,0,8
+1654609480265,10314,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,80,https://localhost:7000/api/statistics/neighbourhoods,,10314,utf-8,1,1,VEGA,0,7
+1654609485416,5163,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,79,https://localhost:7000/api/statistics/neighbourhoods,,5163,utf-8,1,1,VEGA,0,6
+1654609485479,5101,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,79,https://localhost:7000/api/statistics/neighbourhoods,,5101,utf-8,1,1,VEGA,0,6
+1654609485416,5165,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,78,https://localhost:7000/api/listings?geojson=true,,5165,utf-8,1,1,VEGA,0,6
+1654609480329,10252,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,77,https://localhost:7000/api/listings?geojson=true,,10252,utf-8,1,1,VEGA,0,6
+1654609480374,10208,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,76,https://localhost:7000/api/statistics/neighbourhoods,,10208,utf-8,1,1,VEGA,0,7
+1654609485571,5961,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,75,https://localhost:7000/api/listings?geojson=true,,5961,utf-8,1,1,VEGA,0,7
+1654609485916,5616,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,75,https://localhost:7000/api/listings?geojson=true,,5616,utf-8,1,1,VEGA,0,7
+1654609485617,5915,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,75,https://localhost:7000/api/statistics/neighbourhoods,,5915,utf-8,1,1,VEGA,0,7
+1654609485617,5916,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,75,https://localhost:7000/api/listings?geojson=true,,5916,utf-8,1,1,VEGA,0,7
+1654609485664,5869,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,74,https://localhost:7000/api/listings?geojson=true,,5869,utf-8,1,1,VEGA,0,6
+1654609485725,5809,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,74,https://localhost:7000/api/statistics/neighbourhoods,,5809,utf-8,1,1,VEGA,0,7
+1654609485725,5809,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,74,https://localhost:7000/api/listings?geojson=true,,5809,utf-8,1,1,VEGA,0,8
+1654609485664,5871,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,73,https://localhost:7000/api/statistics/neighbourhoods,,5871,utf-8,1,1,VEGA,0,6
+1654609480578,10957,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,72,https://localhost:7000/api/statistics/neighbourhoods,,10957,utf-8,1,1,VEGA,0,8
+1654609485772,5764,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,72,https://localhost:7000/api/listings?geojson=true,,5764,utf-8,1,1,VEGA,0,7
+1654609475501,16036,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,72,https://localhost:7000/api/statistics/neighbourhoods,,16036,utf-8,1,1,VEGA,0,7
+1654609485819,5718,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,72,https://localhost:7000/api/statistics/neighbourhoods,,5718,utf-8,1,1,VEGA,0,7
+1654609477439,14099,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,71,https://localhost:7000/api/statistics/neighbourhoods,,14099,utf-8,1,1,VEGA,0,7
+1654609485772,5766,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,71,https://localhost:7000/api/statistics/neighbourhoods,,5766,utf-8,1,1,VEGA,0,8
+1654609480972,10566,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,69,https://localhost:7000/api/statistics/neighbourhoods,,10566,utf-8,1,1,VEGA,0,6
+1654609477501,14037,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,69,https://localhost:7000/api/statistics/neighbourhoods,,14037,utf-8,1,1,VEGA,0,7
+1654609480578,10961,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,67,https://localhost:7000/api/listings?geojson=true,,10961,utf-8,1,1,VEGA,0,7
+1654609480625,10915,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,66,https://localhost:7000/api/statistics/neighbourhoods,,10915,utf-8,1,1,VEGA,0,7
+1654609485819,5721,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,66,https://localhost:7000/api/listings?geojson=true,,5721,utf-8,1,1,VEGA,0,7
+1654609485868,5672,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,65,https://localhost:7000/api/statistics/neighbourhoods,,5672,utf-8,1,1,VEGA,0,6
+1654609485916,5625,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,65,https://localhost:7000/api/statistics/neighbourhoods,,5625,utf-8,1,1,VEGA,0,7
+1654609485868,5673,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,64,https://localhost:7000/api/listings?geojson=true,,5673,utf-8,1,1,VEGA,0,6
+1654609480671,10871,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,63,https://localhost:7000/api/statistics/neighbourhoods,,10871,utf-8,1,1,VEGA,0,7
+1654609485571,5971,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,63,https://localhost:7000/api/statistics/neighbourhoods,,5971,utf-8,1,1,VEGA,0,7
+1654609480625,10918,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,62,https://localhost:7000/api/listings?geojson=true,,10918,utf-8,1,1,VEGA,0,8
+1654609485978,5565,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,61,https://localhost:7000/api/statistics/neighbourhoods,,5565,utf-8,1,1,VEGA,0,7
+1654609485978,5565,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,61,https://localhost:7000/api/listings?geojson=true,,5565,utf-8,1,1,VEGA,0,7
+1654609486023,5521,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,60,https://localhost:7000/api/statistics/neighbourhoods,,5521,utf-8,1,1,VEGA,0,7
+1654609486023,5521,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,60,https://localhost:7000/api/listings?geojson=true,,5521,utf-8,1,1,VEGA,0,7
+1654609480719,10826,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,59,https://localhost:7000/api/statistics/neighbourhoods,,10826,utf-8,1,1,VEGA,0,10
+1654609480671,10874,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,59,https://localhost:7000/api/listings?geojson=true,,10874,utf-8,1,1,VEGA,0,7
+1654609486070,5476,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,58,https://localhost:7000/api/statistics/neighbourhoods,,5476,utf-8,1,1,VEGA,0,7
+1654609486070,5476,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,58,https://localhost:7000/api/listings?geojson=true,,5476,utf-8,1,1,VEGA,0,7
+1654609480719,10828,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,57,https://localhost:7000/api/listings?geojson=true,,10828,utf-8,1,1,VEGA,0,10
+1654609473016,18533,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,56,https://localhost:7000/api/statistics/neighbourhoods,,18533,utf-8,1,1,VEGA,0,7
+1654609480767,10783,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,55,https://localhost:7000/api/statistics/neighbourhoods,,10783,utf-8,1,1,VEGA,0,6
+1654609477608,13943,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,55,https://localhost:7000/api/statistics/neighbourhoods,,13943,utf-8,1,1,VEGA,0,7
+1654609477547,14004,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,54,https://localhost:7000/api/statistics/neighbourhoods,,14004,utf-8,1,1,VEGA,0,6
+1654609480767,10788,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,53,https://localhost:7000/api/listings?geojson=true,,10788,utf-8,1,1,VEGA,0,6
+1654609480815,10740,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,52,https://localhost:7000/api/statistics/neighbourhoods,,10740,utf-8,1,1,VEGA,0,6
+1654609486230,5326,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,52,https://localhost:7000/api/statistics/neighbourhoods,,5326,utf-8,1,1,VEGA,0,6
+1654609486230,5326,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,52,https://localhost:7000/api/listings?geojson=true,,5326,utf-8,1,1,VEGA,0,6
+1654609480815,10742,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,51,https://localhost:7000/api/listings?geojson=true,,10742,utf-8,1,1,VEGA,0,6
+1654609480877,10681,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,50,https://localhost:7000/api/statistics/neighbourhoods,,10681,utf-8,1,1,VEGA,0,7
+1654609480877,10681,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,50,https://localhost:7000/api/listings?geojson=true,,10681,utf-8,1,1,VEGA,0,7
+1654609477656,13903,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,49,https://localhost:7000/api/statistics/neighbourhoods,,13903,utf-8,1,1,VEGA,0,7
+1654609466927,24634,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,48,https://localhost:7000/api/statistics/neighbourhoods,,24634,utf-8,1,1,VEGA,0,8
+1654609467849,23712,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,47,https://localhost:7000/api/statistics/neighbourhoods,,23712,utf-8,1,1,VEGA,0,7
+1654609467754,23808,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,46,https://localhost:7000/api/statistics/neighbourhoods,,23808,utf-8,1,1,VEGA,0,6
+1654609466264,25298,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,45,https://localhost:7000/api/statistics/neighbourhoods,,25298,utf-8,1,1,VEGA,0,9
+1654609475547,16016,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,44,https://localhost:7000/api/statistics/neighbourhoods,,16016,utf-8,1,1,VEGA,0,8
+1654609467005,24559,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,44,https://localhost:7000/api/statistics/neighbourhoods,,24559,utf-8,1,1,VEGA,0,8
+1654609466422,25142,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,42,https://localhost:7000/api/statistics/neighbourhoods,,25142,utf-8,1,1,VEGA,0,7
+1654609470552,21013,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,41,https://localhost:7000/api/statistics/neighbourhoods,,21013,utf-8,1,1,VEGA,0,8
+1654609467098,24469,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,40,https://localhost:7000/api/statistics/neighbourhoods,,24469,utf-8,1,1,VEGA,0,6
+1654609469843,21724,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,39,https://localhost:7000/api/statistics/neighbourhoods,,21724,utf-8,1,1,VEGA,0,7
+1654609466516,25051,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,38,https://localhost:7000/api/statistics/neighbourhoods,,25051,utf-8,1,1,VEGA,0,9
+1654609471623,19945,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,37,https://localhost:7000/api/statistics/neighbourhoods,,19945,utf-8,1,1,VEGA,0,6
+1654609486119,5449,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,37,https://localhost:7000/api/listings?geojson=true,,5449,utf-8,1,1,VEGA,0,11
+1654609468341,23228,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,36,https://localhost:7000/api/statistics/neighbourhoods,,23228,utf-8,1,1,VEGA,0,6
+1654609486119,5450,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,36,https://localhost:7000/api/statistics/neighbourhoods,,5450,utf-8,1,1,VEGA,0,11
+1654609466677,24893,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,34,https://localhost:7000/api/statistics/neighbourhoods,,24893,utf-8,1,1,VEGA,0,10
+1654609486167,5403,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,2,33,https://localhost:7000/api/statistics/neighbourhoods,,5403,utf-8,1,1,VEGA,0,7
+1654609468101,23469,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,33,https://localhost:7000/api/statistics/neighbourhoods,,23469,utf-8,1,1,VEGA,0,7
+1654609486167,5403,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,1,33,https://localhost:7000/api/listings?geojson=true,,5403,utf-8,1,1,VEGA,0,7
+1654609480924,10647,/api/listings?geojson=true,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,144,2,31,https://localhost:7000/api/listings?geojson=true,,10647,utf-8,1,1,VEGA,0,7
+1654609467350,24223,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,31,https://localhost:7000/api/statistics/neighbourhoods,,24223,utf-8,1,1,VEGA,0,6
+1654609468261,23313,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,30,https://localhost:7000/api/statistics/neighbourhoods,,23313,utf-8,1,1,VEGA,0,8
+1654609468005,23569,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,29,https://localhost:7000/api/statistics/neighbourhoods,,23569,utf-8,1,1,VEGA,0,9
+1654609467176,24399,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,28,https://localhost:7000/api/statistics/neighbourhoods,,24399,utf-8,1,1,VEGA,0,7
+1654609469563,22012,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,27,https://localhost:7000/api/statistics/neighbourhoods,,22012,utf-8,1,1,VEGA,0,7
+1654609470206,21369,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,26,https://localhost:7000/api/statistics/neighbourhoods,,21369,utf-8,1,1,VEGA,0,6
+1654609467600,23978,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,25,https://localhost:7000/api/statistics/neighbourhoods,,23978,utf-8,1,1,VEGA,0,7
+1654609466342,25236,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,25,https://localhost:7000/api/statistics/neighbourhoods,,25236,utf-8,1,1,VEGA,0,7
+1654609473079,18500,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,23,https://localhost:7000/api/statistics/neighbourhoods,,18500,utf-8,1,1,VEGA,0,6
+1654609468593,22987,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,22,https://localhost:7000/api/statistics/neighbourhoods,,22987,utf-8,1,1,VEGA,0,7
+1654609474089,17492,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,21,https://localhost:7000/api/statistics/neighbourhoods,,17492,utf-8,1,1,VEGA,0,7
+1654609471559,20023,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,20,https://localhost:7000/api/statistics/neighbourhoods,,20023,utf-8,1,1,VEGA,0,6
+1654609468845,22738,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,19,https://localhost:7000/api/statistics/neighbourhoods,,22738,utf-8,1,1,VEGA,0,6
+1654609467428,24155,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,18,https://localhost:7000/api/statistics/neighbourhoods,,24155,utf-8,1,1,VEGA,0,6
+1654609470488,21096,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,17,https://localhost:7000/api/statistics/neighbourhoods,,21096,utf-8,1,1,VEGA,0,7
+1654609467255,24329,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,16,https://localhost:7000/api/statistics/neighbourhoods,,24329,utf-8,1,1,VEGA,0,8
+1654609480924,10661,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,15,https://localhost:7000/api/statistics/neighbourhoods,,10661,utf-8,1,1,VEGA,0,7
+1654609466850,24735,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,14,https://localhost:7000/api/statistics/neighbourhoods,,24735,utf-8,1,1,VEGA,0,8
+1654609475608,15977,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,13,https://localhost:7000/api/statistics/neighbourhoods,,15977,utf-8,1,1,VEGA,0,7
+1654609472276,19310,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,12,https://localhost:7000/api/statistics/neighbourhoods,,19310,utf-8,1,1,VEGA,0,7
+1654609470128,21459,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,11,https://localhost:7000/api/statistics/neighbourhoods,,21459,utf-8,1,1,VEGA,0,6
+1654609466597,24991,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,10,https://localhost:7000/api/statistics/neighbourhoods,,24991,utf-8,1,1,VEGA,0,9
+1654609466756,24832,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,10,https://localhost:7000/api/statistics/neighbourhoods,,24832,utf-8,1,1,VEGA,0,6
+1654609469093,22496,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,8,https://localhost:7000/api/statistics/neighbourhoods,,22496,utf-8,1,1,VEGA,0,7
+1654609481568,10956,/api/statistics/neighbourhoods,404,Not Found,parallel bzm - Parallel Controller,text,false,,876,148,1,7,https://localhost:7000/api/statistics/neighbourhoods,,10956,utf-8,1,1,VEGA,0,7
+1654609475826,16700,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,6,https://localhost:7000/api/statistics/neighbourhoods,,16700,utf-8,1,1,VEGA,0,7
+1654609473203,19324,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,6,https://localhost:7000/api/statistics/neighbourhoods,,19324,utf-8,1,1,VEGA,0,6
+1654609474340,18187,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,4,https://localhost:7000/api/statistics/neighbourhoods,,18187,utf-8,1,1,VEGA,0,6
+1654609472403,20125,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,3,https://localhost:7000/api/statistics/neighbourhoods,,20125,utf-8,1,1,VEGA,0,6
+1654609478063,14465,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,2,https://localhost:7000/api/statistics/neighbourhoods,,14465,utf-8,1,1,VEGA,0,7
+1654609478110,14419,/api/statistics/neighbourhoods,500,Internal Server Error,parallel bzm - Parallel Controller,text,false,,3485,148,1,1,https://localhost:7000/api/statistics/neighbourhoods,,14419,utf-8,1,1,VEGA,0,7

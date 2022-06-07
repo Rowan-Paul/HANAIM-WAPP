@@ -14,7 +14,7 @@
       <com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup guiclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroupGui" testclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup" testname="PerformanceWorkShop - Arrivals Thread Group" enabled="true">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">20</stringProp>
+        <stringProp name="TargetLevel">15</stringProp>
         <stringProp name="RampUp">30</stringProp>
         <stringProp name="Steps">10</stringProp>
         <stringProp name="Hold">5</stringProp>
@@ -189,7 +189,7 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">C:\Users\RP-Fl\Downloads\testing\results\TestResults.csv</stringProp>
+            <stringProp name="filename">C:\Users\RP-Fl\Downloads\TestResults.csv</stringProp>
           </ResultCollector>
           <hashTree/>
           <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseCodesPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Codes per Second" enabled="true">
